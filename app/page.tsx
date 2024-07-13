@@ -1,11 +1,10 @@
-// import Image from "next/image";
-// import styles from "./page.module.css";
+import styles from "./page.module.css";
+import HomeContent from "../components/HomeContent";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Alleyway</h1>
-    </main>
-      
+   <main className={styles.main}>
+    <HomeContent/>
+   </main>
   );
 }
