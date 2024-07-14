@@ -1,11 +1,11 @@
 import styles from "../page.module.css";
 import Head from "next/head";
 
-export default function Projects() {
+export default function Services() {
   return (
     <>
     <Head>
-      <title>Alleyway Projects</title>
+      <title>Alleyway Services</title>
       <meta name="contact-alleyway" content="Look what you made me do" />
       {/* Additional metadata and tags */}
     </Head>
