@@ -12,7 +12,7 @@ export default function About() {
         {/* Additional metadata and tags */}
       </Head>
       <main className={styles.main}>
-        About Page Content
+        About Page Content 
       </main>
     </>
   );

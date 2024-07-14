@@ -3,7 +3,6 @@
   flex-direction: row;
   gap: 4rem;
   justify-content:center ;
-  border: 1px solid yellow;
 }
 .icon {
     width: 22px;

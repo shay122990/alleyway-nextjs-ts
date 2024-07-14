@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Head from 'next/head';
-import HomeContent from "../components/HomeContent";
 
 export default function Home() {
   return (
@@ -10,7 +9,6 @@ export default function Home() {
         {/* Add more meta tags as needed */}
       </Head>
       <main className={styles.main}>
-        <HomeContent />
       </main>
     </>
   );
