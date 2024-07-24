@@ -1,0 +1,9 @@
+.whatsapp {
+    font-size: 28px;
+    color: var(--accent-lime);
+}
+@media (min-width: 769px) {
+    .whatsapp {
+       display: none;
+    }
+}

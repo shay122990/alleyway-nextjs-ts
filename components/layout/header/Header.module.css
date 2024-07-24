@@ -5,7 +5,7 @@
   background-position: center center;
   background-size: cover;
   position: relative; 
-  height: 80vh;
+  height: 50vh;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -43,8 +43,13 @@
 .header > * {
   position: relative;
   z-index: 3;
+  border: 1px solid pink;
 }
 
-
+@media (min-width: 769px){
+  .header{
+    height: 80vh;
+  }
+}
   
   

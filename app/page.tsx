@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Head>
         <meta name="cz-shortcut-listen" content="true" />
-        {/* Add more meta tags as needed */}
       </Head>
       <main className={styles.main}>
         <Loader/>
