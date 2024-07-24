@@ -1,7 +1,6 @@
 
-.header {
+.hero {
   background: var(--main-gradient);
-  background-image: url('../../../public/images/header-home.jpg');
   background-position: center center;
   background-size: cover;
   position: relative; 
@@ -17,7 +16,7 @@
   box-shadow: 0px 0px 120px 10px rgba(5, 21, 34, 0.721);
 }
 
-.header::before {
+.hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -29,7 +28,7 @@
   z-index: 1
 }
 
-.header::after {
+.hero::after {
   content: '';
   position: absolute;
   top: 0;
@@ -40,14 +39,14 @@
   z-index: 2; 
 }
 
-.header > * {
+.hero > * {
   position: relative;
   z-index: 3;
   border: 1px solid pink;
 }
 
 @media (min-width: 769px){
-  .header{
+  .hero{
     height: 80vh;
   }
 }
