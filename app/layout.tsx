@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow} from "next/font/google";
 import "./globals.css";
 import Footer from "../components/layout/footer/Footer";
 import Navbar from "@/components/navigation/navbar/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Barlow({weight: ['400', '700'], subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: "Alleyway",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Navbar/>
          {children}
         <Footer/>

@@ -4,7 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Icons from '../../common/icons/Icons';
 import styles from './Navbar.module.css';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Using react-icons for hamburger and close icons
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
 export default function Navbar() {
@@ -17,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.hamburger} onClick={toggleMenu}>
-        {isMenuOpen ? <FaTimes /> : <FaBars />}
+        {isMenuOpen ? <IoCloseOutline/> : <IoMenuOutline/>  }
       </div>
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
         <ul className={styles.menu}>
