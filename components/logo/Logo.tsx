@@ -1,8 +1,10 @@
-
+import styles from "./Logo.module.css"
+import Image from 'next/image'
+import logoImg from "@/public/images/alleyway-1.png"
 export default function Logo() {
   return (
-    <div>
-      <h1>Alleyway</h1>
+    <div className={styles.logoContainer}>
+      <Image src={logoImg} alt='Company logo'/>
     </div>
   )
 }

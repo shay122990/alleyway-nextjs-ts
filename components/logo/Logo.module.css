@@ -1,0 +1,14 @@
+.logoContainer {
+    width: 200px; 
+    height: 100px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+ }
+    

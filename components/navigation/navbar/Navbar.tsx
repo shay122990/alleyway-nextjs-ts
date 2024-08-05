@@ -1,8 +1,8 @@
-'use client'; // Ensure this component is a Client Component
+'use client'; 
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Use next/navigation to get pathname
+import { usePathname } from 'next/navigation'; 
 import Icons from '../../common/icons/Icons';
 import styles from './Navbar.module.css';
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
@@ -10,7 +10,7 @@ import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get current pathname using usePathname
+  const pathname = usePathname(); 
 
   const toggleMenu = () => setIsMenuOpen(prev => !prev);
   const closeMenu = () => setIsMenuOpen(false);
