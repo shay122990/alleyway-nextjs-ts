@@ -5,11 +5,12 @@ import Footer from "../components/layout/footer/Footer";
 import Navbar from "@/components/navigation/navbar/Navbar";
 import Head from 'next/head';
 
-const font = Barlow({ weight: ['400', '700'], subsets: ['latin'] });
+const font = Barlow({ weight: ['400', '700'], subsets: ['latin'], preload:false });
 
 export const metadata: Metadata = {
   title: "Alleyway",
   description: "Event Management Company In Dubai",
+ 
 };
 
 export default function RootLayout({

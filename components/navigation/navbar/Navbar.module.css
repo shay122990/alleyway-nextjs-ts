@@ -55,7 +55,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 7rem 0 0 0;
+  padding: 4rem 0 0 0;
 }
 
 .menu li{
@@ -75,7 +75,6 @@
   height: 2px;
   background-color: lime;
   transition: width 0.3s ease;
-  
 }
 .menu li:hover::before{
   width: 100%;
@@ -85,6 +84,9 @@
 }
 .menu li:hover {
   text-decoration: none; 
+}
+.menu .active{
+  color: lime;
 }
 
 .navIcons {
@@ -117,10 +119,5 @@
     gap: 1rem;
     padding: 0;
   }
-
-  .navLinks li {
-    margin: 0;
-    padding: 0;
-    
-  }
+ 
 }
