@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Barlow} from "next/font/google";
-import "./globals.css";
+import { Barlow } from "next/font/google";
+import "../styles/globals.css";
 import Footer from "../components/layout/footer/Footer";
 import Navbar from "@/components/navigation/navbar/Navbar";
+import Head from 'next/head';
 
-const font = Barlow({weight: ['400', '700'], subsets: ['latin']});
+const font = Barlow({ weight: ['400', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Alleyway",
@@ -18,11 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="preload"
+          href="/_next/static/css/app/page.css" 
+          as="style"
+        />
+      </Head>
       <body className={font.className}>
-        <Navbar/>
-         {children}
-        <Footer/>
-        </body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -40,7 +40,7 @@ body {
 }
 
 ul {
-  list-style-type: none; /* Remove bullets from all <ul> */
+  list-style-type: none;
 }
 
 a {

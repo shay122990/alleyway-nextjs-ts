@@ -14,7 +14,7 @@ export default function Services() {
     </Head>
     <Hero image={projectsImage}/>
     <main className={styles.main}>
-      Projects Page Content
+      Services Page Content
     </main>
   </>
   )

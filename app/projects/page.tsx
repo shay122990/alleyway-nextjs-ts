@@ -3,19 +3,19 @@ import Hero from "@/components/layout/hero/Hero";
 import Head from 'next/head';
 import aboutImage from "@/public/images/about-image.jpg"
 
-export default function About() {
+export default function Project() {
   return (
     <>
       <Head>
-        <title>About Us - Alleyway</title>
-        <meta name="description" content="Learn more about our company's history and mission."/>
-        <meta name="keywords" content="company history, mission statement, about us" />
+        <title>Projects - Alleyway</title>
+        <meta name="description" content="The projects we've successfully completed"/>
+        <meta name="keywords" content="our satisfied clients list and projects we've completed " />
 
         {/* Additional metadata and tags */}
       </Head>
       <Hero image={aboutImage}/>
       <main className={styles.main}>
-        About Page Content 
+        Project Page Content 
       </main>
     </>
   );
