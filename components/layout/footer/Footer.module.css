@@ -31,6 +31,15 @@
 .quoteContainer{
     border: 1px solid blue;
 }
+.companyContactContainer{
+    border: dashed 2px lime;
+}
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 @media (min-width:768px){
     .logoInfo{
         width: 80%;
@@ -49,5 +58,13 @@
     }
     .footerIntro{
         display: inline;
+    }
+    .companyContactContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+    .linksContainer{
+        width: 60%;
     }
 }
