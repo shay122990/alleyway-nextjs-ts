@@ -2,7 +2,7 @@
 export default function Button() {
   return (
     <div>
-      Button
+     <button>Get A quote</button>
     </div>
   )
 }
