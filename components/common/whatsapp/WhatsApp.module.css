@@ -1,6 +1,11 @@
 .whatsapp {
     font-size: 28px;
     color: var(--accent-lime);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.whatsapp:hover{
+    color: var(--hover-blue);
+    transform: scale(1.2);
 }
 @media (min-width: 1024px) {
     .whatsapp {

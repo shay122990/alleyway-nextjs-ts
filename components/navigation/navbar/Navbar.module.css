@@ -25,6 +25,11 @@
   cursor: pointer;
   font-size: 30px;
   color: var(--accent-lime);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.hamburger:hover{
+  color: var(--hover-blue);
+  transform: scale(1.2);
 }
 
 .navLinks {
