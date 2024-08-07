@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 540px;
+    /* height: 540px; */
     padding: 1rem;
     gap: 2rem;
     background-color: var(--main-background);
@@ -50,6 +50,21 @@
     padding-bottom: 1rem;
     font-size: 16px;
 }
+.linksContainer ul li {
+    padding-bottom: 10px; 
+}
+.linksContainer a{
+    text-transform: capitalize;
+}
+.linksContainer a:hover{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+.linksContainer .active a {
+    color: var(--accent-lime); 
+    font-weight: bold; 
+}
+
 @media (min-width:768px){
     .logoInfo{
         width: 80%;
@@ -57,7 +72,8 @@
     .quoteContainer{
         width: 50%;
     }
-    .socialMedia{
+    .linksContainer ul li{
+        padding-bottom: 16px;
     }
 }
 @media (min-width:1024px){
@@ -72,6 +88,7 @@
     }
     .footerIntro{
         display: inline;
+        height: 100px;
     }
     .companyContactContainer{
         display: flex;
