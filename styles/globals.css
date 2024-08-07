@@ -11,6 +11,7 @@
   --gradient-navy: linear-gradient(180deg, rgba(4,19,32,1) 0%, rgba(37,74,103,1) 27%, rgba(20,42,58,1) 73%, rgba(4,19,32,1) 99%);
   --accent-lime: #00FFA3;
   --accent-orange: #FB5607;
+  --hover-orange: #FE7A3A;
   --accent-blue: #043BFF;
   background-color: #020408;
 }

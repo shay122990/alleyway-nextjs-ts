@@ -1,7 +1,7 @@
 import Icons from "@/components/common/icons/Icons"
 import styles from "./Footer.module.css"
 import Logo from "@/components/logo/Logo"
-import Button from "@/components/common/Button"
+import Button from "@/components/common/buttons/Button"
 
 
 export default function Footer() {
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className={styles.quoteContainer}>
         <h3>Ready to launch your next project?</h3>
         <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-        <Button />
+        <Button buttonType="primary">Get A Quote</Button>
       </div>
       <div className={styles.linksContainer}>
         <div className={styles.company}>
@@ -42,8 +42,6 @@ export default function Footer() {
         </div>
       </div>
       </div>
-      
-      
     </div>
   )
 }
