@@ -1,7 +1,6 @@
 import styles from "./page.module.css";
 import Hero from "@/components/layout/hero/Hero";
 import Head from 'next/head';
-import Loader from "@/components/common/loader/Loader";
 import type { StaticImageData } from 'next/image';
 
 import  homeImage from  "@/public/images/header-home.jpg"
@@ -17,7 +16,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Hero image={homeImage}/>
-        <Loader/>
       </main>
     </>
   );
