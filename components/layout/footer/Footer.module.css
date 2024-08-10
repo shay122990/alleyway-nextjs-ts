@@ -82,6 +82,7 @@
         justify-content: space-between;
         height: 400px;
         align-items: center;
+        padding: 2rem;
     }
     .logoIconContainer{
         flex-direction: column;
@@ -102,5 +103,8 @@
     }
     .linksContainer h4{
         font-size: 20px;
+    }
+    .quoteContainer{
+        width: 300px;
     }
 }
