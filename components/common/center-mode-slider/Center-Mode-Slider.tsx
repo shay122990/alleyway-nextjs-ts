@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './Center-Mode-Slider.module.css';
 
@@ -16,6 +16,16 @@ interface CenterModeSliderProps {
 
 const CenterModeSlider: React.FC<CenterModeSliderProps> = ({ items }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+
+    useEffect(() => {
+        if (!isHovered) {
+            const interval = setInterval(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+            }, 4000); 
+            return () => clearInterval(interval);
+        }
+    }, [isHovered, items.length]);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -26,7 +36,11 @@ const CenterModeSlider: React.FC<CenterModeSliderProps> = ({ items }) => {
     };
 
     return (
-        <div className={styles.carousel}>
+        <div 
+            className={styles.carousel}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <button className={styles.prev} onClick={prevSlide}>
                 &#10094;
             </button>
@@ -34,7 +48,6 @@ const CenterModeSlider: React.FC<CenterModeSliderProps> = ({ items }) => {
                 <Image 
                     src={items[currentIndex].image} 
                     alt={items[currentIndex].alt} 
-                    layout="responsive" 
                     width={800} 
                     height={800} 
                 />

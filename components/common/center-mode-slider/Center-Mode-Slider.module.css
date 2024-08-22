@@ -1,21 +1,25 @@
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width:100%;
     margin: auto;
+    padding: 40px 20px;
     overflow: hidden;
+    background-color: black;
+    border-radius: 12px;
 }
-
 .carouselContent {
     position: relative;
     text-align: center;
 }
-
 .carouselContent img {
+    border-radius: 10px;
     width: 100%;
-    height: auto;
+    height: 300px;
 }
-
 .carouselCaption {
     position: absolute;
     bottom: 10px;
@@ -25,22 +29,22 @@
     color: #fff;
     padding: 10px;
 }
-
-.carouselControl {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+.prev, .next {
+    font-size: 20px;
+    color: lime;
+    background-color: transparent;
     border: none;
-    padding: 10px;
-    cursor: pointer;
 }
 
-.prev {
-    left: 10px;
+@media (min-width:768px){
+    .carouselContent img {
+        width: 640px;
+        height: 400px;
+    }
 }
-
-.next {
-    right: 10px;
+@media (min-width:1240px){
+    .carouselContent img {
+        width: 900px;
+        height: 500px;
+    }
 }
