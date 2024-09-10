@@ -1,0 +1,24 @@
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid red;
+    width: 50%;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    color:lime;
+}
+.input{
+    height: 40px;
+    border: 1px solid lime;
+    border-radius: 5px;
+}
+.inputMessage{
+    border-radius: 5px;
+    border: 1px solid lime;
+}

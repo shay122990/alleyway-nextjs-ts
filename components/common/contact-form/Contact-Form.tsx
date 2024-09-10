@@ -6,6 +6,8 @@ import {FC} from 'react';
 import { useForm } from "react-hook-form";
 import {sendEmail} from "@/utils/send-email";
 
+import Button from "../buttons/Button";
+
 export type FormData = {
     name: string;
     email: string;
@@ -21,53 +23,51 @@ const ContactForm: FC = () => {
     }
 
   return (
-  <form onSubmit={handleSubmit(onSubmit)}>
-      <div className=''>
+  <form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
+      <div className={styles.field}>
         <label
           htmlFor='name'
-          className=''
+          className={styles.label}
         >
           Full Name
         </label>
         <input
           type='text'
           placeholder='Full Name'
-          className=''
+          className={styles.input}
           {...register('name', { required: true })}
         />
       </div>
-      <div className=''>
+      <div className={styles.field}>
         <label
           htmlFor='email'
-          className=''
+          className={styles.label}
         >
           Email Address
         </label>
         <input
           type='email'
           placeholder='example@domain.com'
-          className=''
+          className={styles.input}
           {...register('email', { required: true })}
         />
       </div>
-      <div className=''>
+      <div className={styles.field}>
         <label
           htmlFor='message'
-          className=''
+          className={styles.label}
         >
           Message
         </label>
         <textarea
-          rows={4}
+          rows={5}
           placeholder='Type your message'
-          className=''
+          className={styles.inputMessage}
           {...register('message', { required: true })}
         ></textarea>
       </div>
       <div>
-        <button className=''>
-          Submit
-        </button>
+      <Button buttonType="submit">Submit</Button>
       </div>
     </form>
   )

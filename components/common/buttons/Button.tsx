@@ -9,6 +9,7 @@ const BUTTON_TYPE_CLASSES = {
   primary: styles.btnPrimary,
   secondary: styles.btnSecondary,
   generic: styles.btnGeneric,
+  submit: styles.btnSubmit,
 };
 
 const Button: FC<ButtonProps> = ({ children, buttonType, ...otherProps }) => {
