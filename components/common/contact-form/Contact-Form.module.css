@@ -30,6 +30,10 @@
     border-radius: 5px;
     border: 1px solid lime;
 }
+.contactFormWhatsApp{
+    font-size: 20px;
+    width: 20px;
+}
 @media (min-width: 768px){
     .formContainer{
         flex-direction: row;

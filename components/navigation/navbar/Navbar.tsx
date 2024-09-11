@@ -96,7 +96,7 @@ export default function Navbar() {
         </ul>
         <Icons />
       </div>
-      {isMobile && <WhatsApp />}
+      {isMobile && <WhatsApp  className={styles.navbarWhatsApp}/>}
     </nav>
   );
 }

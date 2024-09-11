@@ -33,8 +33,9 @@ const ContactForm: FC = () => {
           Please fill out the form with your event requirements and we will contact you shortly.
           <br />
           Alternatively, you can contact us directly through{' '}
-          {isMounted && <WhatsApp />} WhatsApp.
+           WhatsApp
         </p>
+        {isMounted && <span className={styles.contactFormWhatsApp}><WhatsApp /></span>}
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
         <div className={styles.field}>
