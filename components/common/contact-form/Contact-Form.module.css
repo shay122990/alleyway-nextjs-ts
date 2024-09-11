@@ -4,15 +4,14 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border: 1px dashed pink;
     background: var(--gradient-blue);
+    padding: 10px;
 }
 .contactForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    border: 1px solid red;
     width: 100%;
 }
 .field{
@@ -30,4 +29,17 @@
 .inputMessage{
     border-radius: 5px;
     border: 1px solid lime;
+}
+@media (min-width: 768px){
+    .formContainer{
+        flex-direction: row;
+        width: 60%;
+    }
+    .contactInfo{
+        width: 50%;
+        border: 1px solid green;
+    }
+    .contactForm{
+        width: 50%;
+    }
 }

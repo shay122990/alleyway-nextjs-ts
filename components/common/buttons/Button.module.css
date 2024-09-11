@@ -33,7 +33,11 @@
   }
   
   .btnPrimary:hover::before {
-    border-color: lime;
+    border-color: var(--accent-lime);
+    animation: border-anim 1.5s linear infinite;
+  }
+  .btnSubmit:hover::before{
+    border-color: var(--accent-orange);
     animation: border-anim 1.5s linear infinite;
   }
   
