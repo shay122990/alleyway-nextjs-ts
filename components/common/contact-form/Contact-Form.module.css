@@ -1,10 +1,19 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px dashed pink;
+    background: var(--gradient-blue);
+}
 .contactForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     border: 1px solid red;
-    width: 50%;
+    width: 100%;
 }
 .field{
     display: flex;

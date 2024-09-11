@@ -9,6 +9,7 @@
   --main-gradient: linear-gradient(180deg, rgba(4,19,32,1) 0%, rgba(37,74,103,1) 100%);
   --main-text-color: #fff;
   --gradient-navy: linear-gradient(180deg, rgba(4,19,32,1) 0%, rgba(37,74,103,1) 27%, rgba(20,42,58,1) 73%, rgba(4,19,32,1) 99%);
+  --gradient-blue: linear-gradient(13deg, rgba(49,76,177,1) 35%, rgba(1,194,220,1) 100%);
   --accent-lime: #00FFA3;
   --accent-orange: #FB5607;
   --hover-orange: #FE7A3A;
@@ -19,12 +20,13 @@
 
 body {
   background: var(--main-background);
-  background: var(--main-gradient);
+  /* background: var(--main-gradient); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Barlow", sans-serif;
+  padding: 0 20px;
 }
 
 * {

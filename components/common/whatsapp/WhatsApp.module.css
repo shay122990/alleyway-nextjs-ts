@@ -7,8 +7,3 @@
     color: var(--hover-blue);
     transform: scale(1.2);
 }
-@media (min-width: 1024px) {
-    .whatsapp {
-       display: none;
-    }
-}
