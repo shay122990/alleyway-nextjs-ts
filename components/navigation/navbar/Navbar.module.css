@@ -1,12 +1,3 @@
-@keyframes underlineAnimation {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .navbar {
   display: flex;
   flex-direction: row;

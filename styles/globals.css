@@ -66,3 +66,12 @@ a {
   height: 100%;
   object-fit: cover;
 }
+/* ANIMATIONS */
+@keyframes underlineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

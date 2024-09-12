@@ -30,8 +30,8 @@ const ContactForm: FC = () => {
           <br />
           Alternatively, you can contact us directly through{' '}
            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
-            WhatsApp
-            </a>
+            WhatsApp 
+            </a> 
           </p>
         </div>
       </div>

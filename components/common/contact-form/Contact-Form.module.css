@@ -7,21 +7,21 @@
     background: var(--gradient-blue);
     padding: 20px;
     border-radius: 4px;
+    border: 1px solid red
 }
 .contactInfo{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+ border: 1px solid pink;
+
     
-}
-.formDescription{
-    display: flex;
-    flex-direction: row;
 }
 .formTitle{
     font-size: 20px;
     margin-bottom: 20px;
 }
+.formDescription{
+   letter-spacing: 0.2px;
+}
+
 .contactForm{
     display: flex;
     flex-direction: column;
@@ -45,20 +45,12 @@
     border-radius: 5px;
     border: 1px solid lime;
 }
-.contactFormWhatsApp{
-    font-size: 20px;
-    width: 20px;
-    text-decoration: underline;
-    text-decoration-color: var(--accent-lime);
-    text-underline-offset: 8px;
-}
-.contactFormWhatsApp:hover{
-    color: var(--hover-blue);
-}
+
 .waLink{
     text-decoration: underline;
     text-decoration-color: var(--accent-lime);
     text-underline-offset: 8px;
+    text-transform: capitalize;
 }
 @media (min-width: 768px){
     /* .formContainer{
