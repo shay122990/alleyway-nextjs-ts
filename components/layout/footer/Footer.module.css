@@ -55,15 +55,30 @@
 }
 .linksContainer a{
     text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-text-color);
 }
-.linksContainer a:hover{
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-.linksContainer .active a {
-    color: var(--accent-lime); 
-    font-weight: bold; 
-}
+.linksContainer a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-lime);
+    transition: width 0.3s ease;
+  }
+  
+  .linksContainer a:hover::before {
+    width: 100%;
+    animation: underlineAnimation 0.7s forwards;
+  }
+    .linksContainer .active a {
+    color: var(--accent-lime);
+    font-weight: bold;
+  }
 
 @media (min-width:768px){
     .logoInfo{

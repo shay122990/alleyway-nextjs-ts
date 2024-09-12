@@ -5,6 +5,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace, "Roboto";
   --main-background: #152F44;
+  --dark-text-color: #152F44;
   --main-gradient: linear-gradient(180deg, rgba(4,19,32,1) 0%, rgba(37,74,103,1) 100%);
   --main-text-color: #fff;
   --gradient-navy: linear-gradient(180deg, rgba(4,19,32,1) 0%, rgba(37,74,103,1) 27%, rgba(20,42,58,1) 73%, rgba(4,19,32,1) 99%);
@@ -65,7 +66,6 @@ a {
   height: 100%;
   object-fit: cover;
 }
-/* ANIMATIONS */
 @keyframes underlineAnimation {
   from {
     width: 0;
@@ -74,21 +74,3 @@ a {
     width: 100%;
   }
 } 
-
-@keyframes border-anim {
-  0% {
-    clip-path: inset(0% 100% 100% 0%);
-  }
-  25% {
-    clip-path: inset(0% 0% 100% 0%);
-  }
-  50% {
-    clip-path: inset(0% 0% 0% 0%);
-  }
-  75% {
-    clip-path: inset(0% 0% 0% 100%);
-  }
-  100% {
-    clip-path: inset(0% 100% 0% 0%);
-  }
-}
