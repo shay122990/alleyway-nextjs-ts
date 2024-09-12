@@ -1,0 +1,28 @@
+.message {
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .success {
+    background-color: #4caf50;
+  }
+  
+  .error {
+    background-color: #f44336;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

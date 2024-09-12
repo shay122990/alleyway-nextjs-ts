@@ -1,10 +1,12 @@
-'use client';
 
-import { FC } from 'react';
+"use client";
+import styles from './Contact-Form.module.css';
+import { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 import Button from '../buttons/Button';
-import styles from './Contact-Form.module.css';
+import MessageDisplay from '../message-display/Message-Display';
+
 
 export type FormData = {
   name: string;
@@ -14,24 +16,34 @@ export type FormData = {
 
 const ContactForm: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
+  const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
 
-
-  function onSubmit(data: FormData) {
-    sendEmail(data);
+  async function onSubmit(data: FormData) {
+    try {
+      await sendEmail(data);
+      setMessage({ text: 'Your message was sent successfully!', type: 'success' });
+    } catch (error) {
+      setMessage({ text: 'There was an error sending your message. Please try again.', type: 'error' });
+    }
   }
+
+  const handleCloseMessage = () => {
+    setMessage(null);
+  };
 
   return (
     <div className={styles.formContainer}>
+      {message && <MessageDisplay message={message.text} type={message.type} onClose={handleCloseMessage} />}
       <div className={styles.contactInfo}>
         <h2 className={styles.formTitle}>LET US TAKE IT FROM HERE ...</h2>
         <div className={styles.formDescription}>
-         <p>
-          Please fill out the form with your event requirements and we will contact you shortly.
-          <br />
-          Alternatively, you can contact us directly through{' '}
-           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
-            WhatsApp 
-            </a> 
+          <p>
+            Please fill out the form with your event requirements and we will contact you shortly.
+            <br />
+            Alternatively, you can contact us directly through{' '}
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
+              WhatsApp
+            </a>
           </p>
         </div>
       </div>

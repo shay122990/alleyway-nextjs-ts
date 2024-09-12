@@ -14,8 +14,14 @@ export const sendEmail = async (data: { name: string; email: string; message: st
       },
       '3VxZ2XS6rmTPLzTwV'
     );
+
+    if (response.status !== 200) { 
+      throw new Error('Failed to send email');
+    }
+
     console.log('SUCCESS!', response.status, response.text);
   } catch (error) {
     console.error('FAILED...', error);
+    throw error;
   }
 };
