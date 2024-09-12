@@ -7,10 +7,10 @@
     background: var(--gradient-blue);
     padding: 20px;
     border-radius: 4px;
-    border: 1px solid red
+    width: 100%;
 }
 .contactInfo{
- border: 1px solid pink;   
+    width: 100%; 
 }
 .formTitle{
     font-size: 20px;
@@ -18,6 +18,34 @@
 }
 .formDescription{
    letter-spacing: 0.2px;
+}
+.waLink {
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: var(--main-text-color); 
+    text-underline-offset: 2px; 
+}
+
+.waLink::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-lime); 
+    z-index: 1;
+}
+
+.waLink:hover::before {
+    width: 100%; 
+    animation: underlineAnimation 0.7s forwards;
+}
+
+.waLink:hover {
+    text-decoration: none; 
 }
 .contactForm{
     display: flex;
@@ -31,48 +59,61 @@
     flex-direction: column;
 }
 .label{
-    color:lime;
+    color:var(--accent-lime);
+    margin-bottom: 4px;
 }
-.input{
-    height: 40px;
-    border: 1px solid lime;
+.input {
+    height: 42px;
+    border: 1px solid var(--accent-lime);
     border-radius: 5px;
+    transition: border-width 0.3s ease;
+}
+.input:focus {
+    border-width: 3px;
+    outline: none;
 }
 .inputMessage{
     border-radius: 5px;
-    border: 1px solid lime;
+    border: 1px solid var(--accent-lime);
+    font-family: inherit;
+    transition: border-width 0.3 ease;
 }
-
-.waLink{
-    text-transform: capitalize;
-    position: relative;
-    display: inline-block;
+.inputMessage:focus {
+    border-width: 1px;
+    outline: none;
 }
-.waLink::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-lime); 
-    transition: width 0.3s ease;
-  }
-  
-  .waLink:hover::before {
-    width: 100%;
-    animation: underlineAnimation 0.7s forwards;
-  }
-@media (min-width: 768px){
-    /* .formContainer{
+@media (min-width: 768px) {
+    .formContainer{
         flex-direction: row;
-        width: 60%;
+        gap: 4rem;
     }
     .contactInfo{
         width: 50%;
-        border: 1px solid green;
+    }
+    .formTitle{
+        font-size: 24px;
+    }
+    .formDescription{
+        font-size: 18px;
+        line-height: 24px;
     }
     .contactForm{
         width: 50%;
-    } */
+    }
+}
+@media (min-width: 1024px){
+    .formContainer{
+        width: 1024px;
+        padding: 30px;
+    }
+    .formTitle{
+        font-size: 30px;
+    }
+    .formDescription{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .contactForm{
+        gap: 30px;
+    }
 }

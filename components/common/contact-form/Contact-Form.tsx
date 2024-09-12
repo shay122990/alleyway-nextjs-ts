@@ -42,7 +42,7 @@ const ContactForm: FC = () => {
           </label>
           <input
             type='text'
-            placeholder='Full Name'
+            placeholder='Name'
             className={styles.input}
             {...register('name', { required: true })}
           />
@@ -64,7 +64,7 @@ const ContactForm: FC = () => {
           </label>
           <textarea
             rows={5}
-            placeholder='Type your message'
+            placeholder='How can we assist you?'
             className={styles.inputMessage}
             {...register('message', { required: true })}
           ></textarea>
