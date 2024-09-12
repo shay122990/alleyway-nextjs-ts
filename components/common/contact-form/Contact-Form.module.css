@@ -10,9 +10,7 @@
     border: 1px solid red
 }
 .contactInfo{
- border: 1px solid pink;
-
-    
+ border: 1px solid pink;   
 }
 .formTitle{
     font-size: 20px;
@@ -21,7 +19,6 @@
 .formDescription{
    letter-spacing: 0.2px;
 }
-
 .contactForm{
     display: flex;
     flex-direction: column;
@@ -47,11 +44,25 @@
 }
 
 .waLink{
-    text-decoration: underline;
-    text-decoration-color: var(--accent-lime);
-    text-underline-offset: 8px;
     text-transform: capitalize;
+    position: relative;
+    display: inline-block;
 }
+.waLink::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-lime); 
+    transition: width 0.3s ease;
+  }
+  
+  .waLink:hover::before {
+    width: 100%;
+    animation: underlineAnimation 0.7s forwards;
+  }
 @media (min-width: 768px){
     /* .formContainer{
         flex-direction: row;
