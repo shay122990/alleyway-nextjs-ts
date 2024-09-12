@@ -1,10 +1,9 @@
 'use client';
 
-import { FC, useState, useEffect } from 'react';
+import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
 import Button from '../buttons/Button';
-import WhatsApp from '../whatsapp/WhatsApp';
 import styles from './Contact-Form.module.css';
 
 export type FormData = {
@@ -15,11 +14,7 @@ export type FormData = {
 
 const ContactForm: FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
-  const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   function onSubmit(data: FormData) {
     sendEmail(data);
@@ -28,14 +23,17 @@ const ContactForm: FC = () => {
   return (
     <div className={styles.formContainer}>
       <div className={styles.contactInfo}>
-        <h2 className={styles.formTitle}>Contact Us</h2>
-        <p className={styles.formDescription}>
+        <h2 className={styles.formTitle}>LET US TAKE IT FROM HERE ...</h2>
+        <div className={styles.formDescription}>
+         <p>
           Please fill out the form with your event requirements and we will contact you shortly.
           <br />
           Alternatively, you can contact us directly through{' '}
-           WhatsApp
-        </p>
-        {isMounted && <span className={styles.contactFormWhatsApp}><WhatsApp /></span>}
+           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
+            WhatsApp
+            </a>
+          </p>
+        </div>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
         <div className={styles.field}>

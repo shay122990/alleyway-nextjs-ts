@@ -5,7 +5,22 @@
     align-items: center;
     gap: 2rem;
     background: var(--gradient-blue);
-    padding: 10px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contactInfo{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    
+}
+.formDescription{
+    display: flex;
+    flex-direction: row;
+}
+.formTitle{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 .contactForm{
     display: flex;
@@ -33,9 +48,20 @@
 .contactFormWhatsApp{
     font-size: 20px;
     width: 20px;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-lime);
+    text-underline-offset: 8px;
+}
+.contactFormWhatsApp:hover{
+    color: var(--hover-blue);
+}
+.waLink{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-lime);
+    text-underline-offset: 8px;
 }
 @media (min-width: 768px){
-    .formContainer{
+    /* .formContainer{
         flex-direction: row;
         width: 60%;
     }
@@ -45,5 +71,5 @@
     }
     .contactForm{
         width: 50%;
-    }
+    } */
 }
