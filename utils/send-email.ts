@@ -1,17 +1,21 @@
-import { FormData } from '@/components/common/contact-form/Contact-Form';
+import emailjs from 'emailjs-com';
 
-export function sendEmail(data: FormData) {
-  const apiEndpoint = '/api/email';
+export const sendEmail = async (data: { name: string; email: string; message: string }) => {
+  const { name, email, message } = data;
 
-  fetch(apiEndpoint, {
-    method: 'POST',
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((response) => {
-      alert(response.message);
-    })
-    .catch((err) => {
-      alert(err);
-    });
-}
+  try {
+    const response = await emailjs.send(
+      'service_ume3qg8', 
+      'template_pz2pz5f', 
+      {
+        name,
+        email,
+        message,
+      },
+      '3VxZ2XS6rmTPLzTwV'
+    );
+    console.log('SUCCESS!', response.status, response.text);
+  } catch (error) {
+    console.error('FAILED...', error);
+  }
+};
