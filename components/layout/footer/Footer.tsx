@@ -11,7 +11,7 @@ export default function Footer() {
   const pathname = usePathname(); 
 
   const footerNavItems = [
-    { href: '/about', label: 'About Us' },
+    { href: '/services', label: 'About Us' },
     { href: '/contact', label: 'Contact Us' },
     { href: '/privacy-policy', label: 'Privacy Policy' },
     { href: '/exhibitions', label: 'Exhibitions & Trade Shows' },
