@@ -19,10 +19,10 @@ const ContactForm: FC = () => {
   async function onSubmit(data: FormData) {
     try {
       await sendEmail(data);
-      setMessage({ text: 'Your message was sent successfully!', type: 'success' });
+      setMessage({ text: 'Your message was sent successfully! We will contact you shortly', type: 'success' });
       reset(); 
     } catch (error) {
-      setMessage({ text: 'There was an error sending your message. Please try again.', type: 'error' });
+      setMessage({ text: 'There was an error sending your message. Please try again, or WhatsApp us. ', type: 'error' });
     }
   }
 

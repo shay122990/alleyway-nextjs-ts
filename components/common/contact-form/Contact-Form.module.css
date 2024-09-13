@@ -8,6 +8,7 @@
     padding: 20px;
     border-radius: 4px;
     width: 100%;
+    height: 600px;
 }
 .contactInfo{
     width: 100%; 
@@ -86,6 +87,7 @@
     .formContainer{
         flex-direction: row;
         gap: 4rem;
+        height: 500px;
     }
     .contactInfo{
         width: 50%;
@@ -103,8 +105,12 @@
 }
 @media (min-width: 1024px){
     .formContainer{
-        width: 1024px;
+        width: 80%;
         padding: 30px;
+        justify-content: space-around;
+    }
+    .contactInfo{
+        width: 400px
     }
     .formTitle{
         font-size: 30px;
@@ -115,5 +121,6 @@
     }
     .contactForm{
         gap: 30px;
+        width: 400px;
     }
 }
