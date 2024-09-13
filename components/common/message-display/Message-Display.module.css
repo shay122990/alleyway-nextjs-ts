@@ -1,11 +1,13 @@
 .message {
-    padding: 16px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    position: relative;
-    font-size: 16px;
-    color: #fff;
-    border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  height: 100px;
   }
   
   .success {
