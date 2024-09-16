@@ -6,11 +6,10 @@ import Links from '@/components/common/links/Links';
 interface EventSectionsProps {
     title: string;
     imageSrc1: string;
-    imageSrc2: string;
+    imageSrc2?: string;
     links: { name: string; href: string }[];
-    backgroundColor: string;
-    fontColor: string;
-    fontStyle?: React.CSSProperties; 
+    imageStyle?: React.CSSProperties;
+    className?: string; 
   }
   
   const EventsSection: React.FC<EventSectionsProps> = ({
@@ -18,16 +17,15 @@ interface EventSectionsProps {
     imageSrc1,
     imageSrc2,
     links,
-    backgroundColor,
-    fontColor,
-    fontStyle
+    imageStyle,
+    className
   }) => {
     return (
-      <section style={{ backgroundColor, padding: '2rem', color: fontColor }}>
+      <section className={className}>
         <EventTitle title={title} />
         <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '2rem' }}>
-          <ImageBox imageSrc={imageSrc1} />
-          <ImageBox imageSrc={imageSrc2} />
+        <ImageBox imageSrc={imageSrc1} customStyle={imageStyle} />
+        {imageSrc2 && <ImageBox imageSrc={imageSrc2} customStyle={imageStyle} />}
         </div>
         <nav>
           <ul style={{ listStyleType: 'none', padding: 0 }}>

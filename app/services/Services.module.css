@@ -1,0 +1,33 @@
+/* pages/Services.module.css */
+
+.eventsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    border: 1px solid red;
+  }
+  
+  /* Specific Section Styles */
+  .exhibitionsSection {
+    background-color: #1c2237;
+    color: #f4f4f4;
+  }
+  
+  .privateEventsSection {
+    background-color: #fff;
+    color: gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .creativeServicesSection {
+    background-color: #06d6a0;
+    color: #000000;
+    border-top: 4px solid #000;
+  }
+  
+  .audioVisualSection {
+    background-color: #2a9d8f;
+    color: #ffffff;
+  }
+  
+  
