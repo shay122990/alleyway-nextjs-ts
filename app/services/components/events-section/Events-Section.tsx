@@ -1,7 +1,7 @@
 
-import EventTitle from '@/components/common/events-title/Events-Title';
+import EventTitle from '@/app/services/components/events-title/Events-Title';
 import ImageBox from '@/components/common/image-box/Image-Box';
-import Links from '@/components/common/links/Links';
+import Links from '@/app/services/components/links/Links';
 
 interface EventSectionsProps {
     title: string;

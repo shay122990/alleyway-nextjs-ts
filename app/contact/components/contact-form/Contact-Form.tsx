@@ -3,7 +3,7 @@ import styles from './Contact-Form.module.css';
 import { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/utils/send-email';
-import Button from '../buttons/Button';
+import Button from '@/components/common/buttons/Button';
 import MessageDisplay from '../message-display/Message-Display';
 
 export type FormData = {

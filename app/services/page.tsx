@@ -2,7 +2,7 @@ import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import projectsImage from "@/public/images/projects-image.jpg"
-import EventsSection from "@/components/layout/events-section/Events-Section";
+import EventsSection from "@/app/services/components/events-section/Events-Section";
 
 
 export default function Services() {
