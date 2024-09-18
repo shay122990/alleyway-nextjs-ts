@@ -14,7 +14,7 @@ export default function Services() {
       {/* Additional metadata and tags */}
     </Head>
     <Hero image={projectsImage}/>
-    <main className={styles.main}>
+    <main>
     <div className={styles.eventsContainer}>
       <EventsSection
         title="Exhibitions & Trade Shows"
