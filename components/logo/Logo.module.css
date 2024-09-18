@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    cursor: pointer;
   }
   .logoContainer img {
     width: 100%;
