@@ -6,9 +6,11 @@ interface HeroProps {
   image: string | StaticImageData; 
   title: string;
   paragraph: string;
+  titleClassName?: string; 
+  paragraphClassName?: string; 
 }
 
-const Hero = ({ image, title, paragraph }: HeroProps) => {
+const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
   const backgroundImage = typeof image === 'string' ? image : image.src;
 
   return (
@@ -16,11 +18,11 @@ const Hero = ({ image, title, paragraph }: HeroProps) => {
       className={styles.hero}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     > 
-     <div className={styles.heroContent}>
+      <div className={styles.heroContent}>
         <Logo />
         <div className={styles.heroInfo}>
-          <h1>{title}</h1>
-          <p>{paragraph}</p>      
+          <h1 className={`${styles.heroTitle} ${titleClassName || ''}`}>{title}</h1>
+          <p className={`${styles.heroParagraph} ${paragraphClassName || ''}`}>{paragraph}</p>
         </div>
       </div>
     </div>

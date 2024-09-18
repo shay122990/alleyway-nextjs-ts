@@ -1,3 +1,4 @@
+import styles from "./page.module.css"
 import Hero from "@/components/layout/hero/Hero";
 import Head from 'next/head';
 import type { StaticImageData } from 'next/image';
@@ -15,7 +16,9 @@ export default function Home() {
       <meta name="description" content="Alleyway - Plan Any Event With Us " />
       </Head>
       <Hero image={homeImage}  title="The Events Management Company" 
-        paragraph="We provide top-notch services to meet your needs."/>
+        paragraph="We provide top-notch services to meet your needs." 
+        titleClassName={styles.homeTitle}
+        paragraphClassName={styles.homeParagraph}/>
       <main>
         <HomeCarousel/>
       </main>
