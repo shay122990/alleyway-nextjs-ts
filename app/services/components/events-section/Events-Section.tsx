@@ -1,43 +1,42 @@
-
-import EventTitle from '@/app/services/components/events-title/Events-Title';
+import styles from "./Events-Section.module.css";
 import ImageBox from '@/components/common/image-box/Image-Box';
-import Links from '@/app/services/components/links/Links';
+import { StaticImageData } from 'next/image';
 
 interface EventSectionsProps {
-    title: string;
-    imageSrc1: string;
-    imageSrc2?: string;
-    links: { name: string; href: string }[];
-    imageStyle?: React.CSSProperties;
-    className?: string; 
-  }
-  
-  const EventsSection: React.FC<EventSectionsProps> = ({
-    title,
-    imageSrc1,
-    imageSrc2,
-    links,
-    imageStyle,
-    className
-  }) => {
-    return (
-      <section className={className}>
-        <EventTitle title={title} />
-        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '2rem' }}>
-        <ImageBox imageSrc={imageSrc1} customStyle={imageStyle} />
-        {imageSrc2 && <ImageBox imageSrc={imageSrc2} customStyle={imageStyle} />}
-        </div>
-        <nav>
-          <ul style={{ listStyleType: 'none', padding: 0 }}>
-            {links.map((link, index) => (
-              <li key={index} style={{ margin: '1rem 0' }}>
-                <Links name={link.name} href={link.href} />
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </section>
-    );
-  };
+  title: string;
+  imageSrc1: StaticImageData;
+  imageSrc2?: StaticImageData; 
+  links: { name: string; href: string }[];
+  className?: string;
+  image1ClassName?: string;
+  image2ClassName?: string;
+}
+
+const EventsSection: React.FC<EventSectionsProps> = ({
+  title,
+  imageSrc1,
+  imageSrc2,
+  links,
+  className,
+  image1ClassName,
+  image2ClassName
+}) => {
+  return (
+    <section className={`${className} ${styles.eventsSection}`}>
+      <h2>{title}</h2>
+      <div className={styles.imageBoxContainer}>
+        <ImageBox imageSrc={imageSrc1} className={image1ClassName} />
+        {imageSrc2 && <ImageBox imageSrc={imageSrc2} className={image2ClassName} />}
+      </div>
+      <ul>
+        {links.map((link, index) => (
+          <li key={index}>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
 
 export default EventsSection;

@@ -1,25 +1,20 @@
-import styles from "./Image-Box.module.css"
+import styles from './Image-Box.module.css';
+import Image, { StaticImageData } from 'next/image';
+
 interface ImageBoxProps {
-  imageSrc: string;
-  altText?: string; 
-  customStyle?: React.CSSProperties; 
-  className?: string;  
+  imageSrc: StaticImageData;
+  altText?: string;
+  className?: string;
 }
 
-const ImageBox: React.FC<ImageBoxProps> = ({
-  imageSrc,
-  altText = 'Event Image', 
-  customStyle = {} ,
-  className
-}) => {
+const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', className }) => {
   return (
-    <div className={`${styles.imageBox} ${className}`}  style={{ ...customStyle }}>
-      <img
-        src={imageSrc}
-        alt={altText}
-        style={{
-          objectFit: 'cover',
-        }}
+    <div className={`${styles.imageContainer} ${className}`}>
+      <Image 
+        src={imageSrc} 
+        alt={altText}  
+        priority={true}
+        layout='fill'
       />
     </div>
   );

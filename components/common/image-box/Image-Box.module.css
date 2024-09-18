@@ -1,7 +1,8 @@
-.imageBox{
-    border: 1px solid red;
-    border-radius: 10px;
-    background-color: white;
-    width: 200px;
-    height: 300px;
+.imageContainer {
+  position: relative; 
+  overflow: hidden;
 }
+
+/* .imageContainer img {
+  object-fit: cover; 
+} */
