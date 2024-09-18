@@ -11,7 +11,7 @@ export default function Contact() {
         <meta name="contact-alleyway" content="Get in touch with alleyway" />
         {/* Additional metadata and tags */}
       </Head>
-      <Hero image={contactImage}/>
+      <Hero image={contactImage} title='Contact Us' paragraph="Let Us Make Your Life Easier"/>
       <main className={styles.main}>
         <ContactForm/>
       </main>

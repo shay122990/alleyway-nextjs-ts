@@ -13,7 +13,8 @@ export default function Project() {
 
         {/* Additional metadata and tags */}
       </Head>
-      <Hero image={aboutImage}/>
+      <Hero image={aboutImage} title="Always up to the challenge!" 
+        paragraph="The Projects we've successfully completed"/>
       <main className={styles.main}>
         Project Page Content 
       </main>
