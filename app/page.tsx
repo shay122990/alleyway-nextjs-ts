@@ -14,7 +14,8 @@ export default function Home() {
       <Head>
       <meta name="description" content="Alleyway - Plan Any Event With Us " />
       </Head>
-      <Hero image={homeImage}/>
+      <Hero image={homeImage}  title="The Events Management Company" 
+        paragraph="We provide top-notch services to meet your needs."/>
       <main>
         <HomeCarousel/>
       </main>
