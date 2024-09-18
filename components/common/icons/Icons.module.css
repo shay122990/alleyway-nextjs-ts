@@ -3,7 +3,9 @@
   flex-direction: row;
   justify-content:space-between;
   width: 100%;
+  padding-bottom: 10px;
 }
+
 .icon {
   width: 20px;
   height: 20px;

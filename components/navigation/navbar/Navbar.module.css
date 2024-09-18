@@ -60,6 +60,7 @@
   letter-spacing: 2px;
   position: relative;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .menu li::before{
@@ -87,7 +88,8 @@
 
 .navIcons {
   display: flex;
-  /* gap: 1rem; */
+  gap: 1rem;
+  padding-bottom: 10px;
 }
 .navbarWhatsApp{
   font-size: 28px;
@@ -121,11 +123,14 @@
     gap: 10rem;
     padding: 0;
   }
-
   .menu {
     flex-direction: row;
     gap: 1rem;
     padding: 0;
   }
- 
+}
+@media (min-width: 1240px){
+  .navbar{
+    padding: 0 5rem;
+  }
 }
