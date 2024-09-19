@@ -4,13 +4,6 @@
 .homeParagraph{
   border: 3px solid red;
 }
-.servicesTitle{
-  color: var(--accent-yellow);
-}
-.servicesParagraph{
-  width: 80%;
-  font-size: 20px;
-}
 .eventsContainer {
   display: flex;
   flex-direction: column;

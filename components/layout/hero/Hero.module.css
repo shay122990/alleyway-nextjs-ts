@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(72, 34, 73, 0.362); 
+  background-color: #152f446b; 
   z-index: 1; 
   pointer-events: none; 
 }
