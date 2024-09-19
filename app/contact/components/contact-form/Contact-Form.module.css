@@ -26,7 +26,7 @@
     display: inline-block;
     text-decoration: underline;
     text-decoration-color: var(--main-text-color); 
-    text-underline-offset: 2px; 
+    text-underline-offset: 6px; 
 }
 
 .waLink::before {
@@ -124,3 +124,11 @@
         width: 400px;
     }
 }
+@keyframes underlineAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
