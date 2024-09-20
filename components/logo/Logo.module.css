@@ -7,10 +7,10 @@
     justify-content: center;
     border-radius: 6px;
     cursor: pointer;
-    border-radius: 4px;
-    background: #152F44;
-    box-shadow:  -12px -12px 59px #112738,
-                 12px 12px 59px #193750;
+    border-radius: 10px;
+    background: #152f445f;
+    box-shadow:  7px 7px 14px #12293b72,
+                 -7px -7px 14px #18354d72;
   }
   .logoContainer img {
     width: 100%;
