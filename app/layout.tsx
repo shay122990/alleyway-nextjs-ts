@@ -21,6 +21,7 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head>
+      <link rel="preload" href="/globals.css" as="style" />
       <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
       <link rel="preload" href="/_next/static/css/app/contact/Contact.module.css" as="style" />
       <link rel="preload" href="/_next/static/css/app/privacy-policy/Privacy-Policy.module.css" as="style" />
