@@ -1,5 +1,7 @@
-import { StaticImageData } from 'next/image';
+"use client";
 import styles from './Hero.module.css';
+import { motion } from "framer-motion";
+import { StaticImageData } from 'next/image';
 import Logo from '../../logo/Logo';
 
 interface HeroProps {
@@ -14,7 +16,11 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: H
   const backgroundImage = typeof image === 'string' ? image : image.src;
 
   return (
-    <div
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
       className={styles.hero}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     > 
@@ -25,7 +31,7 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: H
           <p className={`${styles.heroParagraph} ${paragraphClassName || ''}`}>{paragraph}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
