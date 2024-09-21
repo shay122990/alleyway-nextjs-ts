@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { StaticImageData } from 'next/image';
-import Logo from '../../logo/Logo';
+import React, { Suspense } from 'react';
 import styles from './Hero.module.css';
+
+const LazyLogo = React.lazy(() => import('../../logo/Logo'));
 
 interface HeroProps {
   image: string | StaticImageData;
@@ -23,16 +25,18 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: H
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className={styles.hero}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage || '/path/to/fallback.jpg'})` }}
     > 
       <div className={styles.heroContent}>
-        <Logo />
+        <Suspense fallback={<div>Loading Logo...</div>}>
+          <LazyLogo />
+        </Suspense>
         <div className={styles.heroInfo}>
           <motion.h1
             initial={{ x: "100vw", opacity: 0 }} 
             animate={{ x: 0, opacity: 1 }} 
             transition={{ type: "tween", duration: 0.7 }}  
-            className={`${styles.heroTitle} ${titleClassName || ''}`}
+            className={`${styles.heroTitle} ${titleClassName}`}
           >
             {title}
           </motion.h1>
@@ -40,7 +44,7 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: H
             initial={{ x: "-100vw", opacity: 0 }}  
             animate={{ x: 0, opacity: 1 }} 
             transition={{ type: "tween", duration: 0.8, delay: 0.3 }}  
-            className={`${styles.heroParagraph} ${paragraphClassName || ''}`}
+            className={`${styles.heroParagraph} ${paragraphClassName}`}
           >
             {paragraph}
           </motion.p>
