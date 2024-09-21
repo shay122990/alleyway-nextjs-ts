@@ -1,23 +1,35 @@
 import styles from "./Privacy-Policy.module.css";
+import React, { Suspense } from 'react';
 import Head from "next/head";
-import Hero from "@/components/layout/hero/Hero";
-import  homeImage from  "@/public/images/header-home.jpg"
+import Loader from "@/components/common/loader/Loader";
+import homeImage from "@/public/images/header-home.jpg";
+import dynamic from 'next/dynamic';
 
-
+const DynamicHero = dynamic(() => import('@/components/layout/hero/Hero'), {
+  ssr: false,
+  loading: () => <Loader  />,
+});
 
 const PrivacyPolicy = () => {
   return (
     <>
-     <Head>
-      <meta name="description" content="Alleyway - Privacy Policy" />
-     </Head>
-     <Hero image={homeImage}  title="Privacy Policy" 
-        paragraph="Your privacy is your business" 
-        titleClassName={styles.homeTitle}
-        paragraphClassName={styles.homeParagraph}/>
+      <Head>
+        <title>Privacy Policy - Alleyway</title>
+        <link rel="preload" href={homeImage.src} as="image" />
+        <meta name="description" content="Alleyway - Privacy Policy" />
+      </Head>
+      <Suspense fallback={<Loader  />}>
+        <DynamicHero 
+          image={homeImage}  
+          title="Privacy Policy" 
+          paragraph="Your privacy is your business" 
+          titleClassName={styles.homeTitle}
+          paragraphClassName={styles.homeParagraph}
+        />
+      </Suspense>
       <main className={styles.privacyContainer}>
-          <h1>Privacy Policy AlleyWay</h1>
-          <p>
+        <h1>Privacy Policy AlleyWay</h1>
+        <p>
           At AlleyWay, we value and respect your privacy. This Privacy Policy
           outlines how we handle any information collected through our website,
           which is designed solely for informational purposes.
@@ -78,7 +90,7 @@ const PrivacyPolicy = () => {
         <p>Last Updated: [Insert Date]</p>
       </main>
     </>
-  )
+  );
 }
 
-export default PrivacyPolicy
+export default PrivacyPolicy;
