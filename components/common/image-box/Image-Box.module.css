@@ -1,2 +1,6 @@
-
-
+.imageContainer{
+  width: 100%;
+}
+.imageContainer img{
+  width: 100%;
+}

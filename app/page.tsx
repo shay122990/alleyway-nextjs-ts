@@ -35,7 +35,7 @@ export default function Home() {
           paragraphClassName={styles.homeParagraph}
         />
       </Suspense>
-      <main className={styles.mainContainer}>
+      <main>
         <Suspense fallback={<Loader />}>
           <DynamicEventsSection />
         </Suspense>

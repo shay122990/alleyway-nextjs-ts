@@ -1,99 +1,97 @@
-    .eventsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 1rem;
-    }
-    
-    .eventsContainer h2 {
-        font-size: 16px;
-        color: var(--accent-lime);
-        text-transform: uppercase;
-    }
-    
-    .imageAndLinksContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 1rem;
-        border: 1px solid green;
-    }
-    .imagesContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        border: 1px solid blue
-    }
-    .imagesContainer img {
-        width: 100px;
-        height: 120px;
-        border-radius: 15px;
-        object-fit: cover;
-    }  
-    .linksContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        flex: 1;
-        border: 1px solid pink;
-    } 
-    .linksContainer ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    .linksContainer li {
-        margin: 0.5rem 0;
-        font-size: 12px;
-    }
-    
-    .linksContainer a {
-        text-decoration: none;
-        color: var(--main-text-color);
-    }
-    
-    .linksContainer a:hover {
-        text-decoration: underline;
-    }
-    
-    .exhibitionsContainer {
-        flex-direction: row-reverse;
-        justify-content: center;
-    }
-    .exhibitionImage  img{
-        width: 200px;
-        height: 150px;
-    }
-    
-    .privateEventsContainer {
-        border: 1px solid blue ;
-        flex-direction: row;
-    }
-    .privateEventImage {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .creativeServicesContainer {
-        border: 1px solid yellow;
-        flex-direction: row-reverse;
-    }
-    .creativeServiceImage {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .audioVisualContainer {
-        border: 1px solid orange;
-        flex-direction: row;
-    }
-    .audioVisualImage {
-        width: 130px;
-        height: 130px;
-    }
-    
+.eventsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    border: 1px solid pink;
+  }
+.eventSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.eventSection h2 {
+    font-size: 16px;
+    color: var(--accent-lime);
+    text-transform: uppercase;
+}
+.imagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 60%;
+    border: 1px solid green;
+}
+  
+.imagesContainer img {
+    width: 100px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.imageAndLinksContainer {
+    display: flex;
+    width: 100%;
+}
+
+.imageAndLinksContainer.exhibition,
+.imageAndLinksContainer.creative {
+    flex-direction: row-reverse;
+}
+
+.imageAndLinksContainer.private,
+.imageAndLinksContainer.audio {
+    flex-direction: row;
+}
+
+.imageAndLinksContainer.audio {
+    align-items: center;
+}
+
+.imageAndLinksContainer.audio img{
+    width: 100px;
+    height: 160px;
+    border-radius: 15px;
+} 
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 40%;
+    border: 1px solid green;
+}
+.linksContainerAudio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    width: 40%;
+    border: 1px solid green;
+}
+  
+.linksContainer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.linksContainer li {
+    margin: 0.5rem 0;
+    font-size: 12px;
+  }
+  
+.linksContainer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+  
+.linksContainer a:hover {
+    text-decoration: underline;
+}
+
+  

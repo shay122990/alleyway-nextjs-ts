@@ -7,9 +7,9 @@ const EventsSection = () => {
   return (
     <div className={styles.eventsContainer}>
       {/* Exhibitions Section */}
-      <section className={styles.exhibitionsContainer}>
+      <section className={styles.eventSection}>
         <h2>Exhibitions & Trade Shows</h2>
-        <div className={styles.imageAndLinksContainer}>
+        <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.imagesContainer}>
             <ImageBox imageSrc={projectImage1} className={styles.exhibitionImage} />
           </div>
@@ -22,9 +22,9 @@ const EventsSection = () => {
       </section>
 
       {/* Private Events Section */}
-      <section className={styles.privateEventsContainer}>
+      <section className={styles.eventSection}>
         <h2>Private Events</h2>
-        <div className={styles.imageAndLinksContainer}>
+        <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.imagesContainer}>
             <ImageBox imageSrc={projectImage1} className={styles.privateEventImage} />
             <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
@@ -39,9 +39,9 @@ const EventsSection = () => {
       </section>
 
       {/* Creative Services Section */}
-      <section className={styles.creativeServicesContainer}>
+      <section className={styles.eventSection}>
         <h2>Creative Services</h2>
-        <div className={styles.imageAndLinksContainer}>
+        <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.imagesContainer}>
             <ImageBox imageSrc={projectImage1} className={styles.creativeServiceImage} />
             <ImageBox imageSrc={projectImage2} className={styles.creativeServiceImage} />
@@ -55,19 +55,17 @@ const EventsSection = () => {
       </section>
 
       {/* Audio Visual Section */}
-      <section className={styles.audioVisualContainer}>
+      <section className={styles.eventSection}>
         <h2>Audio Visual</h2>
-        <div className={styles.imageAndLinksContainer}>
-          <div className={styles.imagesContainer}>
+        <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
             <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
-            <ImageBox imageSrc={projectImage2} className={styles.audioVisualImage} />
-          </div>
-          <ul className={styles.linksContainer}>
+          <ul className={styles.linksContainerAudio}>
             <li><a href="/services#audio-visual">Sound Systems</a></li>
             <li><a href="/services#audio-visual">Lighting Design</a></li>
             <li><a href="/services#audio-visual">LED Screens</a></li>
             <li><a href="/services#audio-visual">Technical Support</a></li>
           </ul>
+          <ImageBox imageSrc={projectImage2} className={styles.audioVisualImage} />
         </div>
       </section>
     </div>
