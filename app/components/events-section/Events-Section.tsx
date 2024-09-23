@@ -58,14 +58,15 @@ const EventsSection = () => {
       <section className={styles.eventSection}>
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
+          <div className={styles.imagesContainer}>
             <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
-          <ul className={styles.linksContainerAudio}>
+          </div>
+          <ul className={styles.linksContainer}>
             <li><a href="/services#audio-visual">Sound Systems</a></li>
             <li><a href="/services#audio-visual">Lighting Design</a></li>
             <li><a href="/services#audio-visual">LED Screens</a></li>
             <li><a href="/services#audio-visual">Technical Support</a></li>
           </ul>
-          <ImageBox imageSrc={projectImage2} className={styles.audioVisualImage} />
         </div>
       </section>
     </div>
