@@ -1,68 +1,63 @@
-.homeTitle{
+
+/* General Title and Paragraph Styling */
+.homeTitle {
   font-size: 50px;
 }
-.homeParagraph{
+
+.homeParagraph {
   font-size: 20px;
 }
+
+/* Container for events */
 .eventsContainer {
   display: flex;
   flex-direction: column;
   gap: 2rem; 
   width: 100%;
 }
-.exhibitionsSection{
-  background-color: #1c2237;
-  color: #cd1985;
+
+/* Styling for each section */
+.exhibitionsSection, .privateEventsSection, .creativeServicesSection, .audioVisualSection {
   display: flex;
-  justify-content: center;
-}
- 
-.privateEventsSection {
-  background-color: #fff;
-  color: gray;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-  
-.creativeServicesSection {
-  background-color: #06d6a0;
-  color: #000000;
-  border-top: 4px solid #000;
-}
-  
-.audioVisualSection {
-  background-color: #2a9d8f;
-  color: #ffffff;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 20px;
+  align-items: center;
 }
 
-.exhibitionsImage1 {
-  border-radius: 50%;
-  width: 80%;
-  height: 500px;
+/* Image styling */
+.exhibitionsImage1{
+  width: 100px;
+  height: 300px;
+  flex: 1;
+}
+ .privateEventsImage1, .creativeServicesImage1, .audioVisualImage1 {
+  height: 300px;
+  width: 400px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
 }
 
-.creativeImage1 {
-  border-radius: 10%;
-  width: 50%;
-  height: 150px;
-}
-.creativeImage2{
-  width: 50%;
+.privateEventsImage2, .creativeServicesImage2, .audioVisualImage2 {
+  height: 300px;
+  width: 400px;
 }
 
-.privateImage1 {
-  border-radius: 20%;
-  width: 50%;
-  height: 180px;
-}
-.privateImage2{
-  width: 50%;
+/* Links styling */
+.sectionLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex: 1;
 }
 
-.audioVisualImage1 {
-  border-radius: 30%;
-  width: 70%;
-  height: 200px;
+.sectionLinks a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
 }
-.audioVisualImage2{
-  width: 50%;
+
+.sectionLinks a:hover {
+  text-decoration: underline;
 }

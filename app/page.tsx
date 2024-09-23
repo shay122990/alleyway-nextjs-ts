@@ -47,6 +47,7 @@ export default function Home() {
               ]}
               className={styles.exhibitionsSection}
               image1ClassName={styles.exhibitionsImage1}
+              linksClassName={styles.sectionLinks}
             />
             <DynamicEventsSection
               title="Private Events"
@@ -58,8 +59,10 @@ export default function Home() {
                 { name: 'Weddings', href: '/services#private-events' },
                 { name: 'Social Events', href: '/services#private-events' },
               ]}
-              className={styles.exhibitionsSection}
-              image1ClassName={styles.exhibitionsImage1}
+              className={styles.privateEventsSection}
+              image1ClassName={styles.privateEventsImage1}
+              image2ClassName={styles.privateEventsImage2}
+              linksClassName={styles.sectionLinks}
             />
             <DynamicEventsSection
               title="Creative Services"
@@ -70,8 +73,10 @@ export default function Home() {
                 { name: 'Thematic Decor', href: '/services#creative-services' },
                 { name: 'Entertainment Planning', href: '/services#creative-services' }
               ]}
-              className={styles.exhibitionsSection}
-              image1ClassName={styles.exhibitionsImage1}
+              className={styles.creativeServicesSection}
+              image1ClassName={styles.creativeServicesImage1}
+              image2ClassName={styles.creativeServicesImage2}
+              linksClassName={styles.sectionLinks}
             />
             <DynamicEventsSection
               title="Audio and Visual Services"
@@ -83,8 +88,10 @@ export default function Home() {
                 { name: 'LED Screens', href: '/services#audio-visual' },
                 { name: 'Technical Support', href: '/services#audio-visual' },
               ]}
-              className={styles.exhibitionsSection}
-              image1ClassName={styles.exhibitionsImage1}
+              className={styles.audioVisualSection}
+              image1ClassName={styles.audioVisualImage1}
+              image2ClassName={styles.audioVisualImage2}
+              linksClassName={styles.sectionLinks}
             />
           </Suspense>
         </div>
