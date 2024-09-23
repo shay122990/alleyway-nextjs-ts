@@ -1,6 +1,6 @@
 .logoContainer {
-    width: 200px; 
-    height: 60px; 
+    /* height: 100px; 
+    width: 100px; */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -13,8 +13,7 @@
                  -7px -7px 14px #18354d72;
   }
   .logoContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
  }
     
