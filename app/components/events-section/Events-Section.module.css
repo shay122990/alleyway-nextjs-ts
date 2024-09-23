@@ -15,13 +15,24 @@
     width: 100%;
     flex-direction: row;
 } */
+.eventsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    gap: 1rem;
+}
+.imageAndLinksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.imagesContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
-
-/* @media (min-width: 768px) {
-    .eventsSection {
-      flex-direction: row;
-    }
-   .imageLinksBoxContainer{
-     flex-direction: row-reverse;
-   }
-}   */
