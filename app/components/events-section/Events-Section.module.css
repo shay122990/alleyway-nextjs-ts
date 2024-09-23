@@ -1,38 +1,99 @@
-/* .eventsSection {
+.eventsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
-}
-.eventsSection h2{
-    color: var(--accent-lime);
-}
-.imageLinksBoxContainer {
-    display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
+  }
+  
+.eventsContainer h2 {
+    font-size: 16px;
+    color: var(--accent-lime);
+    text-transform: uppercase;
+}
+  
+.imageAndLinksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
     width: 100%;
-    flex-direction: row;
-} */
-.eventsContainer{
+    gap: 1rem;
+}
+.imagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.imagesContainer img {
+    width: 100px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+  
+.linksContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
 }
-.imageAndLinksContainer{
-    display: flex;
+  
+.linksContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.linksContainer li {
+    margin: 0.5rem 0;
+    font-size: 12px;
+}
+  
+.linksContainer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+  
+.linksContainer a:hover {
+    text-decoration: underline;
+}
+  
+.exhibitionsContainer {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+  
+  .privateEventsContainer {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-}
-.imagesContainer{
-    display: flex;
+  }
+  
+  .creativeServicesContainer {
+    flex-direction: row-reverse;
+  }
+  
+  .audioVisualContainer {
     flex-direction: row;
-    gap: 1rem;
-}
-
+  }
+  
+  .exhibitionImage  img{
+    width: 200px;
+    height: 150px;
+  }
+  
+  .privateEventImage {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .creativeServiceImage {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .audioVisualImage {
+    width: 130px;
+    height: 130px;
+  }
+  

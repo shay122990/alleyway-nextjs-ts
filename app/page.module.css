@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 100%;
   border: 1px solid white;
+  gap: 2rem;
 }
 
 

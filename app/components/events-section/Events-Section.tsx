@@ -11,10 +11,12 @@ interface EventSectionsProps {
 
 const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
   const getSectionContent = () => {
+    const containerClass = styles[`${eventType}Container`];
+
     switch (eventType) {
       case 'exhibitions':
         return {
-          images: [projectImage1],
+          images: [{ src: projectImage1, className: styles.exhibitionImage }],
           links: [
             { name: 'Booth Design & Set Up', href: '/services#exhibitions' },
             { name: 'Logistics Management', href: '/services#exhibitions' },
@@ -23,7 +25,10 @@ const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
         };
       case 'private-events':
         return {
-          images: [projectImage1,projectImage2],
+          images: [
+            { src: projectImage1, className: styles.privateEventImage },
+            { src: projectImage2, className: styles.privateEventImage },
+          ],
           links: [
             { name: 'Anniversary', href: '/services/private-events' },
             { name: 'Birthday Parties', href: '/services#private-events' },
@@ -33,7 +38,10 @@ const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
         };
       case 'creative-services':
         return {
-          images: [projectImage1, projectImage2],
+          images: [
+            { src: projectImage1, className: styles.creativeServiceImage },
+            { src: projectImage2, className: styles.creativeServiceImage },
+          ],
           links: [
             { name: 'Event Concept & Design', href: '/services#creative-services' },
             { name: 'Thematic Decor', href: '/services#creative-services' },
@@ -42,7 +50,10 @@ const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
         };
       case 'audio-visual':
         return {
-          images: [projectImage1, projectImage2],
+          images: [
+            { src: projectImage1, className: styles.audioVisualImage },
+            { src: projectImage2, className: styles.audioVisualImage },
+          ],
           links: [
             { name: 'Sound Systems', href: '/services#audio-visual' },
             { name: 'Lighting Design', href: '/services#audio-visual' },
@@ -58,15 +69,15 @@ const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
   const sectionContent = getSectionContent();
 
   return (
-    <section className={styles[`${eventType}Container`]}>
+    <section className={styles.eventsContainer}>
       <h2>{title}</h2>
-      <div className={styles.imageAndLinksContainer}>
+      <div className={`${styles.imageAndLinksContainer} ${styles[`${eventType}Container`]}`}>
         <div className={styles.imagesContainer}>
-          {sectionContent.images.map((src, index) => (
-            <ImageBox key={index} imageSrc={src as StaticImageData} className={styles[`${eventType}Image${index + 1}`]} />
+          {sectionContent.images.map((image, index) => (
+            <ImageBox key={index} imageSrc={image.src} className={image.className} />
           ))}
         </div>
-        <ul>
+        <ul className={styles.linksContainer}>
           {sectionContent.links.map((link, index) => (
             <li key={index}>
               <a href={link.href}>{link.name}</a>
