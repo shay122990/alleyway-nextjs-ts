@@ -1,91 +1,76 @@
 import styles from "./Events-Section.module.css";
 import ImageBox from '@/components/common/image-box/Image-Box';
-import { StaticImageData } from 'next/image';
 import projectImage1 from '@/public/images/projects-image.jpg';
 import projectImage2 from '@/public/images/projects-image.jpg';
 
-interface EventSectionsProps {
-  title: string;
-  eventType: 'exhibitions' | 'private-events' | 'creative-services' | 'audio-visual';
-}
-
-const EventsSection: React.FC<EventSectionsProps> = ({ title, eventType }) => {
-  const getSectionContent = () => {
-    const containerClass = styles[`${eventType}Container`];
-
-    switch (eventType) {
-      case 'exhibitions':
-        return {
-          images: [{ src: projectImage1, className: styles.exhibitionImage }],
-          links: [
-            { name: 'Booth Design & Set Up', href: '/services#exhibitions' },
-            { name: 'Logistics Management', href: '/services#exhibitions' },
-            { name: 'On-site Coordination', href: '/services#exhibitions' },
-          ],
-        };
-      case 'private-events':
-        return {
-          images: [
-            { src: projectImage1, className: styles.privateEventImage },
-            { src: projectImage2, className: styles.privateEventImage },
-          ],
-          links: [
-            { name: 'Anniversary', href: '/services/private-events' },
-            { name: 'Birthday Parties', href: '/services#private-events' },
-            { name: 'Weddings', href: '/services#private-events' },
-            { name: 'Social Events', href: '/services#private-events' },
-          ],
-        };
-      case 'creative-services':
-        return {
-          images: [
-            { src: projectImage1, className: styles.creativeServiceImage },
-            { src: projectImage2, className: styles.creativeServiceImage },
-          ],
-          links: [
-            { name: 'Event Concept & Design', href: '/services#creative-services' },
-            { name: 'Thematic Decor', href: '/services#creative-services' },
-            { name: 'Entertainment Planning', href: '/services#creative-services' },
-          ],
-        };
-      case 'audio-visual':
-        return {
-          images: [
-            { src: projectImage1, className: styles.audioVisualImage },
-            { src: projectImage2, className: styles.audioVisualImage },
-          ],
-          links: [
-            { name: 'Sound Systems', href: '/services#audio-visual' },
-            { name: 'Lighting Design', href: '/services#audio-visual' },
-            { name: 'LED Screens', href: '/services#audio-visual' },
-            { name: 'Technical Support', href: '/services#audio-visual' },
-          ],
-        };
-      default:
-        return { images: [], links: [] };
-    }
-  };
-
-  const sectionContent = getSectionContent();
-
+const EventsSection = () => {
   return (
-    <section className={styles.eventsContainer}>
-      <h2>{title}</h2>
-      <div className={`${styles.imageAndLinksContainer} ${styles[`${eventType}Container`]}`}>
-        <div className={styles.imagesContainer}>
-          {sectionContent.images.map((image, index) => (
-            <ImageBox key={index} imageSrc={image.src} className={image.className} />
-          ))}
+    <div className={styles.eventsContainer}>
+      {/* Exhibitions Section */}
+      <section className={styles.exhibitionsContainer}>
+        <h2>Exhibitions & Trade Shows</h2>
+        <div className={styles.imageAndLinksContainer}>
+          <div className={styles.imagesContainer}>
+            <ImageBox imageSrc={projectImage1} className={styles.exhibitionImage} />
+          </div>
+          <ul className={styles.linksContainer}>
+            <li><a href="/services#exhibitions">Booth Design & Set Up</a></li>
+            <li><a href="/services#exhibitions">Logistics Management</a></li>
+            <li><a href="/services#exhibitions">On-site Coordination</a></li>
+          </ul>
         </div>
-        <ul className={styles.linksContainer}>
-          {sectionContent.links.map((link, index) => (
-            <li key={index}>
-              <a href={link.href}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+      </section>
+
+      {/* Private Events Section */}
+      <section className={styles.privateEventsContainer}>
+        <h2>Private Events</h2>
+        <div className={styles.imageAndLinksContainer}>
+          <div className={styles.imagesContainer}>
+            <ImageBox imageSrc={projectImage1} className={styles.privateEventImage} />
+            <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
+          </div>
+          <ul className={styles.linksContainer}>
+            <li><a href="/services/private-events">Anniversary</a></li>
+            <li><a href="/services#private-events">Birthday Parties</a></li>
+            <li><a href="/services#private-events">Weddings</a></li>
+            <li><a href="/services#private-events">Social Events</a></li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Creative Services Section */}
+      <section className={styles.creativeServicesContainer}>
+        <h2>Creative Services</h2>
+        <div className={styles.imageAndLinksContainer}>
+          <div className={styles.imagesContainer}>
+            <ImageBox imageSrc={projectImage1} className={styles.creativeServiceImage} />
+            <ImageBox imageSrc={projectImage2} className={styles.creativeServiceImage} />
+          </div>
+          <ul className={styles.linksContainer}>
+            <li><a href="/services#creative-services">Event Concept & Design</a></li>
+            <li><a href="/services#creative-services">Thematic Decor</a></li>
+            <li><a href="/services#creative-services">Entertainment Planning</a></li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Audio Visual Section */}
+      <section className={styles.audioVisualContainer}>
+        <h2>Audio Visual</h2>
+        <div className={styles.imageAndLinksContainer}>
+          <div className={styles.imagesContainer}>
+            <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
+            <ImageBox imageSrc={projectImage2} className={styles.audioVisualImage} />
+          </div>
+          <ul className={styles.linksContainer}>
+            <li><a href="/services#audio-visual">Sound Systems</a></li>
+            <li><a href="/services#audio-visual">Lighting Design</a></li>
+            <li><a href="/services#audio-visual">LED Screens</a></li>
+            <li><a href="/services#audio-visual">Technical Support</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -1,16 +1,8 @@
 .homeTitle {
   font-size: 50px;
 }
-
 .homeParagraph {
   font-size: 20px;
-}
-.eventsContainer{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border: 1px solid white;
-  gap: 2rem;
 }
 
 
