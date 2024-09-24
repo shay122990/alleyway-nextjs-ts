@@ -1,9 +1,10 @@
 .eventsContainer {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
     width: 100%;
-    margin: 2rem 0 ;
+    height: auto;
+    /* margin: 2rem 0; */
   }
 .eventSection{
     width: 100%;
@@ -13,6 +14,7 @@
     text-align: center;
 } 
 .eventSection h2 {
+    margin: 0;
     font-size: 16px;
     color: var(--accent-lime);
     text-transform: uppercase;
@@ -93,15 +95,17 @@
 }
 
 @media (min-width: 768px) {
+    .eventsContainer{
+        gap: 3rem;
+    }
     .eventSection {
-        margin: 4rem 0;
-        gap:5rem;
+        gap: 3rem;
     }
     .eventSection h2 {
         font-size: 24px;
     }
     .imageAndLinksContainer {
-        height: 340px;
+        height: auto;
         justify-content: space-between;
         gap: 1rem;
     }
@@ -114,5 +118,17 @@
     }
     .linksContainer a {
         font-size: 20px;
+    }
+}
+@media (min-width:1024px) {
+    .imagesContainer{
+        width:60%;
+        height:100%;
+    }
+    .imagesContainer img{
+        height: 520px;
+    }
+    .linksContainer a{
+        font-size: 28px;
     }
 }
