@@ -1,14 +1,8 @@
 import styles from "./Privacy-Policy.module.css";
-import React, { Suspense } from 'react';
 import Head from "next/head";
-import Loader from "@/components/common/loader/Loader";
+import Hero from "@/components/layout/hero/Hero";
 import homeImage from "@/public/images/header-home.jpg";
-import dynamic from 'next/dynamic';
 
-const DynamicHero = dynamic(() => import('@/components/layout/hero/Hero'), {
-  ssr: false,
-  loading: () => <Loader  />,
-});
 
 const PrivacyPolicy = () => {
   return (
@@ -18,15 +12,13 @@ const PrivacyPolicy = () => {
         <link rel="preload" href={homeImage.src} as="image" />
         <meta name="description" content="Alleyway - Privacy Policy" />
       </Head>
-      <Suspense fallback={<Loader  />}>
-        <DynamicHero 
+        <Hero 
           image={homeImage}  
           title="Privacy Policy" 
           paragraph="Your privacy is your business" 
           titleClassName={styles.privacyTitle}
           paragraphClassName={styles.privacyParagraph}
         />
-      </Suspense>
       <main className={styles.privacyContainer}>
         <h1>Privacy Policy AlleyWay</h1>
         <p>
