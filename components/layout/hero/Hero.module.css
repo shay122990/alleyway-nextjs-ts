@@ -13,10 +13,10 @@
   padding: 1rem 2rem;
   filter: contrast(1) brightness(1.05);
   overflow: hidden; 
-  border-radius: 15px;
+  border-radius: 25px;
   background: #0b1924;
-  box-shadow:  20px 20px 60px #09151f,
-               -20px -20px 60px #0d1d29;
+  box-shadow:  14px 14px 28px #081119,
+               -14px -14px 28px #0e212f;
 }
 
 .hero::before {
