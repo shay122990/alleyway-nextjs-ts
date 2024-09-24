@@ -1,10 +1,8 @@
 .eventsContainer {
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
     width: 100%;
     height: auto;
-    /* margin: 2rem 0; */
   }
 .eventSection{
     width: 100%;
@@ -36,6 +34,10 @@
     width: 100%;
     height: 180px;
     border-radius: 15px;
+    border-radius: 15px;
+background: #0b1924;
+box-shadow:  20px 20px 60px #09151f,
+             -20px -20px 60px #0d1d29;
 }
 
 .imageAndLinksContainer.exhibition,
