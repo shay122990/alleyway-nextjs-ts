@@ -14,9 +14,9 @@ const DynamicEventsSection = dynamic(() => import('./components/events-section/E
   ssr: false,
 });
 
-const DynamicHomeCarousel = dynamic(() => import('@/components/layout/home-carousel/Home-Carousel'), {
-  ssr: false,
-});
+// const DynamicHomeCarousel = dynamic(() => import('@/components/layout/home-carousel/Home-Carousel'), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
@@ -39,9 +39,9 @@ export default function Home() {
         <Suspense fallback={<Loader />}>
           <DynamicEventsSection />
         </Suspense>
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}>
           <DynamicHomeCarousel />
-        </Suspense>
+        </Suspense> */}
       </main>
     </>
   );
