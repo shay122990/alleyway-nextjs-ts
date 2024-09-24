@@ -8,3 +8,27 @@
     border: 2px solid var(--accent-lime);
     border-radius: 10px;
 }
+.privacyTitle{
+    color: var(--accent-yellow);
+    font-size: 30px;
+  }
+  .privacyParagraph{
+    width: 80%;
+    font-size: 16px;
+  }
+  @media (min-width: 768px) {
+    .privacyTitle{
+      font-size: 50px;
+    }
+    .privacyParagraph{
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .privacyTitle{
+      font-size: 100px;
+    }
+    .privacyParagraph{
+      font-size: 32px;
+    }
+  } 

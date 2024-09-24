@@ -1,6 +1,23 @@
 .contactTitle{
-    font-size: 50px;
+    font-size: 30px
 }
 .contactParagraph{
     color: aqua;
+    font-size: 16px;
 }
+@media (min-width: 768px) {
+    .contactTitle{
+      font-size: 50px;
+    }
+    .contactParagraph{
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .contactTitle{
+      font-size: 100px;
+    }
+    .contactParagraph{
+      font-size: 32px;
+    }
+  }

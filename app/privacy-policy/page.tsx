@@ -23,8 +23,8 @@ const PrivacyPolicy = () => {
           image={homeImage}  
           title="Privacy Policy" 
           paragraph="Your privacy is your business" 
-          titleClassName={styles.homeTitle}
-          paragraphClassName={styles.homeParagraph}
+          titleClassName={styles.privacyTitle}
+          paragraphClassName={styles.privacyParagraph}
         />
       </Suspense>
       <main className={styles.privacyContainer}>

@@ -1,7 +1,24 @@
 .projectsTitle{
     color: lime;
-    font-size: 100px;
+    font-size: 30px;
 }
 .projectsParagraph{
     color: lime;
+    font-size: 16px;
 }
+@media (min-width: 768px) {
+    .projectsTitle{
+      font-size: 50px;
+    }
+    .projectsParagraph{
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .projectsTitle{
+      font-size: 100px;
+    }
+    .projectsParagraph{
+      font-size: 32px;
+    }
+  }
