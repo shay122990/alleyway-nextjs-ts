@@ -120,6 +120,9 @@
     }
 }
 @media (min-width:1024px) {
+    .eventSection h2{
+        width: 40%;
+    }
     .imagesContainer{
         width:60%;
         height:100%;
@@ -131,11 +134,10 @@
         font-size: 28px;
     }
     .exhibitionSection, .creativeSection{
-        text-align: left;
-        align-items: flex-start;
+        text-align: center;
     }
     .privateSection, .audioSection{
-        text-align: right;
+        text-align: center;
         align-items: flex-end;
     }
 }
