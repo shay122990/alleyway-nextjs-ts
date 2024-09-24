@@ -7,7 +7,7 @@ const EventsSection = () => {
   return (
     <div className={styles.eventsContainer}>
       {/* Exhibitions Section */}
-      <section className={styles.eventSection}>
+      <section className={`${styles.eventSection} ${styles.exhibitionSection}`}>
         <h2>Exhibitions & Trade Shows</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.imagesContainer}>
@@ -22,7 +22,7 @@ const EventsSection = () => {
       </section>
 
       {/* Private Events Section */}
-      <section className={styles.eventSection}>
+      <section className={`${styles.eventSection} ${styles.privateSection}`}>
         <h2>Private Events</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.imagesContainer}>
@@ -39,7 +39,7 @@ const EventsSection = () => {
       </section>
 
       {/* Creative Services Section */}
-      <section className={styles.eventSection}>
+      <section className={`${styles.eventSection} ${styles.creativeSection}`}>
         <h2>Creative Services</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.imagesContainer}>
@@ -55,7 +55,7 @@ const EventsSection = () => {
       </section>
 
       {/* Audio Visual Section */}
-      <section className={styles.eventSection}>
+      <section className={`${styles.eventSection} ${styles.audioSection}`}>
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.imagesContainer}>

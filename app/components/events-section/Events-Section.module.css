@@ -54,8 +54,7 @@
     justify-content: center;
     flex: 1;
     width: 30%;
-    text-wrap: wrap;
-}
+} 
   
 .linksContainer ul {
     list-style-type: none;
@@ -130,5 +129,13 @@
     }
     .linksContainer a{
         font-size: 28px;
+    }
+    .exhibitionSection, .creativeSection{
+        text-align: left;
+        align-items: flex-start;
+    }
+    .privateSection, .audioSection{
+        text-align: right;
+        align-items: flex-end;
     }
 }
