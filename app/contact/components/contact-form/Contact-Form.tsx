@@ -31,7 +31,7 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <div className={styles.formContainer}>
+    <div className={styles.formContainer} id="contact-form">
       <div className={styles.contactInfo}>
         <h2 className={styles.formTitle}>LET US TAKE IT FROM HERE ...</h2>
         <div className={styles.formDescription}>
