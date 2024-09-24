@@ -67,22 +67,22 @@
 .linksContainer a::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -4px;
     left: 0;
     width: 0;
     height: 2px;
     background-color: var(--accent-lime);
     transition: width 0.3s ease;
-  }
+}
   
-  .linksContainer a:hover::before {
+.linksContainer a:hover::before {
     width: 100%;
     animation: underlineAnimation 0.7s forwards;
-  }
-    .linksContainer .active a {
+}
+.linksContainer .active a {
     color: var(--accent-lime);
     font-weight: bold;
-  }
+}
 
 @media (min-width:768px){
     .logoInfo{

@@ -38,7 +38,7 @@ export default function Footer() {
           <h3>Ready to launch your next project?</h3>
           <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
           <Link href="/contact#contact-form">
-            <Button buttonType="primary">Get A Quote</Button>
+            <Button buttonType="primary">Book Us</Button>
           </Link>
         </div>
         <div className={styles.linksContainer}>
