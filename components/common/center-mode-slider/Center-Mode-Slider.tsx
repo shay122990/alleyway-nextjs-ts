@@ -48,8 +48,6 @@ const CenterModeSlider: React.FC<CenterModeSliderProps> = ({ items }) => {
                 <Image 
                     src={items[currentIndex].image} 
                     alt={items[currentIndex].alt} 
-                    width={800} 
-                    height={800} 
                 />
                 <div className={styles.carouselCaption}>
                     <h3>{items[currentIndex].title}</h3>

@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Barlow } from 'next/font/google';
 import '../styles/globals.css';
-import Loader from '@/components/common/loader/Loader';
+import Loader from '../components/common/loader/Loader';
 import Head from 'next/head';
 
 const DynamicNavbar = React.lazy(() => import('@/components/navigation/navbar/Navbar'));
