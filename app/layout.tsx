@@ -3,6 +3,7 @@ import { Barlow } from 'next/font/google';
 import '../styles/globals.css';
 import Loader from '../components/common/loader/Loader';
 import Head from 'next/head';
+import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
 const DynamicNavbar = React.lazy(() => import('@/components/navigation/navbar/Navbar'));
 const DynamicFooter = React.lazy(() => import('@/components/layout/footer/Footer'));
@@ -63,6 +64,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
         <DynamicNavbar />
         {children}
         <DynamicFooter />
+        <WhatsApp isFloating={true}/>
       </Suspense>
     </body>
   </html>

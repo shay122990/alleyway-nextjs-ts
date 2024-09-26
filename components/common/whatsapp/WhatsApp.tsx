@@ -1,7 +1,9 @@
+"use client";
+import styles from "./WhatsApp.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WhatsApp = ({ className = '' }) => {
-  const whatsappURL = "https://wa.me/1234567890"; 
+const WhatsApp = ({ className = '', isFloating = false }) => {
+  const whatsappURL = "https://wa.me/+971528182368";
 
   const handleClick = () => {
     window.open(whatsappURL, '_blank', 'noopener,noreferrer');
@@ -9,7 +11,7 @@ const WhatsApp = ({ className = '' }) => {
 
   return (
     <div 
-      className={`${className}`} 
+      className={`${isFloating ? styles['floating-whatsapp'] : ''} ${className}`} 
       onClick={handleClick}
       aria-label="Open WhatsApp"
     >
