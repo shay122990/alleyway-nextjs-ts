@@ -22,12 +22,13 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head>
-      <link rel="preload" href="/globals.css" as="style" />
-      <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
-      <link rel="preload" href="/_next/static/css/app/contact/Contact.module.css" as="style" />
-      <link rel="preload" href="/_next/static/css/app/privacy-policy/Privacy-Policy.module.css" as="style" />
-      <link rel="preload" href="/_next/static/css/app/projects/Projects.module.css" as="style" />
-      <link rel="preload" href="/_next/static/css/app/services/Services.module.css" as="style" />
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="/globals.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/page.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/contact/Contact.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/privacy-policy/Privacy-Policy.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/projects/Projects.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/services/Services.module.css" />
 
       {/* SEO Meta Tags */}
       <meta name="description" content="Event Management Company In Dubai" />

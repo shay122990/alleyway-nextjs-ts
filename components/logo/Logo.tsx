@@ -14,8 +14,7 @@ export default function Logo() {
 
   return (
     <div className={styles.logoContainer} onClick={handleClick}>
-      <Image src={logoImg}  alt='Company logo' 
-          objectFit="cover"/>
+      <Image src={logoImg}  alt='Company logo' />
     </div>
   );
 }

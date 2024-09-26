@@ -9,11 +9,11 @@ export default function Home() {
     <>
       <Head>
         <title>Alleyway - Plan Any Event</title>
-        <link rel="preload" href={homeImage.src} as="image" />
+        <link rel="stylesheet" href={homeImage.src} as="image" />
         <meta name="description" content="Alleyway - Plan Any Event With Us " />
       </Head>
         <Hero 
-           image={homeImage} 
+          image={homeImage} 
           title="The Events Management Company" 
           paragraph="We provide top-notch services to meet your needs." 
           titleClassName={styles.homeTitle}

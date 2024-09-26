@@ -1,12 +1,9 @@
 "use client";
 import styles from './Hero.module.css';
-import Loader from '@/components/common/loader/Loader';
 import { motion } from "framer-motion";
 import { StaticImageData } from 'next/image';
-import React, { Suspense } from 'react';
+import Logo from "@/components/logo/Logo"
 
-
-const LazyLogo = React.lazy(() => import('../../logo/Logo'));
 
 interface HeroProps {
   image: string | StaticImageData;
@@ -26,12 +23,10 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName }: H
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className={styles.hero}
-      style={{ backgroundImage: `url(${backgroundImage || '/path/to/fallback.jpg'})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     > 
       <div className={styles.heroContent}>
-        <Suspense fallback={<Loader  />}>
-          <LazyLogo />
-        </Suspense>
+          <Logo />
         <div className={styles.heroInfo}>
           <motion.h1
             initial={{ x: "100vw", opacity: 0 }} 

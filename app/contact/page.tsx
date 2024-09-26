@@ -4,14 +4,12 @@ import Hero from "@/components/layout/hero/Hero";
 import contactImage from "@/public/images/contact-image.jpg";
 import ContactForm from "./components/contact-form/Contact-Form";
 
-
-
 export default function Contact() {
   return (
     <>
       <Head>
         <title>Contact Alleyway</title>
-        <link rel="preload" href={contactImage.src} as="image" />
+        <link rel="stylesheet" href={contactImage.src} as="image" />
         <meta name="description" content="Get in touch with Alleyway" />
       </Head>
         <Hero 
