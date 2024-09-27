@@ -1,0 +1,49 @@
+.masonryContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .titleContainer {
+    position: absolute; 
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10; 
+  }
+  
+  .titleText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0; 
+  }
+  
+  .gridItem {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; 
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
