@@ -137,5 +137,6 @@
     }
     .quoteContainer{
         width: 300px;
+        gap:2rem;
     }
 }

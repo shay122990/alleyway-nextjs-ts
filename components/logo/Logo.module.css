@@ -9,8 +9,8 @@
     cursor: pointer;
     border-radius: 10px;
     background: #152f445f;
-    box-shadow:  7px 7px 14px #12293b72,
-                 -7px -7px 14px #18354d72;
+    box-shadow:   5px 5px 1px #050b10,
+    -5px -5px 1px #112738;
   }
   .logoContainer img {
     width: 100px;
