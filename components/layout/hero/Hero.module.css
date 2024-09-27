@@ -1,6 +1,5 @@
 .hero {
-  background-position: center center; 
-  background-repeat: no-repeat; 
+  background:  center center no-repeat;
   background-size: cover;
   position: relative; 
   height: 500px;
@@ -14,7 +13,6 @@
   filter: contrast(1) brightness(1.05);
   overflow: hidden; 
   border-radius: 25px;
-  background: #0b1924;
   box-shadow:  14px 14px 28px #081119,
                -14px -14px 28px #0e212f;
 }

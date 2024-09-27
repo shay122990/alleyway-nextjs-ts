@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <Head>
         <title>Alleyway - Plan Any Event</title>
-        <link rel="stylesheet" href={homeImage.src} as="image" />
         <meta name="description" content="Alleyway - Plan Any Event With Us " />
       </Head>
         <Hero 

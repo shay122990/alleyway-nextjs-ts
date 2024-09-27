@@ -9,7 +9,6 @@ export default function Project() {
     <>
       <Head>
         <title>Projects - Alleyway</title>
-        <link rel="stylesheet" href={aboutImage.src} as="image" />
         <meta name="description" content="The projects we've successfully completed" />
       </Head>
         <Hero 

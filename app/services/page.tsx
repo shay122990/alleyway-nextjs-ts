@@ -9,7 +9,6 @@ export default function Services() {
     <>
       <Head>
         <title>Alleyway Services</title>
-        <link rel="stylesheet" href={projectsImage.src} as="image" />
         <meta name="description" content="Comprehensive event management services." />
       </Head>
         <Hero 

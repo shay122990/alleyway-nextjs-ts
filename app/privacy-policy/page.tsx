@@ -9,7 +9,6 @@ const PrivacyPolicy = () => {
     <>
       <Head>
         <title>Privacy Policy - Alleyway</title>
-        <link rel="stylesheet" href={homeImage.src} as="image" />
         <meta name="description" content="Alleyway - Privacy Policy" />
       </Head>
         <Hero 

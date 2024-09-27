@@ -9,7 +9,6 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact Alleyway</title>
-        <link rel="stylesheet" href={contactImage.src} as="image" />
         <meta name="description" content="Get in touch with Alleyway" />
       </Head>
         <Hero 
