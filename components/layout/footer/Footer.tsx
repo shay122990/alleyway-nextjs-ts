@@ -23,14 +23,14 @@ export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.logoIconContainer}>
-        <div className={styles.logoInfo}>
+        <div className={styles.logoContainer}>
           <Logo />
-          <p className={styles.footerIntro}>
-            Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
-          </p>
         </div>
         <div className={styles.socialMedia}>
           <Icons />
+          <p className={styles.socialIntro}>
+            Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
+          </p>
         </div>
       </div>
       <div className={styles.companyContactContainer}>
