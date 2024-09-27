@@ -18,7 +18,7 @@ const carouselItems = [
    
 ];
 
-const HomeCarousel: React.FC = () => {
+const Carousel: React.FC = () => {
     return (
         <div>
             <CenterModeSlider items={carouselItems} />
@@ -26,4 +26,4 @@ const HomeCarousel: React.FC = () => {
     );
 };
 
-export default HomeCarousel;
+export default Carousel;

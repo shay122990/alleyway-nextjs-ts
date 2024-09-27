@@ -29,7 +29,7 @@ export default function Footer() {
         <div className={styles.socialMedia}>
           <Icons />
           <p className={styles.socialIntro}>
-            Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
+            Stay connected with us for the latest updates, exclusive offers, and more! <br/> Follow us on our social media platforms and be part of our community.
           </p>
         </div>
       </div>

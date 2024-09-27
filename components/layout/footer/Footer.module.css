@@ -20,7 +20,7 @@
 .socialMedia{
     display: flex;
     flex-direction: column;
-    text-align:end;
+    /* text-align:end; */
     gap: 1rem;
     width: 60%;
 }
