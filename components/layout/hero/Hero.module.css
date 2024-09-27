@@ -13,8 +13,7 @@
   filter: contrast(1) brightness(1.05);
   overflow: hidden; 
   border-radius: 25px;
-  box-shadow:  5px 5px 5px #0a1720,
-             -5px -5px 5px #0c1c28;
+  box-shadow: var(--blue-box-shadow)
 }
 
 .hero::before {

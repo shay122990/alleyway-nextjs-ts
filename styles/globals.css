@@ -17,6 +17,7 @@
   --accent-blue: #043BFF;
   --hover-blue: #00E0FF;
   background-color: #020408;
+  --blue-box-shadow: 5px 5px 5px #0a1720, -5px -5px 5px #0c1c28;
 }
 
 body {
