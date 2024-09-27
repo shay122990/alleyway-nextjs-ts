@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Head from 'next/head';
 import Hero from "@/components/layout/hero/Hero";
 import EventsSection from "./components/events-section/Events-Section";
+import Banner from "./components/banner/Banner";
 import homeImage from "@/public/images/header-home.jpg";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           paragraphClassName={styles.homeParagraph} />
       <main>
         <EventsSection />
+        <Banner />
         {/* <Suspense fallback={<Loader />}>
           <DynamicHomeCarousel />
         </Suspense> */}

@@ -1,0 +1,36 @@
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--accent-orange);
+    padding: 0 2rem;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+.bannerContent p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.bannerSideArrow{
+    font-size: 40px;
+}
+@media (min-width: 768px) {
+    .bannerContainer{
+        justify-content: end;
+    }
+    .bannerContent{
+        width: 70%;
+        justify-content: space-around;
+    }
+    .bannerContent p{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
