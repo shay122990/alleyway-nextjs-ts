@@ -51,7 +51,7 @@ const ContactForm: FC = () => {
             Please fill out the form with your event requirements and we will contact you shortly.
             <br />
             Alternatively, you can contact us directly through{' '}
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
+            <a href="https://wa.me/+971528182368" target="_blank" rel="noopener noreferrer" className={styles.waLink}>
               WhatsApp
             </a>
           </p>

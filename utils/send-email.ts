@@ -5,7 +5,7 @@ export const sendEmail = async (data: { name: string; email: string; message: st
 
   try {
     const response = await emailjs.send(
-      'service_ume3qg8', 
+      'service_1y8x8jd', 
       'template_pz2pz5f', 
       {
         name,

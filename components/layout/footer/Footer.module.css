@@ -1,4 +1,4 @@
-.footer{
+.footerContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,8 @@
     width: 20%;
 }
 .footerIntro{
-    display: none;
+    width: 100%;
+    border: 1px solid red;
 }
 .socialMedia{
     height: 60px;
@@ -46,7 +47,7 @@
 .linksContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 .company{
     width: 50%;
@@ -94,7 +95,7 @@
         width: 50%;
     }
     .linksContainer{
-        justify-content: space-between;
+       width: 50%;
     }
     .linksContainer ul li{
         padding-bottom: 16px;

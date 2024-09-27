@@ -21,12 +21,12 @@ export default function Footer() {
   ];
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footerContainer}>
       <div className={styles.logoIconContainer}>
         <div className={styles.logoInfo}>
           <Logo />
           <p className={styles.footerIntro}>
-          Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
+            Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
           </p>
         </div>
         <div className={styles.socialMedia}>
@@ -64,6 +64,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
