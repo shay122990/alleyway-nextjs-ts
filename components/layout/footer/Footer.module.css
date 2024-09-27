@@ -46,8 +46,10 @@
 .linksContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 16%; 
+    justify-content: center;
+}
+.company{
+    width: 50%;
 }
 .linksContainer h4{
     color: var(--accent-lime);
@@ -91,6 +93,9 @@
     .quoteContainer{
         width: 50%;
     }
+    .linksContainer{
+        justify-content: space-between;
+    }
     .linksContainer ul li{
         padding-bottom: 16px;
     }
@@ -116,9 +121,8 @@
         width: 90%;
     }
     .linksContainer{
-        width: 60%;
-        padding: 0;
-        justify-content: space-around;
+        width: 75%;
+        justify-content: center;
     }
     .linksContainer h4{
         font-size: 20px;

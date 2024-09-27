@@ -26,7 +26,7 @@ export default function Footer() {
         <div className={styles.logoInfo}>
           <Logo />
           <p className={styles.footerIntro}>
-            With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+          Stay connected with us for the latest updates, exclusive offers, and more! Follow us on our social media platforms and be part of our community.
           </p>
         </div>
         <div className={styles.socialMedia}>
@@ -36,7 +36,7 @@ export default function Footer() {
       <div className={styles.companyContactContainer}>
         <div className={styles.quoteContainer}>
           <h3>Ready to launch your next project?</h3>
-          <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          <p>We make event and project management a seamless experience.</p>
           <Link href="/contact#contact-form">
             <Button buttonType="primary">Book Us</Button>
           </Link>
