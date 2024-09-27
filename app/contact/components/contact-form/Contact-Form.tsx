@@ -6,7 +6,6 @@ import { sendEmail } from '@/utils/send-email';
 import { motion } from 'framer-motion';
 import Button from '@/components/common/buttons/Button';
 import MessageDisplay from '../message-display/Message-Display';
-import ReCAPTCHA from 'react-google-recaptcha'; // Import the reCAPTCHA component
 
 export type FormData = {
   name: string;
@@ -17,19 +16,12 @@ export type FormData = {
 const ContactForm: FC = () => {
   const { register, handleSubmit, reset } = useForm<FormData>();
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
-  const [captchaValue, setCaptchaValue] = useState<string | null>(null); 
 
   async function onSubmit(data: FormData) {
-    if (!captchaValue) {
-      setMessage({ text: 'Please complete the reCAPTCHA.', type: 'error' });
-      return;
-    }
-
     try {
       await sendEmail(data);
       setMessage({ text: 'Your message was sent successfully! We will contact you shortly', type: 'success' });
       reset(); 
-      setCaptchaValue(null); 
     } catch (error) {
       setMessage({ text: 'There was an error sending your message. Please try again, or WhatsApp us. ', type: 'error' });
     }
@@ -106,14 +98,6 @@ const ContactForm: FC = () => {
               className={styles.inputMessage}
               {...register('message', { required: true })}
             ></textarea>
-          </motion.div>
-          
-          {/* continue set up after  google set up*/}
-          <motion.div className={styles.field} initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 0.7 }}>
-            <ReCAPTCHA
-              sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || ""}
-              onChange={(value: string | null) => setCaptchaValue(value)} 
-            />
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
             <Button buttonType="submit">Submit</Button>
