@@ -1,8 +1,9 @@
+
 import styles from './Image-Box.module.css';
 import Image, { StaticImageData } from 'next/image';
 
 interface ImageBoxProps {
-  imageSrc: StaticImageData;
+  imageSrc: StaticImageData | string;
   altText?: string;
   className?: string;
 }

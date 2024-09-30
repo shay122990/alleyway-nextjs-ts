@@ -2,7 +2,7 @@
 import styles from './Events-Section.module.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import ImageBox from '@/components/common/image-box/Image-Box';
+import Image from 'next/image';
 import projectImage1 from '@/public/images/projects-image.jpg';
 import projectImage2 from '@/public/images/projects-image.jpg';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -32,7 +32,9 @@ const EventsSection = () => {
         <h2>Exhibitions & Trade Shows</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.exhibitionImage} />
+            <div className={styles.exhibitionImage}>
+              <Image src={projectImage1} alt="Exhibition" />
+            </div>
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -54,8 +56,12 @@ const EventsSection = () => {
         <h2>Private Events</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.privateEventImage} />
-            <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
+            <div className={styles.privateEventImage}>
+              <Image src={projectImage1} alt="Private Event 1" />
+            </div>
+            <div className={styles.privateEventImage}>
+              <Image src={projectImage2} alt="Private Event 2" />
+            </div>
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -78,8 +84,12 @@ const EventsSection = () => {
         <h2>Creative Services</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.creativeServiceImage} />
-            <ImageBox imageSrc={projectImage2} className={styles.creativeServiceImage} />
+            <div className={styles.creativeServiceImage}>
+              <Image src={projectImage1} alt="Creative Service 1" />
+            </div>
+            <div className={styles.creativeServiceImage}>
+              <Image src={projectImage2} alt="Creative Service 2" />
+            </div>
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -101,7 +111,9 @@ const EventsSection = () => {
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
+            <div className={styles.audioVisualImage}>
+              <Image src={projectImage1} alt="Audio Visual" />
+            </div>
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
