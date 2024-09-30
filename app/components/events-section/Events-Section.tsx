@@ -3,7 +3,7 @@ import styles from './Events-Section.module.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ImageBox from '@/components/common/image-box/Image-Box';
-import Links from '../../../components/common/links/Links';
+import Links from '@/components/common/links/Links';
 import projectImage1 from '@/public/images/projects-image.jpg';
 import projectImage2 from '@/public/images/projects-image.jpg';
 import { IoIosArrowDown } from 'react-icons/io';

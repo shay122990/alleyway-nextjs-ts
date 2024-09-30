@@ -1,6 +1,11 @@
-.imageContainer{
-  width: 100%;
+/* .imageContainer {
+  width: 100%; 
+  height: auto;
+  overflow: hidden;
 }
-.imageContainer img{
-  width: 100%;
-}
+
+.image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+} */

@@ -1,20 +1,24 @@
-
-import styles from './Image-Box.module.css';
+// import styles from './Image-Box.module.css';
 import Image, { StaticImageData } from 'next/image';
 
 interface ImageBoxProps {
   imageSrc: StaticImageData | string;
   altText?: string;
   className?: string;
+  width?: number;   
+  height?: number;  
 }
 
-const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', className }) => {
+const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', className, width, height }) => {
   return (
-    <div className={`${styles.imageContainer} ${className}`}>
+    <div>
       <Image 
         src={imageSrc} 
-        alt={altText}  
+        alt={altText}
         priority={true}
+        layout="fixed"
+        width={width}   
+        height={height} 
       />
     </div>
   );

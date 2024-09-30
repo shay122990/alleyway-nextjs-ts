@@ -4,7 +4,7 @@ import Hero from "@/components/layout/hero/Hero";
 import EventsSection from "./components/events-section/Events-Section";
 import homeImage from "@/public/images/header-home.jpg";
 import Banner from "./components/banner/Banner";
-// import MasonryGrid from "./components/masonry-grid/MasonryGrid";
+import MasonryGrid from "./components/masonry-grid/MasonryGrid";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <EventsSection />
         <Banner/>
-        {/* <MasonryGrid/> */}
+        <MasonryGrid/>
       </main>
     </>
   );

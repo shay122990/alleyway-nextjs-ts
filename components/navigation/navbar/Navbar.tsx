@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation'; 
 import Icons from '../../common/icons/Icons';
-import Links from '../../common/links/Links'; 
+import Links from '@/components/common/links/Links'; 
 import styles from './Navbar.module.css';
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';

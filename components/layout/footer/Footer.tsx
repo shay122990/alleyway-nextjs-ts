@@ -5,7 +5,7 @@ import Icons from "@/components/common/icons/Icons";
 import styles from "./Footer.module.css";
 import Logo from "@/components/logo/Logo";
 import Button from "@/components/common/buttons/Button";
-import Links from "@/components/common/links/Links"; 
+import Links from "@/components/common/links/Links"
 
 export default function Footer() {
   const pathname = usePathname(); 
