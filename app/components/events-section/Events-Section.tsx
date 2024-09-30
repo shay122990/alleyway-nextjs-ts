@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import styles from './Events-Section.module.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ImageBox from '@/components/common/image-box/Image-Box';
-import Links from '../links/Links';
+import Links from '../../../components/common/links/Links';
 import projectImage1 from '@/public/images/projects-image.jpg';
 import projectImage2 from '@/public/images/projects-image.jpg';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -66,7 +66,7 @@ const EventsSection = () => {
             <IoIosArrowDown className={styles.arrowIconDown} />
             {exhibitionsLinks.map((link, index) => (
               <li key={index}>
-                <Links name={link.name} href={link.href} />
+                <Links href={link.href}>{link.name}</Links> 
               </li>
             ))}
           </ul>
@@ -91,7 +91,7 @@ const EventsSection = () => {
             <IoIosArrowDown className={styles.arrowIconDown} />
             {privateEventsLinks.map((link, index) => (
               <li key={index}>
-                <Links name={link.name} href={link.href} />
+                <Links href={link.href}>{link.name}</Links> 
               </li>
             ))}
           </ul>
@@ -116,7 +116,7 @@ const EventsSection = () => {
             <IoIosArrowDown className={styles.arrowIconDown} />
             {creativeServicesLinks.map((link, index) => (
               <li key={index}>
-                <Links name={link.name} href={link.href} />
+                <Links href={link.href}>{link.name}</Links> 
               </li>
             ))}
           </ul>
@@ -140,7 +140,7 @@ const EventsSection = () => {
             <IoIosArrowDown className={styles.arrowIconDown} />
             {audioVisualLinks.map((link, index) => (
               <li key={index}>
-                <Links name={link.name} href={link.href} />
+                <Links href={link.href}>{link.name}</Links>
               </li>
             ))}
           </ul>

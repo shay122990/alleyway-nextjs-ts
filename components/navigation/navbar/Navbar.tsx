@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation'; 
 import Icons from '../../common/icons/Icons';
+import Links from '../../common/links/Links'; 
 import styles from './Navbar.module.css';
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
@@ -41,15 +41,15 @@ export default function Navbar() {
         <ul className={styles.menu}>
           {navItems.map(({ href, label }, index) => (
             <li key={index} className={pathname === href ? styles.active : ''}>
-              <Link href={href} onClick={closeMenu}>
+              <Links href={href} onClick={closeMenu}>
                 {label}
-              </Link>
+              </Links>
             </li>
           ))}
         </ul>
         <Icons />
       </div>
-      {isMobile && <WhatsApp  className={styles.navbarWhatsApp}/>}
+      {isMobile && <WhatsApp className={styles.navbarWhatsApp}/>}
     </nav>
   );
 }

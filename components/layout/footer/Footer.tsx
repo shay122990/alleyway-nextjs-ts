@@ -1,11 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation'; 
 import Icons from "@/components/common/icons/Icons";
 import styles from "./Footer.module.css";
 import Logo from "@/components/logo/Logo";
 import Button from "@/components/common/buttons/Button";
+import Links from "@/components/common/links/Links"; 
 
 export default function Footer() {
   const pathname = usePathname(); 
@@ -20,6 +20,9 @@ export default function Footer() {
     { href: '/audio-visual', label: 'Audio & Visual' }
   ];
 
+  const companyLinks = footerNavItems.slice(0, 3);
+  const serviceLinks = footerNavItems.slice(3);
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.logoIconContainer}>
@@ -29,7 +32,7 @@ export default function Footer() {
         <div className={styles.socialMedia}>
           <Icons />
           <p className={styles.socialIntro}>
-            Stay connected with us for the latest updates, exclusive offers, and more! <br/> Follow us on our social media platforms and be part of our community.
+            Stay connected with us for the latest updates, exclusive offers, and more! <br /> Follow us on our social media platforms and be part of our community.
           </p>
         </div>
       </div>
@@ -37,17 +40,17 @@ export default function Footer() {
         <div className={styles.quoteContainer}>
           <h3>Ready to launch your next project?</h3>
           <p>We make event and project management a seamless experience.</p>
-          <Link href="/contact#contact-form">
+          <Links href="/contact#contact-form">
             <Button buttonType="primary">Book Us</Button>
-          </Link>
+          </Links>
         </div>
         <div className={styles.linksContainer}>
           <div className={styles.company}>
             <h4>Company</h4>
             <ul>
-              {footerNavItems.slice(0, 3).map(({ href, label }, index) => (
+              {companyLinks.map(({ href, label }, index) => (
                 <li key={index} className={pathname === href ? styles.active : ''}>
-                  <Link href={href}>{label}</Link>
+                  <Links href={href}>{label}</Links> {/* Use Links component here */}
                 </li>
               ))}
             </ul>
@@ -55,9 +58,9 @@ export default function Footer() {
           <div className={styles.services}>
             <h4>Services</h4>
             <ul>
-              {footerNavItems.slice(3).map(({ href, label }, index) => (
+              {serviceLinks.map(({ href, label }, index) => (
                 <li key={index} className={pathname === href ? styles.active : ''}>
-                  <Link href={href}>{label}</Link>
+                  <Links href={href}>{label}</Links> {/* Use Links component here */}
                 </li>
               ))}
             </ul>
