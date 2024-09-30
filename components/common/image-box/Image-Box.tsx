@@ -16,7 +16,6 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
         src={imageSrc} 
         alt={altText}
         priority={true}
-        layout="fixed"
         width={width}   
         height={height} 
       />

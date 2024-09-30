@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   background:  center center no-repeat;
   background-size: cover;
   position: relative; 
@@ -13,7 +13,8 @@
   filter: contrast(1) brightness(1.05);
   overflow: hidden; 
   border-radius: 25px;
-  box-shadow: var(--blue-box-shadow)
+  box-shadow:  5px 5px 10px #06040d,
+             -5px -5px 10px #160e33;
 }
 
 .hero::before {
@@ -61,4 +62,109 @@
   }
 }
   
-  
+   */
+
+
+   /* Hero.module.css */
+
+.hero {
+  background: center center no-repeat; 
+  background-size: cover;
+  position: relative; 
+  height: 500px; /* Adjust height as needed */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  filter: contrast(1) brightness(1.05);
+  overflow: hidden; 
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px #06040d,
+              -5px -5px 10px #160e33;
+  transition: transform 10s ease-in-out; /* Animate the growth effect */
+}
+
+.hero:hover {
+  transform: scale(1.05); /* Subtle growth effect on hover */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 47, 68, 0.42); /* Adjust transparency */
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the whole hero section */
+  z-index: 1; /* Position it behind other content */
+}
+
+.backgroundImage {
+  background: center center no-repeat; 
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Position it behind other content */
+}
+
+.heroContent {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  z-index: 2; /* Position it above the video/image */
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  color: white; /* Change to your desired color */
+}
+
+.heroParagraph {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  color: white; /* Change to your desired color */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 800px; /* Adjust height for larger screens */
+  }
+
+  .heroTitle {
+    font-size: 10rem; /* Larger font size for bigger screens */
+  }
+
+  .heroParagraph {
+    font-size: 1.5rem; /* Larger font size for bigger screens */
+  }
+}

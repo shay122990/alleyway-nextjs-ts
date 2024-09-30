@@ -11,10 +11,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
 } 
 .eventSection h2 {
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--accent-lime);
     text-transform: uppercase;
 }
@@ -42,11 +44,15 @@
 .imageAndLinksContainer.exhibition,
 .imageAndLinksContainer.creative {
     flex-direction: row-reverse;
+    padding:0 15px;
+    border-radius: 10px;
+    border: 1px solid lime;
 }
 
 .imageAndLinksContainer.private,
 .imageAndLinksContainer.audio {
     flex-direction: row;
+    border-radius: 10px;
 }
 .linksContainer {
     display: flex;
@@ -103,6 +109,7 @@
     }
     .eventSection {
         gap: 3rem;
+        margin-bottom: 0;
     }
     .eventSection h2 {
         font-size: 24px;
@@ -121,6 +128,14 @@
     }
     .linksContainer a {
         font-size: 20px;
+    }
+    .imageAndLinksContainer.exhibition,
+    .imageAndLinksContainer.creative {
+        padding: 40px 10px;
+    }
+    .imageAndLinksContainer.private,
+    .imageAndLinksContainer.audio {
+        padding:40px 10px;
     }
 }
 @media (min-width:1024px) {
