@@ -52,6 +52,8 @@
 
 // export default Hero;
 
+// components/layout/hero/Hero.tsx
+
 "use client";
 import styles from './Hero.module.css';
 import { motion } from "framer-motion";
@@ -59,26 +61,16 @@ import { StaticImageData } from 'next/image';
 import Logo from "@/components/logo/Logo";
 
 interface HeroProps {
-  image?: string | StaticImageData; // Make image prop optional
-  video?: string; // New video prop
+  video?: string; 
+  image?: string | StaticImageData; 
   title: string;
   paragraph: string;
   titleClassName?: string;
   paragraphClassName?: string;
 }
 
-const Hero = ({ image, video, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
-  const background = video ? (
-    <video autoPlay loop muted className={styles.backgroundVideo}>
-      <source src={video} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  ) : (
-    <div 
-      className={styles.backgroundImage}
-      style={{ backgroundImage: `url(${typeof image === 'string' ? image : image?.src})` }} 
-    />
-  );
+const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
+  const backgroundImage = typeof image === 'string' ? image : image?.src;
 
   return (
     <motion.div 
@@ -87,10 +79,29 @@ const Hero = ({ image, video, title, paragraph, titleClassName, paragraphClassNa
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className={styles.hero}
-    >
-      {background}
+    > 
+      {video && (
+        <video 
+          className={styles.backgroundVideo} 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          preload="auto"
+          style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
+      {image && !video && (
+        <div 
+          className={styles.backgroundImage} 
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        />
+      )}
       <div className={styles.heroContent}>
-        <Logo />
+          <Logo />
         <div className={styles.heroInfo}>
           <motion.h1
             initial={{ x: "100vw", opacity: 0 }} 

@@ -84,11 +84,11 @@
   border-radius: 25px;
   box-shadow: 5px 5px 10px #06040d,
               -5px -5px 10px #160e33;
-  transition: transform 10s ease-in-out; /* Animate the growth effect */
+  transition: transform 10s ease-in-out; 
 }
 
 .hero:hover {
-  transform: scale(1.05); /* Subtle growth effect on hover */
+  transform: scale(1.05);
 }
 
 .hero::before {
@@ -98,7 +98,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(21, 47, 68, 0.42); /* Adjust transparency */
+  background-color: rgba(21, 47, 68, 0.42);
   z-index: 1; 
   pointer-events: none; 
 }
@@ -109,8 +109,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures video covers the whole hero section */
-  z-index: 1; /* Position it behind other content */
+  object-fit: cover;
+  z-index: 1; 
 }
 
 .backgroundImage {
@@ -121,7 +121,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Position it behind other content */
+  z-index: 1; 
 }
 
 .heroContent {
@@ -132,7 +132,7 @@
   height: 100%;
   align-items: center;
   text-align: center;
-  z-index: 2; /* Position it above the video/image */
+  z-index: 2;
 }
 
 .heroInfo {
@@ -146,25 +146,25 @@
 }
 
 .heroTitle {
-  font-size: 2.5rem; /* Adjust font size as needed */
-  color: white; /* Change to your desired color */
+  font-size: 2.5rem; 
+  color: white;
 }
 
 .heroParagraph {
-  font-size: 1.25rem; /* Adjust font size as needed */
-  color: white; /* Change to your desired color */
+  font-size: 1.25rem; 
+  color: white;
 }
 
 @media (min-width: 768px) {
   .hero {
-    height: 800px; /* Adjust height for larger screens */
+    height: 800px; 
   }
 
   .heroTitle {
-    font-size: 10rem; /* Larger font size for bigger screens */
+    font-size: 10rem; 
   }
 
   .heroParagraph {
-    font-size: 1.5rem; /* Larger font size for bigger screens */
+    font-size: 1.5rem;
   }
 }
