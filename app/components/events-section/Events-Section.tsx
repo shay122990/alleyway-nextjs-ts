@@ -4,9 +4,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ImageBox from '@/components/common/image-box/Image-Box';
 import Links from '@/components/common/links/Links';
-import projectImage1 from '@/public/images/projects-image.jpg';
-import projectImage2 from '@/public/images/projects-image.jpg';
 import { IoIosArrowDown } from 'react-icons/io';
+import projectImage1 from '@/public/images/projects-image1.jpg';
+import projectImage2 from '@/public/images/projects-image2.jpg';
+import projectImage3 from '@/public/images/projects-image3.jpg';
+import projectImage4 from '@/public/images/projects-image4.jpg';
+import projectImage5 from '@/public/images/projects-image5.jpg';
+import projectImage6 from '@/public/images/projects-image6.jpg';
+
 
 const sectionVariants = {
   hidden: { opacity: 0, scale: 0.8, x: 0 }, 
@@ -84,8 +89,8 @@ const EventsSection = () => {
         <h2>Private Events</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.privateEventImage} />
             <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
+            <ImageBox imageSrc={projectImage3} className={styles.privateEventImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -109,8 +114,8 @@ const EventsSection = () => {
         <h2>Creative Services</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.creativeServiceImage} />
-            <ImageBox imageSrc={projectImage2} className={styles.creativeServiceImage} />
+            <ImageBox imageSrc={projectImage4} className={styles.creativeServiceImage} />
+            <ImageBox imageSrc={projectImage5} className={styles.creativeServiceImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -134,7 +139,7 @@ const EventsSection = () => {
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
+            <ImageBox imageSrc={projectImage6} className={styles.audioVisualImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
