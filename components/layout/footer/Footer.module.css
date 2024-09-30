@@ -5,9 +5,9 @@
     width: 100%;
     padding: 1rem;
     gap: 3rem;
-    background-color: var(--main-background);
+    background-color: transparent;
     border-top: 1px solid var(--accent-lime);
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .logoIconContainer{
     display: flex;
