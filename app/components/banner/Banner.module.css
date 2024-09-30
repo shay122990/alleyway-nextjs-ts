@@ -5,6 +5,7 @@
     width: 100%;
     background-color: var(--accent-orange);
     padding: 0 2rem;
+    margin-bottom: 2rem;
 }
 .bannerContent{
     display: flex;
@@ -37,5 +38,10 @@
     }
     .bannerSideArrow{
         font-size: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .bannerContainer{
+        margin: 3rem 0 5rem 0;
     }
 }

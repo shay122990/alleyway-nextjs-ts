@@ -1,7 +1,8 @@
 import styles from './MasonryGrid.module.css';
 import ImageBox from '@/components/common/image-box/Image-Box';
 import Links from '@/components/common/links/Links'; 
-import image1 from "@/public/images/contact-image.jpg";
+import image1 from "@/public/images/image1.jpg";
+
 
 const MasonryGrid = () => {
   return (
