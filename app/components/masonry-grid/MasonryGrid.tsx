@@ -3,7 +3,6 @@ import ImageBox from '@/components/common/image-box/Image-Box';
 import Links from '@/components/common/links/Links'; 
 import image1 from "@/public/images/image1.jpg";
 
-
 const MasonryGrid = () => {
   return (
     <div className={styles.masonryContainer}>
@@ -13,6 +12,8 @@ const MasonryGrid = () => {
           imageSrc={image1}
           altText="Project image 1"
           className={styles.image1}
+          width={2000}  
+          height={1300} 
         />
         <Links href="/projects">
           <h2 className={styles.titleText}>The projects we've done</h2>
