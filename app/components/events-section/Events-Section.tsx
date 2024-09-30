@@ -2,7 +2,8 @@
 import styles from './Events-Section.module.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
+import ImageBox from '@/components/common/image-box/Image-Box';
+import Links from '../links/Links';
 import projectImage1 from '@/public/images/projects-image.jpg';
 import projectImage2 from '@/public/images/projects-image.jpg';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -19,6 +20,33 @@ const EventsSection = () => {
   const [refCreative, inViewCreative] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
 
+  // Link data for each section
+  const exhibitionsLinks = [
+    { name: 'Booth Design & Set Up', href: '/services#exhibitions' },
+    { name: 'Logistics Management', href: '/services#exhibitions' },
+    { name: 'On-site Coordination', href: '/services#exhibitions' },
+  ];
+
+  const privateEventsLinks = [
+    { name: 'Anniversary', href: '/services/private-events' },
+    { name: 'Birthday Parties', href: '/services#private-events' },
+    { name: 'Weddings', href: '/services#private-events' },
+    { name: 'Social Events', href: '/services#private-events' },
+  ];
+
+  const creativeServicesLinks = [
+    { name: 'Event Concept & Design', href: '/services#creative-services' },
+    { name: 'Thematic Decor', href: '/services#creative-services' },
+    { name: 'Entertainment Planning', href: '/services#creative-services' },
+  ];
+
+  const audioVisualLinks = [
+    { name: 'Sound Systems', href: '/services#audio-visual' },
+    { name: 'Lighting Design', href: '/services#audio-visual' },
+    { name: 'LED Screens', href: '/services#audio-visual' },
+    { name: 'Technical Support', href: '/services#audio-visual' },
+  ];
+
   return (
     <div className={styles.eventsContainer}>
       {/* Exhibitions Section */}
@@ -32,15 +60,15 @@ const EventsSection = () => {
         <h2>Exhibitions & Trade Shows</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.imagesContainer}>
-            <div className={styles.exhibitionImage}>
-              <Image src={projectImage1} alt="Exhibition" />
-            </div>
+            <ImageBox imageSrc={projectImage1} className={styles.exhibitionImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            <li><a href="/services#exhibitions">Booth Design & Set Up</a></li>
-            <li><a href="/services#exhibitions">Logistics Management</a></li>
-            <li><a href="/services#exhibitions">On-site Coordination</a></li>
+            {exhibitionsLinks.map((link, index) => (
+              <li key={index}>
+                <Links name={link.name} href={link.href} />
+              </li>
+            ))}
           </ul>
         </div>
       </motion.section>
@@ -56,19 +84,16 @@ const EventsSection = () => {
         <h2>Private Events</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.imagesContainer}>
-            <div className={styles.privateEventImage}>
-              <Image src={projectImage1} alt="Private Event 1" />
-            </div>
-            <div className={styles.privateEventImage}>
-              <Image src={projectImage2} alt="Private Event 2" />
-            </div>
+            <ImageBox imageSrc={projectImage1} className={styles.privateEventImage} />
+            <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            <li><a href="/services/private-events">Anniversary</a></li>
-            <li><a href="/services#private-events">Birthday Parties</a></li>
-            <li><a href="/services#private-events">Weddings</a></li>
-            <li><a href="/services#private-events">Social Events</a></li>
+            {privateEventsLinks.map((link, index) => (
+              <li key={index}>
+                <Links name={link.name} href={link.href} />
+              </li>
+            ))}
           </ul>
         </div>
       </motion.section>
@@ -84,18 +109,16 @@ const EventsSection = () => {
         <h2>Creative Services</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.imagesContainer}>
-            <div className={styles.creativeServiceImage}>
-              <Image src={projectImage1} alt="Creative Service 1" />
-            </div>
-            <div className={styles.creativeServiceImage}>
-              <Image src={projectImage2} alt="Creative Service 2" />
-            </div>
+            <ImageBox imageSrc={projectImage1} className={styles.creativeServiceImage} />
+            <ImageBox imageSrc={projectImage2} className={styles.creativeServiceImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            <li><a href="/services#creative-services">Event Concept & Design</a></li>
-            <li><a href="/services#creative-services">Thematic Decor</a></li>
-            <li><a href="/services#creative-services">Entertainment Planning</a></li>
+            {creativeServicesLinks.map((link, index) => (
+              <li key={index}>
+                <Links name={link.name} href={link.href} />
+              </li>
+            ))}
           </ul>
         </div>
       </motion.section>
@@ -111,16 +134,15 @@ const EventsSection = () => {
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.imagesContainer}>
-            <div className={styles.audioVisualImage}>
-              <Image src={projectImage1} alt="Audio Visual" />
-            </div>
+            <ImageBox imageSrc={projectImage1} className={styles.audioVisualImage} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            <li><a href="/services#audio-visual">Sound Systems</a></li>
-            <li><a href="/services#audio-visual">Lighting Design</a></li>
-            <li><a href="/services#audio-visual">LED Screens</a></li>
-            <li><a href="/services#audio-visual">Technical Support</a></li>
+            {audioVisualLinks.map((link, index) => (
+              <li key={index}>
+                <Links name={link.name} href={link.href} />
+              </li>
+            ))}
           </ul>
         </div>
       </motion.section>
