@@ -2,7 +2,6 @@
 import styles from './Hero.module.css';
 import { motion } from "framer-motion";
 import { StaticImageData } from 'next/image';
-import Logo from "@/components/logo/Logo";
 
 interface HeroProps {
   video?: string; 
@@ -41,7 +40,6 @@ const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassNa
         />
       )}
       <div className={styles.heroContent}>
-          <Logo />
         <div className={styles.heroInfo}>
           <motion.h1
             initial={{ x: "100vw", opacity: 0 }} 

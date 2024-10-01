@@ -18,7 +18,14 @@
   color: var(--accent-lime);
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
+.heroLogoContainer {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+}
 .hamburger:hover {
   color: var(--hover-blue);
   transform: scale(1.2);
@@ -114,7 +121,11 @@
   .hamburger {
     display: none;
   }
-
+  .heroLogoContainer{
+    top: -5rem;
+    width: 130px;
+    height: 130px;
+  }
   .navLinks {
     position: static;
     transform: none; 

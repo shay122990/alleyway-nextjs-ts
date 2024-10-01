@@ -1,10 +1,11 @@
 'use client';
+import styles from './Navbar.module.css';
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation'; 
 import Icons from '../../common/icons/Icons';
 import Links from '@/components/common/links/Links'; 
-import styles from './Navbar.module.css';
+import Logo from '@/components/logo/Logo';
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
@@ -36,6 +37,9 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.hamburger} onClick={toggleMenu}>
         {isMenuOpen ? <IoCloseOutline /> : <IoMenuOutline />}
+      </div>
+      <div className={styles.heroLogoContainer}>
+        <Logo />
       </div>
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
         <ul className={styles.menu}>

@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.logoIconContainer}>
-        <div className={styles.logoContainer}>
+        <div className={styles.logoFooterContainer}>
           <Logo />
         </div>
         <div className={styles.socialMedia}>
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul>
               {companyLinks.map(({ href, label }, index) => (
                 <li key={index} className={pathname === href ? styles.active : ''}>
-                  <Links href={href}>{label}</Links> {/* Use Links component here */}
+                  <Links href={href}>{label}</Links> 
                 </li>
               ))}
             </ul>
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul>
               {serviceLinks.map(({ href, label }, index) => (
                 <li key={index} className={pathname === href ? styles.active : ''}>
-                  <Links href={href}>{label}</Links> {/* Use Links component here */}
+                  <Links href={href}>{label}</Links> 
                 </li>
               ))}
             </ul>

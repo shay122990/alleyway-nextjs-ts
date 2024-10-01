@@ -14,8 +14,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.logoContainer{
-    border-radius: 15px;
+.logoFooterContainer{
+    width: 110px;
+    height: 110px;
 }
 .socialMedia{
     display: flex;

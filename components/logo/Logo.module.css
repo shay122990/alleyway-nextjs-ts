@@ -1,19 +1,12 @@
 .logoContainer {
-    /* height: 100px; 
-    width: 100px; */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
+    height: 100%; 
+    width: 100%;
     cursor: pointer;
-    border-radius: 10px;
-    background: #152f445f;
-    box-shadow:   5px 5px 1px #050b10,
-    -5px -5px 1px #112738;
+    border-radius: 15px;
   }
   .logoContainer img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
  }
     
