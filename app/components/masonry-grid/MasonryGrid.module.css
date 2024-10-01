@@ -44,6 +44,8 @@
   font-weight: bold;
   z-index: 2; 
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
   background-color: rgba(0, 0, 0, 0.39);
   padding: 2rem 1rem;
   border-radius: 10px;
