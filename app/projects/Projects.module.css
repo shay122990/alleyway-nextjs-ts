@@ -6,6 +6,29 @@
     color: lime;
     font-size: 16px;
 }
+.section1Projects{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+.section1ProjectsImages{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+.section1ProjectsImages img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.section1Projects p{
+  width: 50%;
+}
 @media (min-width: 768px) {
     .projectsTitle{
       font-size: 50px;

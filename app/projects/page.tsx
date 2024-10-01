@@ -2,6 +2,11 @@ import styles from "./Projects.module.css";
 import Head from 'next/head';
 import aboutImage from "@/public/images/about-image.jpg";
 import Hero from "@/components/layout/hero/Hero";
+import ImageBox from "@/components/common/image-box/Image-Box";
+import projectImage1 from '@/public/images/projects-image1.jpg';
+import projectImage2 from '@/public/images/projects-image2.jpg';
+import projectImage3 from '@/public/images/projects-image3.jpg';
+
 
 
 export default function Project() {
@@ -19,7 +24,15 @@ export default function Project() {
           paragraphClassName={styles.projectsParagraph}
         />
       <main className={styles.main}>
-        Project Page Content 
+        <div className={styles.section1Projects}>
+          <div className={styles.section1ProjectsImages}>
+          <ImageBox imageSrc={projectImage1}/>
+          <ImageBox imageSrc={projectImage2}/>
+          <ImageBox imageSrc={projectImage3}/>
+          <p>The flawless design with effortless solutions</p>
+          </div>
+          
+        </div>
       </main>
     </>
   );
