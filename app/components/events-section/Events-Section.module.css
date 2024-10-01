@@ -1,4 +1,4 @@
-remove anythign repetative .eventsContainer {
+.eventsContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -79,7 +79,7 @@ remove anythign repetative .eventsContainer {
     color: var(--main-text-color);
     position: relative;
     padding-bottom: 8px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
