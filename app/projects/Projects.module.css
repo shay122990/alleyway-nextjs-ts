@@ -7,7 +7,6 @@
     font-size: 16px;
 }
 .projectSection{
-  border-top: 1px solid var(--accent-lime);
   padding: 2rem 0;
   display: flex;
   flex-direction: row;
@@ -77,6 +76,22 @@
   border: 1px;
   background-color: var(--accent-orange);
 }
+/* SECTION 3 */
+.section3ProjectsImages{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section3ProjectsImages img{
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+
 @media (min-width:500px){
   .section1ProjectsImages div:nth-child(3) img{
     width: 180px;

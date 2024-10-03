@@ -43,6 +43,13 @@ export default function Project() {
             </div>
           </div>
           <hr className={styles.section2Hr}/>
+          <div className={styles.projectSection}>
+            <div className={styles.section3ProjectsImages}>
+              <ImageBox imageSrc={projectImage1}/>
+              <ImageBox imageSrc={projectImage2}/>
+              <ImageBox imageSrc={projectImage3}/>
+            </div>
+          </div>
         </div>
       </main>
     </>
