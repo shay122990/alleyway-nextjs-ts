@@ -49,6 +49,16 @@ export default function Project() {
               <ImageBox imageSrc={projectImage3}/>
             </div>
           </div>
+          <div className={styles.projectSection}>
+            <div className={styles.section4ProjectsImages}>
+              <div className={styles.section4Info}>
+                <h2>Stage Up</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <ImageBox imageSrc={projectImage1}/>
+            </div>
+          </div>
         </div>
       </main>
     </>

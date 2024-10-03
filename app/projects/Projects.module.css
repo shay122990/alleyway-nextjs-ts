@@ -14,14 +14,16 @@
   width: 100%;
 }
 /* SECTION 1 */
-.section1ProjectsImages, .section2ProjectsImages, .section3ProjectsImages{
+.section1ProjectsImages, .section2ProjectsImages, .section3ProjectsImages, .section4ProjectsImages{
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
+}
+.section1ProjectsImages{
+  flex-direction: row-reverse;
 }
 .section1ProjectsImages img{
   width: 180px;
@@ -87,7 +89,30 @@
   width: 340px; 
   height: 340px; 
 }
-
+/* SECTION 4 */
+.section4ProjectsImages img{
+  width: 90vw;
+  height: auto;
+  border-radius: 15px;
+}
+.section4Info{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  gap: 1rem;
+}
+.section4Info h2{
+  font-size: 20px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.section4Info p{
+  font-size: 16px;
+  width: 80%;
+  padding-top: 1rem;
+  border-top: 1px solid var(--accent-lime);
+}
 @media (min-width:500px){
   .section1ProjectsImages div:nth-child(3) img{
     width: 180px;
@@ -115,6 +140,25 @@
   .section3ProjectsImages div:nth-child(3)  img{
     width: 180px; 
     height: 180px; 
+  }
+  /* SECTION 4 */
+  .section4ProjectsImages{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+  }
+  .section4Info{
+    width: 40%;
+  }  
+  .section4ProjectsImages img{
+    width: 50vw;
+  }
+  .section4Info h2{
+   font-size: 30px;
+  }
+  .section4Info p{
+    font-size: 18px;
+    width: 70%;
   }
 }
 @media (min-width: 768px) {
