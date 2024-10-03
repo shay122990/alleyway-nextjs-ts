@@ -29,7 +29,7 @@ export default function Project() {
               <ImageBox imageSrc={projectImage1}/>
               <ImageBox imageSrc={projectImage2}/>
               <ImageBox imageSrc={projectImage3}/>
-              <p>The flawless design with effortless solutions</p>
+              <h2>The flawless design with effortless solutions</h2>
             </div>
           </div>
           <div className={styles.projectSection}>
