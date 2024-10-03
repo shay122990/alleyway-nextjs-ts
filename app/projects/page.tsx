@@ -8,7 +8,6 @@ import projectImage2 from '@/public/images/projects-image2.jpg';
 import projectImage3 from '@/public/images/projects-image3.jpg';
 
 
-
 export default function Project() {
   return (
     <>
@@ -30,7 +29,7 @@ export default function Project() {
               <ImageBox imageSrc={projectImage1}/>
               <ImageBox imageSrc={projectImage2}/>
               <ImageBox imageSrc={projectImage3}/>
-            <p>The flawless design with effortless solutions</p>
+              <p>The flawless design with effortless solutions</p>
             </div>
           </div>
           <div className={styles.projectSection}>
