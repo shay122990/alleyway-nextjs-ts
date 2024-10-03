@@ -11,13 +11,13 @@ export default function Footer() {
   const pathname = usePathname(); 
 
   const footerNavItems = [
-    { href: '/services', label: 'About Us' },
+    { href: '/services/#about-us', label: 'About Us' },
     { href: '/contact', label: 'Contact Us' },
     { href: '/privacy-policy', label: 'Privacy Policy' },
-    { href: '/exhibitions', label: 'Exhibitions & Trade Shows' },
-    { href: '/private-events', label: 'Private Events' },
-    { href: '/creative-services', label: 'Creative Services' },
-    { href: '/audio-visual', label: 'Audio & Visual' }
+    { href: '/services/#exhibitions&tradeshows', label: 'Exhibitions & Trade Shows' },
+    { href: '/services/#private-events', label: 'Private Events' },
+    { href: '/services/#creative-services', label: 'Creative Services' },
+    { href: '/services/#audio-visual', label: 'Audio & Visual' }
   ];
 
   const companyLinks = footerNavItems.slice(0, 3);

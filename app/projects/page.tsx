@@ -24,7 +24,7 @@ export default function Project() {
           paragraphClassName={styles.projectsParagraph}
         />
       <main className={styles.main}>
-        <div className={styles.projectSection}>
+        <div className={styles.projectSection} id="exhibitions&tradeshows">
           <div className={styles.section1ProjectsImages}>
             <ImageBox imageSrc={projectImage1}/>
             <ImageBox imageSrc={projectImage2}/>
