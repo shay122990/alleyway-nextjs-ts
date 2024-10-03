@@ -35,10 +35,13 @@ export default function Project() {
         <div className={styles.projectSection}>
           <div className={styles.section2ProjectsImages}>
             <ImageBox imageSrc={projectImage1}/>
+            <div className={styles.section2Info}>
             <h2>The experience</h2>
-            <p>Praesent efficitur sodales elit, sed porta nisl dignissim eget. Fusce vitae pretium ante. Mauris metus urna, porta vitae tincidunt vitae, tristique ac metus. Etiam ultricies auctor imperdiet.</p>
+            <p>Praesent efficitur sodales elit, sed porta nisl dignissim eget. Fusce vitae pretium ante.</p> 
+            </div>
           </div>
         </div>
+        <hr className={styles.section2Hr}/>
       </main>
     </>
   );
