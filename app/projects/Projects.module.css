@@ -6,28 +6,51 @@
     color: lime;
     font-size: 16px;
 }
-.section1Projects{
+.projectSection{
+  border-top: 1px solid var(--accent-lime);
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   width: 100%;
 }
-.section1ProjectsImages{
+.section1ProjectsImages, .section2ProjectsImages{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
 }
 .section1ProjectsImages img{
-  width: 200px;
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+}
+.section1ProjectsImages div:nth-child(3) img {
+  width: 250px;
+  height:280px;
+}
+.section1ProjectsImages p{
+  width: 20%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.section2ProjectsImages img{
+  width: 280px;
   height: 200px;
   border-radius: 15px;
 }
-.section1Projects p{
-  width: 50%;
+@media (min-width:500px){
+  .section1ProjectsImages div:nth-child(3) img{
+    width: 180px;
+    height: 180px;
+  }
+  .section1ProjectsImages p{
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
     .projectsTitle{
@@ -36,6 +59,12 @@
     .projectsParagraph{
       font-size: 24px;
     }
+    .section1ProjectsImages p{
+      width: 20%;
+      text-align: left;
+      font-size: 26px;
+    }
+    
   }
   @media (min-width: 1024px) {
     .projectsTitle{
@@ -43,5 +72,21 @@
     }
     .projectsParagraph{
       font-size: 32px;
+    }
+    .section1ProjectsImages{
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .section1ProjectsImages img{
+      width: 380px;
+      height: 380px;
+    }
+    .section1ProjectsImages div:nth-child(3) img{
+      width: 380px;
+      height: 380px;
+    } 
+    .section1ProjectsImages p{
+      width: 20%;
+      padding: 0 0 0 2rem;
     }
   }

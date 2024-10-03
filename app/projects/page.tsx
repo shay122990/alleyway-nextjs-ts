@@ -24,14 +24,20 @@ export default function Project() {
           paragraphClassName={styles.projectsParagraph}
         />
       <main className={styles.main}>
-        <div className={styles.section1Projects}>
+        <div className={styles.projectSection}>
           <div className={styles.section1ProjectsImages}>
-          <ImageBox imageSrc={projectImage1}/>
-          <ImageBox imageSrc={projectImage2}/>
-          <ImageBox imageSrc={projectImage3}/>
+            <ImageBox imageSrc={projectImage1}/>
+            <ImageBox imageSrc={projectImage2}/>
+            <ImageBox imageSrc={projectImage3}/>
           <p>The flawless design with effortless solutions</p>
           </div>
-          
+        </div>
+        <div className={styles.projectSection}>
+          <div className={styles.section2ProjectsImages}>
+            <ImageBox imageSrc={projectImage1}/>
+            <h2>The experience</h2>
+            <p>Praesent efficitur sodales elit, sed porta nisl dignissim eget. Fusce vitae pretium ante. Mauris metus urna, porta vitae tincidunt vitae, tristique ac metus. Etiam ultricies auctor imperdiet.</p>
+          </div>
         </div>
       </main>
     </>
