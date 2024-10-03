@@ -21,7 +21,7 @@ export default function Home() {
           titleClassName={styles.homeTitle}
           paragraphClassName={styles.homeParagraph} 
         />
-        <main>
+        <main className={styles.main}>
           <EventsSection />
           <Banner />
           <MasonryGrid />
