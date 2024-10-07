@@ -6,6 +6,7 @@ import ImageBox from "@/components/common/image-box/Image-Box";
 import projectImage1 from '@/public/images/projects-image1.jpg';
 import projectImage2 from '@/public/images/projects-image2.jpg';
 import projectImage3 from '@/public/images/projects-image3.jpg';
+import projectImage4 from '@/public/images/projects-image4.jpg';
 
 
 export default function Project() {
@@ -57,6 +58,15 @@ export default function Project() {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <ImageBox imageSrc={projectImage1}/>
+            </div>
+          </div>
+          <div className={styles.projectSection}>
+            <hr className={styles.section5Hr}/>
+            <div className={styles.section5ProjectsImages}>
+              <ImageBox imageSrc={projectImage1}/>
+              <ImageBox imageSrc={projectImage2}/>
+              <ImageBox imageSrc={projectImage3}/>
+              <ImageBox imageSrc={projectImage4}/>
             </div>
           </div>
         </div>
