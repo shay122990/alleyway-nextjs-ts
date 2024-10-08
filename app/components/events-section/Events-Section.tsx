@@ -25,7 +25,6 @@ const EventsSection = () => {
   const [refCreative, inViewCreative] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  // Link data for each section
   const exhibitionsLinks = [
     { name: 'Booth Design & Set Up', href: '/services#exhibitions' },
     { name: 'Logistics Management', href: '/services#exhibitions' },
