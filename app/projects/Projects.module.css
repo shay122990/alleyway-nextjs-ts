@@ -27,13 +27,13 @@
   flex-direction: row-reverse;
 }
 .section1ProjectsImages img{
-  width: 180px;
-  height: 180px;
+  width: 40vw;
+  height: auto;
   border-radius: 15px;
 }
 .section1ProjectsImages div:nth-child(3) img {
-  width: 250px;
-  height:280px;
+  width: 60vw;
+  height:auto;
 }
 .section1ProjectsImages h2{
   width: 30%;
@@ -53,8 +53,8 @@
   overflow: hidden;
 }
 .section2ProjectsImages img{
-  width: 260px;
-  height: 200px;
+  width: 50vw;
+  height: auto;
 }
 .section2Info{
   display: flex;
@@ -83,13 +83,13 @@
 /* SECTION 3 */
 
 .section3ProjectsImages img {
-  width: 180px;
-  height: 180px;
+  width: 40vw;
+  height: auto;
   border-radius: 15px;
 }
 .section3ProjectsImages div:nth-child(3) img{
-  width: 340px; 
-  height: 340px; 
+  width: 90vw; 
+  height: auto; 
 }
 /* SECTION 4 */
 .section4ProjectsImages img{
