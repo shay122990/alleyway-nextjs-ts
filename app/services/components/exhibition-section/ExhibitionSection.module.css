@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
+    background: rgb(1, 17, 139);
+    width: 100%;
+    padding:2rem 0;
 }
 .exhibitionsInfoContainer{
     display: flex;
