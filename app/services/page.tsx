@@ -1,11 +1,32 @@
 import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
-import ImageInfoBox from "./components/image-info-box/ImageInfoBox";
+import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
 import projectsImage from "@/public/images/projects-image.jpg";
-
+import serviceImage1 from '@/public/images/projects-image1.jpg';
 
 export default function Services() {
+  const exhibitionData = [
+    {
+      title: "Booth Design & Set up",
+      description: "We create eye-catching, custom booth designs that make your brand stand out. From concept to setup, we ensure your booth captures attention and delivers a memorable experience, driving engagement and leaving a lasting impact.",
+      imageSrc: serviceImage1,
+      href: "/projects/#exhibitions&tradeshows"
+    },
+    {
+      title: "Logistics Management",
+      description: "We manage all logistical aspects of your event, ensuring smooth operations and timely deliveries.",
+      imageSrc: serviceImage1,
+      href: "/projects/#exhibitions&tradeshows"
+    },
+    {
+      title: "On-site Coordination",
+      description: "Our experienced team ensures everything runs smoothly on the event day, from setup to teardown.",
+      imageSrc: serviceImage1,
+      href: "/projects/#exhibitions&tradeshows"
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -20,21 +41,21 @@ export default function Services() {
         paragraphClassName={styles.servicesParagraph}
       />
       <main className={styles.main}>
-          <div className={styles.serviceSection} id="exhibitions&tradeshows">
-            <ImageInfoBox/>
-          </div>
-          <div className={styles.serviceSection} id="private-events">
-            <h2>Private Events</h2>
-          </div>
-          <div className={styles.serviceSection} id="creative-services">
-            <h2>Creative Services</h2>
-          </div>
-          <div className={styles.serviceSection} id="audio&visual">
-            <h2>Audio & Visual</h2>
-          </div>
-          <div className={styles.serviceSection} id="other-services">
-            <h2>Other Services</h2>
-          </div>
+        <div className={styles.serviceSection} id="exhibitions&tradeshows">
+          <ExhibitionSection exhibitionData={exhibitionData} />
+        </div>
+        <div className={styles.serviceSection} id="private-events">
+          <h2>Private Events</h2>
+        </div>
+        <div className={styles.serviceSection} id="creative-services">
+          <h2>Creative Services</h2>
+        </div>
+        <div className={styles.serviceSection} id="audio&visual">
+          <h2>Audio & Visual</h2>
+        </div>
+        <div className={styles.serviceSection} id="other-services">
+          <h2>Other Services</h2>
+        </div>
       </main>
     </>
   );
