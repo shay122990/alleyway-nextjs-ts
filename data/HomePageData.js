@@ -8,7 +8,7 @@ import projectImage6 from "@/public/images/projects-image6.jpg";
 export const homePageData = {
   exhibitions: {
     title: "Exhibitions & Trade Shows",
-    images: [projectImage1],
+    images: [{ src: projectImage1, width: 4569, height: 3046 }],
     links: [
       { name: "Booth Design & Set Up", href: "/services#exhibitions" },
       { name: "Logistics Management", href: "/services#exhibitions" },
@@ -17,7 +17,10 @@ export const homePageData = {
   },
   privateEvents: {
     title: "Private Events",
-    images: [projectImage2, projectImage3],
+    images: [
+      { src: projectImage2, width: 4480, height: 6720 },
+      { src: projectImage3, width: 2912, height: 4368 },
+    ],
     links: [
       { name: "Anniversary", href: "/services/private-events" },
       { name: "Birthday Parties", href: "/services#private-events" },
@@ -27,7 +30,10 @@ export const homePageData = {
   },
   creativeServices: {
     title: "Creative Services",
-    images: [projectImage4, projectImage5],
+    images: [
+      { src: projectImage4, width: 4016, height: 6016 },
+      { src: projectImage5, width: 5472, height: 3648 },
+    ],
     links: [
       { name: "Event Concept & Design", href: "/services#creative-services" },
       { name: "Thematic Decor", href: "/services#creative-services" },
@@ -36,7 +42,7 @@ export const homePageData = {
   },
   audioVisual: {
     title: "Audio Visual",
-    images: [projectImage6],
+    images: [{ src: projectImage6, width: 5000, height: 6720 }],
     links: [
       { name: "Sound Systems", href: "/services#audio-visual" },
       { name: "Lighting Design", href: "/services#audio-visual" },
