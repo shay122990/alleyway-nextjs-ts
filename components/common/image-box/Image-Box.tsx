@@ -17,7 +17,6 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
       priority={true}
       width={width}   
       height={height} 
-      style={{ objectFit: 'cover' }} 
       className={`${styles.imageBox} ${className}`}
     />
   );

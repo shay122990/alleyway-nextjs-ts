@@ -6,83 +6,78 @@
     color: lime;
     font-size: 16px;
 }
-.projectSection{
-  padding: 2rem 0;
+/* PROJECT SECTION 1 */
+.projectSection1{
   display: flex;
   flex-direction: row;
-  position: relative;
-  gap: 1rem;
-  width: 100%;
-}
-/* SECTION 1 */
-.section1ProjectsImages, .section2ProjectsImages, .section3ProjectsImages, .section4ProjectsImages, .section5ProjectsImages{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+}
+.exhibitionsRow1 , .exhibitionsRow2{
+  display: flex;
   gap: 1rem;
-  width: 100%;
-}
-.section1ProjectsImages{
-  flex-direction: row-reverse;
-}
-.section1ProjectsImages img{
-  width: 40vw;
-  height: auto;
-  border-radius: 15px;
-}
-.section1ProjectsImages div:nth-child(3) img {
-  width: 60vw;
-  height:auto;
-}
-.section1ProjectsImages h2{
-  width: 30%;
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 1.5rem;
-}
-.section2ProjectsImages img{
-  width: 280px;
-  height: 200px;
-  border-radius: 15px;
-}
-/* SECTION 2 */
-.section2ProjectsImages{
+  justify-content: space-between;
+  flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  align-items: center;
+  padding: 2rem 0;
 }
-.section2ProjectsImages img{
-  width: 50vw;
+.exhibitionsRow1 img{
+  width: 46%;
   height: auto;
 }
-.section2Info{
+.exhibitionsRow2 img {
+  width: 70%; 
+  height: auto;
+}
+.exhibitionsRow2 h2 {
+  font-size: 16px;
+  width: 20%;
+}
+
+/* PROJECT SECTION 2 */
+.projectSection2{
+  margin: 2rem 0;
+}
+.exhibitionSection2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.exhibitionSection2 img{
+  width: 60%;
+  height: auto;
+}
+.exhibitionSection2Info{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 1rem;
   width: 30%;
-  height: 100%;
+  border-right: 1px solid var(--accent-orange);
 }
-.section2ProjectsImages h2{
+.exhibitionSection2Info h2{
   font-size: 14px;
   text-transform: uppercase;
   color: var(--accent-lime);
 }
-.section2ProjectsImages p{
+.exhibitionSection2Info p{
+  height: 100px;
   font-size: 14px;
   padding-right: 1rem;
-  border-right: 1px solid var(--accent-orange);
 }
 .section2Hr{
-  width: 60%;
+  margin: 1rem 0;
+  width: 80%;
   height: 2px;
   border: 1px;
   background-color: var(--accent-orange);
 }
 /* SECTION 3 */
 
-.section3ProjectsImages img {
+/* .section3ProjectsImages img {
   width: 40vw;
   height: auto;
   border-radius: 15px;
@@ -90,9 +85,9 @@
 .section3ProjectsImages div:nth-child(3) img{
   width: 90vw; 
   height: auto; 
-}
+} */
 /* SECTION 4 */
-.section4ProjectsImages img{
+/* .section4ProjectsImages img{
   width: 90vw;
   height: auto;
   border-radius: 15px;
@@ -114,9 +109,9 @@
   width: 80%;
   padding-top: 1rem;
   border-top: 1px solid var(--accent-lime);
-}
+} */
 /* SECTION 5 */
-.section5ProjectsImages img{
+/* .section5ProjectsImages img{
   width: 40vw;
   height: auto;
   border-radius: 15px;
@@ -129,23 +124,9 @@
   height: 1px;
   border: 1px;
   background-color: var(--accent-lime);
-}
+} */
 @media (min-width:500px){
-  .section1ProjectsImages div:nth-child(3) img{
-    width: 180px;
-    height: 180px;
-  }
-  .section1ProjectsImages h2{
-    width: 100%;
-    text-align: center;
-  }
-  /* Section 2 */
-  .section2ProjectsImages{
-    gap: 4rem;
-  }
-  .section2Info{
-    justify-content: center;
-  }
+
   .section2ProjectsImages h2{
     padding-left: 1rem;
   }
@@ -154,12 +135,10 @@
     border-left: 1px solid var(--accent-orange);
     border-right: none;
   }
-  /* section 3 */
   .section3ProjectsImages div:nth-child(3)  img{
     width: 180px; 
     height: 180px; 
   }
-  /* SECTION 4 */
   .section4ProjectsImages{
     flex-direction: row;
     flex-wrap: nowrap;
@@ -180,26 +159,37 @@
   }
 }
 @media (min-width: 768px) {
-    .projectsTitle{
-      font-size: 50px;
-    }
-    .projectsParagraph{
-      font-size: 24px;
-    }
-    .section1ProjectsImages h2{
-      width: 20%;
-      text-align: left;
-      font-size: 26px;
-    }
-    /* SECTION 2 */
-    .section2ProjectsImages h2{
-      font-size: 26px;
-      padding: 0;
-    }
-    .section2ProjectsImages p{
-      font-size: 20px;
-    }
+  .projectsTitle{
+    font-size: 50px;
   }
+  .projectsParagraph{
+    font-size: 24px;
+  }
+  .exhibitionsRow1 , .exhibitionsRow2{
+    width: 50%;
+  }
+  .exhibitionsRow2{
+    flex-direction: column-reverse;
+  }
+  .exhibitionsRow2 img {
+    width: 68%;
+    height: auto; 
+  }
+  .exhibitionsRow2 h2 {
+    font-size: 20px;
+    width: 50%;
+  }
+  .projectSection2{
+    margin: 2rem 0;
+  }
+  .exhibitionSection2Info h2{
+    font-size: 26px;
+  }
+  .exhibitionSection2Info p{
+    font-size: 20px;
+  }
+    
+}
   @media (min-width: 1240px){
     .projectsTitle{
       font-size: 100px;
@@ -207,45 +197,34 @@
     .projectsParagraph{
       font-size: 32px;
     }
-    .section1ProjectsImages, .section2ProjectsImages{
-      flex-direction: row;
-      justify-content: flex-start;
+    .exhibitionsRow2{
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
     }
-    .section1ProjectsImages img{
-      width: 380px;
-      height: 380px;
+    .exhibitionsRow2 img {
+      width: 58%;
+      height: auto; 
     }
-    .section1ProjectsImages div:nth-child(3) img{
-      width: 380px;
-      height: 380px;
+    .exhibitionsRow2 h2 {
+      font-size: 28px;
+      width: 18%;
     }
-    .section1ProjectsImages h2{
-      padding: 0 0 0 2rem;
-      line-height: 3rem;
+    .exhibitionSection2{
+      justify-content: space-between;
     }
-     /*section2  */
-    .section2Info{
-      width:30%;
+    .exhibitionSection2Info{
+      border-right: none;
     }
-    .section2ProjectsImages{
-      gap: 20rem;
-    }
-    .section2ProjectsImages img{
-      width: 100%;
-      height: 480px;
-    }
-    .section2ProjectsImages h2{
-      font-size: 50px;
-    }
-    .section2ProjectsImages p{
-      width: 70%;
-      font-size: 30px;
+    .exhibitionSection2Info p{
+      border-left:1px solid var(--accent-orange);
+      padding: 5px;
+      margin-left: 6px;
     }
     .section2Hr{
       width: 90%;
+      margin: 4rem 0;
     }
-    /* section 3 */
-    .section3ProjectsImages{
+    /* .section3ProjectsImages{
       gap: 4rem;
     }
     .section3ProjectsImages div:nth-child(1) img,
@@ -256,5 +235,5 @@
     .section3ProjectsImages div:nth-child(2)  img{
       width: 480px; 
       height: 580px; 
-    }
+    } */
   }
