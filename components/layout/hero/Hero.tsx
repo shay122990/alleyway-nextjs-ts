@@ -1,11 +1,11 @@
-"use client";
+"use client"
 import styles from './Hero.module.css';
 import { motion } from "framer-motion";
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface HeroProps {
   video?: string; 
-  image?: string | StaticImageData; 
+  image?: string | StaticImageData | undefined; 
   title: string;
   paragraph: string;
   titleClassName?: string;
@@ -13,12 +13,10 @@ interface HeroProps {
 }
 
 const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
-  const backgroundImage = typeof image === 'string' ? image : image?.src;
+  const backgroundImage = typeof image === 'string' ? image : image ? image.src : undefined;
 
   return (
-    <motion.div 
-      className={styles.hero}
-    > 
+    <motion.div className={styles.hero}>
       {video && (
         <video 
           className={styles.backgroundVideo} 
@@ -33,10 +31,13 @@ const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassNa
           Your browser does not support the video tag.
         </video>
       )}
-      {image && !video && (
-        <div 
-          className={styles.backgroundImage} 
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+      {image && !video && backgroundImage && (
+        <Image 
+          src={backgroundImage} 
+          alt="Hero Image" 
+          fill 
+          style={{ objectFit: 'cover' }} 
+          className={styles.backgroundImage}
         />
       )}
       <div className={styles.heroContent}>
