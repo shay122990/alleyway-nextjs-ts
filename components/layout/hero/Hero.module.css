@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #152f446b; 
+  background-color: #071e316b; 
   z-index: 1; 
   pointer-events: none; 
 }
@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .heroContent {

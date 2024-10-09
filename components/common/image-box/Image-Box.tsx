@@ -19,7 +19,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
         width={width}   
         height={height} 
         objectFit='fill'
-        className={styles.imageBox}
+        className={`${styles.imageBox} ${className}`}
       />
     </>
   );

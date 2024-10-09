@@ -63,8 +63,8 @@ const EventsSection = () => {
       >
         <h2>Exhibitions & Trade Shows</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
-          <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage1} className={styles.exhibitionImage} />
+          <div className={styles.exhibitionImages}>
+            <ImageBox imageSrc={projectImage1} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -87,9 +87,9 @@ const EventsSection = () => {
       >
         <h2>Private Events</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
-          <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage2} className={styles.privateEventImage} />
-            <ImageBox imageSrc={projectImage3} className={styles.privateEventImage} />
+          <div className={styles.privateEventImages}>
+            <ImageBox imageSrc={projectImage2} />
+            <ImageBox imageSrc={projectImage3} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -112,9 +112,9 @@ const EventsSection = () => {
       >
         <h2>Creative Services</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
-          <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage4} className={styles.creativeServiceImage} />
-            <ImageBox imageSrc={projectImage5} className={styles.creativeServiceImage} />
+          <div className={styles.creativeServiceImages}>
+            <ImageBox imageSrc={projectImage4} />
+            <ImageBox imageSrc={projectImage5} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
@@ -137,8 +137,8 @@ const EventsSection = () => {
       >
         <h2>Audio Visual</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
-          <div className={styles.imagesContainer}>
-            <ImageBox imageSrc={projectImage6} className={styles.audioVisualImage} />
+          <div className={styles.audioVisualImages}>
+            <ImageBox imageSrc={projectImage6} />
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />

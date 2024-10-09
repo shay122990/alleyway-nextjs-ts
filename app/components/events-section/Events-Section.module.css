@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    margin: 2rem 0;
   }
 .eventSection{
     width: 100%;
@@ -11,54 +9,99 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    height: auto;
     gap: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 30px 10px;
 } 
 .eventSection h2 {
+    width: 100%;
     margin: 0;
     font-size: 20px;
     color: var(--accent-lime);
     text-transform: uppercase;
 }
-.imageAndLinksContainer {
+/* EXHIBITIONS SECTION */
+.exhibition{
     display: flex;
-    width: 100%;
-    height: 260px;
-    gap: 1rem;
-}
-.imagesContainer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 70%;
-}
-  
-.imagesContainer img {
-    width: 100%;
-    height: 180px;
-}
-
-.imageAndLinksContainer.exhibition,
-.imageAndLinksContainer.creative {
     flex-direction: row-reverse;
-    padding:0 15px;
-    border-radius: 10px;
-    border: 1px solid lime;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
 }
-
-.imageAndLinksContainer.private,
-.imageAndLinksContainer.audio {
+.exhibitionImages{
+    width: 55vw;
+}
+.exhibitionImages img{
+    width: 100%;
+    height:auto;
+}
+/* PRIVATE SECTION */
+.private{
+    display: flex;
     flex-direction: row;
-    border-radius: 10px;
-    padding:0 15px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
 }
+.privateEventImages{
+    display: flex;
+    flex-direction: row;
+    width: 25vw;
+    gap: 1rem;
+}
+.privateEventImages img{
+    width: 100%;
+    height: auto;
+}
+/* CREATIVE SECTION */
+.creative{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.creativeServiceImages{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    width: 25vw;
+    gap: 1rem;
+}
+.creativeServiceImages img{
+    width: 100%;
+    height: auto;
+}
+/* AUDIO & VISUAL SECTION */
+.audio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.audioVisualImages{
+    width: 55vw;
+}
+.audioVisualImages img{
+    width: 100%;
+    height: auto;
+}
+/* ------------------------------LINKS */
 .linksContainer {
     display: flex;
     flex-direction: column;
     text-align: start;
-    justify-content: center;
-    flex: 1;
-    width: 30%;
+    justify-content: center; 
+    width: 30%;  
 } 
   
 .linksContainer ul {
@@ -99,26 +142,11 @@
 }
 .arrowIconDown{
     display: none;
-}
+} 
 
-@media (min-width: 768px) {
-    .eventsContainer{
-        gap: 3rem;
-    }
-    .eventSection {
-        gap: 3rem;
-        margin-bottom: 0;
-    }
+ @media (min-width: 768px) {
     .eventSection h2 {
         font-size: 24px;
-    }
-    .imageAndLinksContainer {
-        height: auto;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-    .imagesContainer img {
-        height: 400px;
     }
     .linksContainer {
         text-align: center;
@@ -127,26 +155,24 @@
     .linksContainer a {
         font-size: 20px;
     }
-    .imageAndLinksContainer.exhibition,
-    .imageAndLinksContainer.creative,  
-    .imageAndLinksContainer.private,
-    .imageAndLinksContainer.audio  {
-        padding: 40px 10px;
-    }
+
 }
 @media (min-width:1024px) {
-    .eventSection h2{
-        width: 40%;
+    .eventSection h2 {
+        font-size: 40px;
+        padding-bottom: 2rem;
     }
-    .imagesContainer{
-        width:60%;
-        height:100%;
+    .exhibitionImages, .audioVisualImages{
+        width: 60vw;
+        gap: 1rem;
     }
-    .imagesContainer img{
-        height: 680px;
+    .privateEventImages, .creativeServiceImages{
+        width: 30vw;
+        gap: 2rem;
     }
     .linksContainer{
         position: relative;
+        height: 50vh;
     }
     .linksContainer .arrowIconDown {
         width: 100%;
@@ -158,7 +184,6 @@
         top: 0;
         left: 0;
     }
-
     .linksContainer a{
         font-size: 28px;
         text-transform: uppercase;
@@ -170,4 +195,4 @@
         text-align: center;
         align-items: flex-end;
     }
-}
+} 
