@@ -3,21 +3,26 @@ import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import homeImage from "@/public/images/header-home.jpg";
 
-
 const PrivacyPolicy = () => {
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
   return (
     <>
       <Head>
         <title>Privacy Policy - Alleyway</title>
         <meta name="description" content="Alleyway - Privacy Policy" />
       </Head>
-        <Hero 
-          image={homeImage}  
-          title="Privacy Policy" 
-          paragraph="Your privacy is your business" 
-          titleClassName={styles.privacyTitle}
-          paragraphClassName={styles.privacyParagraph}
-        />
+      <Hero 
+        image={homeImage}  
+        title="Privacy Policy" 
+        paragraph="Your privacy is your business" 
+        titleClassName={styles.privacyTitle}
+        paragraphClassName={styles.privacyParagraph}
+      />
       <main className={styles.privacyContainer}>
         <h1>Privacy Policy AlleyWay</h1>
         <p>
@@ -74,11 +79,13 @@ const PrivacyPolicy = () => {
         <h2>7. Contact Us</h2>
         <p>
           If you have any questions regarding our Privacy Policy or how your
-          information is handled, feel free to reach out to us at
-          <strong> [email address]</strong>.
+          information is handled, feel free to reach out to us at{" "}
+          <a href="mailto:hello@alleywaydxb.com" className={styles.emailLink}>
+            hello@alleywaydxb.com
+          </a>.
         </p>
 
-        <p>Last Updated: [Insert Date]</p>
+        <p>Last Updated: {currentDate}</p> 
       </main>
     </>
   );
