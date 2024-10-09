@@ -11,7 +11,12 @@ import projectImage3 from '@/public/images/projects-image3.jpg';
 import projectImage4 from '@/public/images/projects-image4.jpg';
 import projectImage5 from '@/public/images/projects-image5.jpg';
 import projectImage6 from '@/public/images/projects-image6.jpg';
-
+import { 
+  exhibitionsLinks, 
+  privateEventsLinks, 
+  creativeServicesLinks, 
+  audioVisualLinks 
+} from '@/data/EventLinksData'; 
 
 const sectionVariants = {
   hidden: { opacity: 0, scale: 0.8, x: 0 }, 
@@ -24,32 +29,6 @@ const EventsSection = () => {
   const [refPrivate, inViewPrivate] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [refCreative, inViewCreative] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
-
-  const exhibitionsLinks = [
-    { name: 'Booth Design & Set Up', href: '/services#exhibitions' },
-    { name: 'Logistics Management', href: '/services#exhibitions' },
-    { name: 'On-site Coordination', href: '/services#exhibitions' },
-  ];
-
-  const privateEventsLinks = [
-    { name: 'Anniversary', href: '/services/private-events' },
-    { name: 'Birthday Parties', href: '/services#private-events' },
-    { name: 'Weddings', href: '/services#private-events' },
-    { name: 'Social Events', href: '/services#private-events' },
-  ];
-
-  const creativeServicesLinks = [
-    { name: 'Event Concept & Design', href: '/services#creative-services' },
-    { name: 'Thematic Decor', href: '/services#creative-services' },
-    { name: 'Entertainment Planning', href: '/services#creative-services' },
-  ];
-
-  const audioVisualLinks = [
-    { name: 'Sound Systems', href: '/services#audio-visual' },
-    { name: 'Lighting Design', href: '/services#audio-visual' },
-    { name: 'LED Screens', href: '/services#audio-visual' },
-    { name: 'Technical Support', href: '/services#audio-visual' },
-  ];
 
   return (
     <div className={styles.eventsContainer}>
