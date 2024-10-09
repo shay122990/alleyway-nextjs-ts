@@ -17,6 +17,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
       priority={true}
       width={width}   
       height={height} 
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       layout='responsive'
       className={`${styles.imageBox} ${className}`}
     />

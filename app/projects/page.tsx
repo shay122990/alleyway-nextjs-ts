@@ -13,6 +13,8 @@ export default function Project() {
         <meta name="description" content="The projects we've successfully completed" />
       </Head>
       <Hero 
+        width={1920}
+        height={1536}
         image={aboutImage} 
         title="Always up to the challenge!" 
         paragraph="The Projects we've successfully completed"
@@ -20,27 +22,27 @@ export default function Project() {
         paragraphClassName={styles.projectsParagraph}
       />
       <main className={styles.main}>
-        <div className={styles.projectSection1} id="exhibitions&tradeshows">
+        {/* <div className={styles.projectSection1} id="exhibitions&tradeshows">
           <div className={styles.exhibitionsRow1}>
-            <ImageBox imageSrc={projectsPageImages.image3} />
-            <ImageBox imageSrc={projectsPageImages.image2} />
+            <ImageBox imageSrc={projectsPageImages.image3} width={2912} height={4368}/>
+            <ImageBox imageSrc={projectsPageImages.image2} width={4480} height={6720}/>
           </div>
           <div className={styles.exhibitionsRow2}>
             <h2>The flawless design with effortless solutions</h2>
-            <ImageBox imageSrc={projectsPageImages.image1} />
+            <ImageBox imageSrc={projectsPageImages.image1} width={4569} height={3046} />
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.projectSection2}>
+        {/* <div className={styles.projectSection2}>
           <div className={styles.exhibitionSection2}>
-            <ImageBox imageSrc={projectsPageImages.image1} />
+            <ImageBox imageSrc={projectsPageImages.image1} width={4569} height={3046} />
             <div className={styles.exhibitionSection2Info}>
               <h2>The experience</h2>
               <p>Praesent efficitur sodales elit, sed porta nisl dignissim eget. Fusce vitae pretium ante.</p> 
             </div>
           </div>
           <hr className={styles.section2Hr} />
-        </div>
+        </div> */}
         {/* <div className={styles.projectSection} id="private-events">
           <div className={styles.section3ProjectsImages}>
             <ImageBox imageSrc={projectsPageImages.image1} />

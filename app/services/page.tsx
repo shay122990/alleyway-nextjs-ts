@@ -34,6 +34,8 @@ export default function Services() {
         <meta name="description" content="Comprehensive event management services in Dubai" />
       </Head>
       <Hero 
+        width={1920}
+        height={1080}
         image={projectsImage} 
         title="What We Do" 
         paragraph="At Alleyway, we offer a comprehensive range of event management services designed to make your event memorable and stress-free." 

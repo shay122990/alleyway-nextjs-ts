@@ -15,6 +15,8 @@ export default function Home() {
         <meta name="description" content="Alleyway - Plan Any Event With Us " />
       </Head>
         <Hero 
+          width={3840}
+          height={2160}
           video={homeVideo}  
           title="The Events Management Company" 
           paragraph="We provide top-notch services to meet your needs." 

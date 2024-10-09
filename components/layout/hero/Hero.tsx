@@ -10,6 +10,8 @@ interface HeroProps {
   paragraph: string;
   titleClassName?: string;
   paragraphClassName?: string;
+  width?: number; 
+  height?: number; 
 }
 
 const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
@@ -19,6 +21,7 @@ const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassNa
     <motion.div className={styles.hero}>
       {video && (
         <video 
+          width={1200}
           className={styles.backgroundVideo} 
           autoPlay 
           loop 

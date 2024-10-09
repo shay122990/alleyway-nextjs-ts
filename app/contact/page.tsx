@@ -12,6 +12,8 @@ export default function Contact() {
         <meta name="description" content="Get in touch with Alleyway" />
       </Head>
         <Hero 
+          width={1920}
+          height={1440}
           image={contactImage} 
           title='Contact Us'
           paragraph="Let Us Make Your Life Easier"
