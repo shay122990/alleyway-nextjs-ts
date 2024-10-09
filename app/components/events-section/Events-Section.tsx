@@ -5,18 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import ImageBox from '@/components/common/image-box/Image-Box';
 import Links from '@/components/common/links/Links';
 import { IoIosArrowDown } from 'react-icons/io';
-import projectImage1 from '@/public/images/projects-image1.jpg';
-import projectImage2 from '@/public/images/projects-image2.jpg';
-import projectImage3 from '@/public/images/projects-image3.jpg';
-import projectImage4 from '@/public/images/projects-image4.jpg';
-import projectImage5 from '@/public/images/projects-image5.jpg';
-import projectImage6 from '@/public/images/projects-image6.jpg';
-import { 
-  exhibitionsLinks, 
-  privateEventsLinks, 
-  creativeServicesLinks, 
-  audioVisualLinks 
-} from '@/data/EventLinksData'; 
+import { homePageData } from '@/data/HomePageData'; 
 
 const sectionVariants = {
   hidden: { opacity: 0, scale: 0.8, x: 0 }, 
@@ -40,14 +29,16 @@ const EventsSection = () => {
         animate={inViewExhibition ? sectionVariants.visible : sectionVariants.exit}
         className={`${styles.eventSection} ${styles.exhibitionSection}`}
       >
-        <h2>Exhibitions & Trade Shows</h2>
+        <h2>{homePageData.exhibitions.title}</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.exhibitionImages}>
-            <ImageBox imageSrc={projectImage1} />
+            {homePageData.exhibitions.images.map((image, index) => (
+              <ImageBox key={index} imageSrc={image} />
+            ))}
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            {exhibitionsLinks.map((link, index) => (
+            {homePageData.exhibitions.links.map((link, index) => (
               <li key={index}>
                 <Links href={link.href}>{link.name}</Links> 
               </li>
@@ -64,15 +55,16 @@ const EventsSection = () => {
         animate={inViewPrivate ? sectionVariants.visible : sectionVariants.exit}
         className={`${styles.eventSection} ${styles.privateSection}`}
       >
-        <h2>Private Events</h2>
+        <h2>{homePageData.privateEvents.title}</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.privateEventImages}>
-            <ImageBox imageSrc={projectImage2} />
-            <ImageBox imageSrc={projectImage3} />
+            {homePageData.privateEvents.images.map((image, index) => (
+              <ImageBox key={index} imageSrc={image} />
+            ))}
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            {privateEventsLinks.map((link, index) => (
+            {homePageData.privateEvents.links.map((link, index) => (
               <li key={index}>
                 <Links href={link.href}>{link.name}</Links> 
               </li>
@@ -89,15 +81,16 @@ const EventsSection = () => {
         animate={inViewCreative ? sectionVariants.visible : sectionVariants.exit}
         className={`${styles.eventSection} ${styles.creativeSection}`}
       >
-        <h2>Creative Services</h2>
+        <h2>{homePageData.creativeServices.title}</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.creativeServiceImages}>
-            <ImageBox imageSrc={projectImage4} />
-            <ImageBox imageSrc={projectImage5} />
+            {homePageData.creativeServices.images.map((image, index) => (
+              <ImageBox key={index} imageSrc={image} />
+            ))}
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            {creativeServicesLinks.map((link, index) => (
+            {homePageData.creativeServices.links.map((link, index) => (
               <li key={index}>
                 <Links href={link.href}>{link.name}</Links> 
               </li>
@@ -114,14 +107,16 @@ const EventsSection = () => {
         animate={inViewAudio ? sectionVariants.visible : sectionVariants.exit}
         className={`${styles.eventSection} ${styles.audioSection}`}
       >
-        <h2>Audio Visual</h2>
+        <h2>{homePageData.audioVisual.title}</h2>
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.audioVisualImages}>
-            <ImageBox imageSrc={projectImage6} />
+            {homePageData.audioVisual.images.map((image, index) => (
+              <ImageBox key={index} imageSrc={image} />
+            ))}
           </div>
           <ul className={styles.linksContainer}>
             <IoIosArrowDown className={styles.arrowIconDown} />
-            {audioVisualLinks.map((link, index) => (
+            {homePageData.audioVisual.links.map((link, index) => (
               <li key={index}>
                 <Links href={link.href}>{link.name}</Links>
               </li>
