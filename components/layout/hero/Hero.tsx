@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import styles from './Hero.module.css';
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from 'next/image';
 
 interface HeroProps {
-  video?: string; 
   image?: string | StaticImageData | undefined; 
   title: string;
   paragraph: string;
@@ -14,32 +13,20 @@ interface HeroProps {
   height?: number; 
 }
 
-const Hero = ({ video, image, title, paragraph, titleClassName, paragraphClassName }: HeroProps) => {
-  const backgroundImage = typeof image === 'string' ? image : image ? image.src : undefined;
+const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, width, height }: HeroProps) => {
+  const backgroundImage = typeof image === 'string' ? image : image?.src;
 
   return (
     <motion.div className={styles.hero}>
-      {video && (
-        <video 
-          width={1200}
-          className={styles.backgroundVideo} 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          preload="auto"
-          style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
-        >
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      )}
-      {image && !video && backgroundImage && (
+      {image && backgroundImage && (
         <Image 
           src={backgroundImage} 
           alt="Hero Image" 
           fill 
-          style={{ objectFit: 'cover' }} 
+          style={{ objectFit: 'cover' }}  
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"  
+          priority  
+          quality={75}
           className={styles.backgroundImage}
         />
       )}

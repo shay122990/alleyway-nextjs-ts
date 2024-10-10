@@ -1,14 +1,11 @@
-import React, { Suspense } from 'react';
-import { Barlow } from 'next/font/google';
 import '../styles/globals.css';
-import Loader from '../components/common/loader/Loader';
+import { Barlow } from 'next/font/google';
 import Head from 'next/head';
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
+import Navbar from '@/components/navigation/navbar/Navbar';
+import Footer from '@/components/layout/footer/Footer';
 
-const DynamicNavbar = React.lazy(() => import('@/components/navigation/navbar/Navbar'));
-const DynamicFooter = React.lazy(() => import('@/components/layout/footer/Footer'));
-
-const font = Barlow({ weight: ['400', '700'], subsets: ['latin'], preload: false });
+const font = Barlow({ weight: ['400', '700'], subsets: ['latin'], preload: true });
 
 export const metadata = {
   title: 'Alleyway',
@@ -22,13 +19,12 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
-      <link rel="preload" href="/globals.css" />
-      <link rel="preload" href="/_next/static/css/app/page.css" />
-      <link rel="preload" href="/_next/static/css/app/contact/Contact.module.css" />
-      <link rel="preload" href="/_next/static/css/app/privacy-policy/Privacy-Policy.module.css" />
-      <link rel="preload" href="/_next/static/css/app/projects/Projects.module.css" />
-      <link rel="preload" href="/_next/static/css/app/services/Services.module.css" />
+      <link rel="preload" href="/globals.css" as="style" />
+      <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
+      
+      {/* Preload only essential styles */}
+      <link rel="stylesheet" href="/_next/static/css/app/contact/Contact.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/services/Services.module.css" />
 
       {/* SEO Meta Tags */}
       <meta name="description" content="Event Management Company In Dubai" />
@@ -50,23 +46,24 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
 
       {/* Structured Data */}
       <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Alleyway",
-        "url": "https://yourwebsite.com",
-        "logo": "URL to your logo",
-        //Add image, website url and logo once ready for production
-      })}
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Alleyway",
+          "url": "https://alleywaydxb.com",
+          "logo": "URL to your logo",
+        })}
       </script>
     </Head>
     <body className={font.className}>
-      <Suspense fallback={<Loader />}>
-        <DynamicNavbar />
-        {children}
-        <DynamicFooter />
-        <WhatsApp isFloating={true}/>
-      </Suspense>
+        <nav>
+          <Navbar />
+        </nav>
+        <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
+        {typeof window !== 'undefined' && <WhatsApp isFloating={true} />}
     </body>
   </html>
 );
