@@ -23,25 +23,27 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
       
       {/* Preload only essential styles */}
-      <link rel="stylesheet" href="/_next/static/css/app/contact/Contact.module.css" />
-      <link rel="stylesheet" href="/_next/static/css/app/services/Services.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/" />
+      {/* <link rel="stylesheet" href="/_next/static/css/app/services/Services.module.css" />
+      <link rel="stylesheet" href="/_next/static/css/app/projects/Projects.module.css" /> */}
+      
 
       {/* SEO Meta Tags */}
-      <meta name="description" content="Event Management Company In Dubai" />
-      <meta name="keywords" content="events, management, Dubai, Alleyway" />
+      <meta name="description" content="Event & Project Management Company In Dubai" />
+      <meta name="keywords" content="events, project management, Dubai Events, Alleyway, Alleyway Events, event planner in dubai, project management company in dubai" />
       <meta name="author" content="Shay Asanova" />
 
       {/* Open Graph Tags */}
       <meta property="og:title" content="Alleyway" />
-      <meta property="og:description" content="Event Management Company In Dubai" />
+      <meta property="og:description" content="Event & Project Management Company In Dubai" />
       <meta property="og:image" content="URL to your image" />
-      <meta property="og:url" content="https://yourwebsite.com" />
+      <meta property="og:url" content="https://alleywaydxb.com" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Alleyway" />
-      <meta name="twitter:description" content="Event Management Company In Dubai" />
+      <meta name="twitter:description" content="Event & Project Management Company In Dubai" />
       <meta name="twitter:image" content="URL to your image" />
 
       {/* Structured Data */}
