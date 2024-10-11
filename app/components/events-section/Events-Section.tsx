@@ -20,7 +20,7 @@ const EventsSection = () => {
   const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div className={styles.eventsContainer}>
+    <div>
       {/* Exhibitions Section */}
       <motion.section
         ref={refExhibition}
