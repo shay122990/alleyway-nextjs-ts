@@ -19,16 +19,18 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
   return (
     <motion.div className={styles.hero}>
       {image && backgroundImage && (
-        <Image 
-          src={backgroundImage} 
-          alt="Hero Image" 
-          fill 
-          style={{ objectFit: 'cover' }}  
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"  
-          priority  
-          quality={75}
-          className={styles.backgroundImage}
-        />
+       <Image 
+       src={backgroundImage} 
+       alt="Hero Image" 
+       fill 
+       style={{ objectFit: 'cover' }}  
+       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"  
+       priority
+       blurDataURL="data:image/webp;base64,..."  
+       quality={60}  
+       className={styles.backgroundImage}
+     />
+     
       )}
       <div className={styles.heroContent}>
         <div className={styles.heroInfo}>
