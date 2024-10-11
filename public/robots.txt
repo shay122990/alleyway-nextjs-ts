@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cpanel
+Disallow: /webmail
+Sitemap: https://alleywaydxb.com/sitemap.xml
