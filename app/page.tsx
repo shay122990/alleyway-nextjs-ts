@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>Alleyway - Plan Any Event</title>
         <meta name="description" content="Alleyway - Plan Any Event With Us " />
+        <link rel="preload" href={homeHero.src} as="image" />
       </Head>
         <Hero 
           width={1920}
