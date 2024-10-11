@@ -12,8 +12,6 @@ const MasonryGrid = () => {
           imageSrc={image1}
           altText="Project image 1"
           className={styles.image1}
-          width={2000}  
-          height={1300} 
         />
         <Links href="/projects">
           <h2 className={styles.titleText}>The projects we've done</h2>
