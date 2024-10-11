@@ -24,12 +24,12 @@ export default function Project() {
       <main className={styles.main}>
         {/* <div className={styles.projectSection1} id="exhibitions&tradeshows">
           <div className={styles.exhibitionsRow1}>
-            <ImageBox imageSrc={projectsPageImages.image3} width={2912} height={4368}/>
-            <ImageBox imageSrc={projectsPageImages.image2} width={4480} height={6720}/>
+            <ImageBox imageSrc={projectsPageImages.image3} />
+            <ImageBox imageSrc={projectsPageImages.image2} />
           </div>
           <div className={styles.exhibitionsRow2}>
             <h2>The flawless design with effortless solutions</h2>
-            <ImageBox imageSrc={projectsPageImages.image1} width={4569} height={3046} />
+            <ImageBox imageSrc={projectsPageImages.image1}  />
           </div>
         </div> */}
 

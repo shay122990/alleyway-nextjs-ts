@@ -4,9 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 interface ImageBoxProps {
   imageSrc: StaticImageData | string;
   altText?: string;
-  className?: string;
-  // width?: number;   
-  // height?: number;  
+  className?: string; 
 }
 
 const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', className }) => {
@@ -16,7 +14,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
       alt={altText}
       priority={true}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      layout='responsive'
+      style={{ width: '100%', height: 'auto' }}
       className={`${styles.imageBox} ${className}`}
     />
   );

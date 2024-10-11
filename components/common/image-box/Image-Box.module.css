@@ -1,5 +1,7 @@
 .imageBox{
   border-radius: 15px;
   box-shadow:  5px 5px 18px #040010,
-           -5px -5px 18px #0e0242;
+           -5px -5px 18px #0a0131;
+           width: 100%; /* This is important for responsiveness */
+           height: auto;
 }
