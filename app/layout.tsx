@@ -19,14 +19,8 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head>
-      <link rel="preload" href="/globals.css" as="style" />
       <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
-      
-      {/* Preload only essential styles */}
       <link rel="stylesheet" href="/_next/static/css/" />
-      {/* <link rel="stylesheet" href="/_next/static/css/app/services/Services.module.css" />
-      <link rel="stylesheet" href="/_next/static/css/app/projects/Projects.module.css" /> */}
-      
 
       {/* SEO Meta Tags */}
       <meta name="description" content="Event & Project Management Company In Dubai" />
@@ -58,12 +52,12 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       </script>
     </Head>
     <body className={font.className}>
-        <nav>
-          <Navbar />
-        </nav>
-        <main>{children}</main>
-          <Footer />
-        {typeof window !== 'undefined' && <WhatsApp isFloating={true} />}
+      <nav>
+        <Navbar />
+      </nav>
+      <main>{children}</main>
+      <Footer />
+      {typeof window !== 'undefined' && <WhatsApp isFloating={true} />}
     </body>
   </html>
 );
