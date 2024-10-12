@@ -36,7 +36,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       </noscript>
 
       {/* Inline critical CSS */}
-      <style>{`
+      {/* <style>{`
         .hero {
           background: center center no-repeat;
           background-size: cover;
@@ -111,7 +111,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
             font-size: 8rem;
           }
         }
-      `}</style>
+      `}</style> */}
 
       {/* SEO Meta Tags */}
       <meta name="description" content="Event & Project Management Company In Dubai" />
@@ -143,9 +143,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       </script>
     </Head>
     <body className={font.className}>
-      <nav>
         <Navbar />
-      </nav>
       <main>{children}</main>
       <Footer />
       {typeof window !== 'undefined' && <WhatsApp isFloating={true} />}
