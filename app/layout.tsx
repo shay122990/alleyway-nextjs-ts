@@ -84,7 +84,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       <Navbar />
       <main>{children}</main>
       <Footer />
-      {typeof window !== 'undefined' && <WhatsApp isFloating={true} />}
+      <WhatsApp isFloating={true} />
     </body>
   </html>
 );

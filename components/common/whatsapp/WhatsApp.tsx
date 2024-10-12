@@ -1,3 +1,4 @@
+"use client";
 import styles from "./WhatsApp.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 
