@@ -12,9 +12,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Alleyway - Plan Any Event</title>
-        <meta name="description" content="Alleyway - Plan Any Event With Us" />
+        <title>Alleyway - Event & Project Management Company in Dubai</title>
+        <meta name="description" content="Alleyway - Plan Any Event & Project With Us" />
         <link rel="preload" href={homeHero.src} as="image" />
+        <meta property="og:title" content="Alleyway - Event & Project Management Company in Dubai" />
+        <meta property="og:description" content="Alleyway - Plan Any Event & Project With Us" />
+        <meta property="og:image" content={homeHero.src} />
+        <meta property="og:url" content="https://alleywaydxb.com" />
+        <meta property="og:type" content="website" />
       </Head>
       <Hero 
         width={1920}
