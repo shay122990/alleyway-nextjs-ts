@@ -103,6 +103,8 @@
   padding-bottom: 10px;
 }
 .navbarWhatsApp{
+  background: transparent;
+  border: none;
   font-size: 28px;
   color: var(--accent-lime);
   transition: color 0.3s ease, transform 0.3s ease;

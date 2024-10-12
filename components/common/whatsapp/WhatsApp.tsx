@@ -1,4 +1,3 @@
-"use client";
 import styles from "./WhatsApp.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -10,13 +9,13 @@ const WhatsApp = ({ className = '', isFloating = false }) => {
   };
 
   return (
-    <div 
+    <button 
       className={`${isFloating ? styles['floating-whatsapp'] : ''} ${className}`} 
       onClick={handleClick}
       aria-label="Open WhatsApp"
     >
       <FaWhatsapp />
-    </div>
+    </button>
   );
 }
 
