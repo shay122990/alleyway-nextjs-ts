@@ -21,8 +21,7 @@ export default function Project() {
         titleClassName={styles.projectsTitle}
         paragraphClassName={styles.projectsParagraph}
       />
-      <main className={styles.main}>
-        {/* <div className={styles.projectSection1} id="exhibitions&tradeshows">
+        <div className={styles.projectSection1} id="exhibitions&tradeshows">
           <div className={styles.exhibitionsRow1}>
             <ImageBox imageSrc={projectsPageImages.image3} />
             <ImageBox imageSrc={projectsPageImages.image2} />
@@ -31,7 +30,7 @@ export default function Project() {
             <h2>The flawless design with effortless solutions</h2>
             <ImageBox imageSrc={projectsPageImages.image1}  />
           </div>
-        </div> */}
+        </div>
 
         {/* <div className={styles.projectSection2}>
           <div className={styles.exhibitionSection2}>
@@ -69,7 +68,6 @@ export default function Project() {
             <ImageBox imageSrc={projectsPageImages.image4} />
           </div>
         </div> */}
-      </main>
-    </>
+      </>
   );
 }

@@ -23,11 +23,11 @@
   padding: 2rem 0;
 }
 .exhibitionsRow1 img{
-  width: 46%;
-  height: auto;
+  width: 36%;
+  height: 24px;
 }
 .exhibitionsRow2 img {
-  width: 65%; 
+  width: 35%; 
   height: auto;
 }
 .exhibitionsRow2 h2 {

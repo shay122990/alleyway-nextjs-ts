@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
         titleClassName={styles.privacyTitle}
         paragraphClassName={styles.privacyParagraph}
       />
-      <main className={styles.privacyContainer}>
+      <div className={styles.privacyContainer}>
         <h1>Privacy Policy AlleyWay</h1>
         <p>
           At AlleyWay, we value and respect your privacy. This Privacy Policy
@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p>Last Updated: {currentDate}</p> 
-      </main>
+      </div>
     </>
   );
 }
