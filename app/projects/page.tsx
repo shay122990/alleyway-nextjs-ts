@@ -32,23 +32,23 @@ export default function Project() {
           </div>
         </div>
 
-        {/* <div className={styles.projectSection2}>
+        <div className={styles.projectSection2}>
           <div className={styles.exhibitionSection2}>
-            <ImageBox imageSrc={projectsPageImages.image1} width={4569} height={3046} />
+            <ImageBox imageSrc={projectsPageImages.image1} />
             <div className={styles.exhibitionSection2Info}>
               <h2>The experience</h2>
               <p>Praesent efficitur sodales elit, sed porta nisl dignissim eget. Fusce vitae pretium ante.</p> 
             </div>
           </div>
           <hr className={styles.section2Hr} />
-        </div> */}
-        {/* <div className={styles.projectSection} id="private-events">
-          <div className={styles.section3ProjectsImages}>
-            <ImageBox imageSrc={projectsPageImages.image1} />
-            <ImageBox imageSrc={projectsPageImages.image2} />
+        </div>
+        <div className={styles.projectSection3} id="private-events">
+          <div className={styles.privateSection}>
             <ImageBox imageSrc={projectsPageImages.image3} />
+            <ImageBox imageSrc={projectsPageImages.image2} />
+            <ImageBox imageSrc={projectsPageImages.image1} />
           </div>
-        </div> */}
+        </div>
         {/* <div className={styles.projectSection} id="creative-services">
           <div className={styles.section4ProjectsImages}>
             <div className={styles.section4Info}>
