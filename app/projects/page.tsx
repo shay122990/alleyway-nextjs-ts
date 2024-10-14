@@ -59,15 +59,15 @@ export default function Project() {
             <ImageBox imageSrc={projectsPageImages.image1} />
           </div>
         </div>
-        {/* <div className={styles.projectSection} id="audio&visual">
+        <div className={styles.projectSection5} id="audio&visual">
           <hr className={styles.section5Hr} />
-          <div className={styles.section5ProjectsImages}>
+          <div className={styles.audioSection}>
             <ImageBox imageSrc={projectsPageImages.image1} />
             <ImageBox imageSrc={projectsPageImages.image2} />
             <ImageBox imageSrc={projectsPageImages.image3} />
             <ImageBox imageSrc={projectsPageImages.image4} />
           </div>
-        </div> */}
+        </div>
       </>
   );
 }
