@@ -14,14 +14,13 @@ const sectionVariants = {
 };
 
 const EventsSection = () => {
-  const [refExhibition, inViewExhibition] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [refPrivate, inViewPrivate] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [refCreative, inViewCreative] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [refExhibition, inViewExhibition] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refPrivate, inViewPrivate] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refCreative, inViewCreative] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refAudio, inViewAudio] = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
     <div>
-      {/* Exhibitions Section */}
       <motion.section
         ref={refExhibition}
         variants={sectionVariants}
@@ -47,7 +46,6 @@ const EventsSection = () => {
         </div>
       </motion.section>
 
-      {/* Private Events Section */}
       <motion.section
         ref={refPrivate}
         variants={sectionVariants}
@@ -73,7 +71,6 @@ const EventsSection = () => {
         </div>
       </motion.section>
 
-      {/* Creative Services Section */}
       <motion.section
         ref={refCreative}
         variants={sectionVariants}
@@ -99,7 +96,6 @@ const EventsSection = () => {
         </div>
       </motion.section>
 
-      {/* Audio Visual Section */}
       <motion.section
         ref={refAudio}
         variants={sectionVariants}
