@@ -1,7 +1,7 @@
 "use client";
 import styles from "./Projects.module.css";
 import Head from 'next/head';
-import aboutImage from "@/public/images/about-image.jpg";
+import aboutImage from "@/public/images/about-image.webp";
 import Hero from "@/components/layout/hero/Hero";
 import ImageBox from "@/components/common/image-box/Image-Box";
 import { projectsPageImages } from '@/data/ProjectsPageData'; 
