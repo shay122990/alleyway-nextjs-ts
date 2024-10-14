@@ -92,6 +92,7 @@
 }
 .privateSection img:nth-child(3) {
   width: 100%;
+  padding-top: 1rem;
 }
 .projectSection4{
   width: 100%;
@@ -166,8 +167,8 @@
     width: 80%;
     line-height: normal;
   }
-  .projectSection2{
-    margin: 2rem 0;
+  .projectSection2, .projectSection3, .projectSection4{
+    margin: 5rem 0;
   }
   .exhibitionSection2Info h2{
     font-size: 26px;
@@ -190,9 +191,7 @@
   }
   .privateSection img:nth-child(3) {
     width: 30%;
-  }
-  .projectSection4{
-    margin: 4rem 0;
+    padding: 0;
   }
   .creativeSection{
     flex-direction: row;
@@ -226,6 +225,9 @@
     }
     .projectsParagraph{
       font-size: 32px;
+    }
+    .projectSection2, .projectSection3, .projectSection4{
+      margin: 8rem 0;
     }
     .exhibitionsRow1 img{
       width: 48%;
