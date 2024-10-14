@@ -49,16 +49,16 @@ export default function Project() {
             <ImageBox imageSrc={projectsPageImages.image1} />
           </div>
         </div>
-        {/* <div className={styles.projectSection} id="creative-services">
-          <div className={styles.section4ProjectsImages}>
-            <div className={styles.section4Info}>
+        <div className={styles.projectSection4} id="creative-services">
+          <div className={styles.creativeSection}>
+            <div className={styles.creativeSectionInfo}>
               <h2>Stage Up</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <ImageBox imageSrc={projectsPageImages.image1} />
           </div>
-        </div> */}
+        </div>
         {/* <div className={styles.projectSection} id="audio&visual">
           <hr className={styles.section5Hr} />
           <div className={styles.section5ProjectsImages}>

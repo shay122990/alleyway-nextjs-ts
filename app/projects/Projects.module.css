@@ -96,70 +96,29 @@
 .privateSection img:nth-child(3) {
   width: 100%;
 }
-/* SECTION 4 */
-/* .section4ProjectsImages img{
-  width: 90vw;
-  height: auto;
-  border-radius: 15px;
+.projectSection4{
+  width: 100%;
 }
-.section4Info{
+.creativeSection{
   display: flex;
   flex-direction: column;
-  width: 90vw;
   gap: 1rem;
 }
-.section4Info h2{
-  font-size: 20px;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  color: var(--main-text-color);
+.creativeSectionInfo{
+  padding: 1rem;
 }
-.section4Info p{
-  font-size: 16px;
-  width: 80%;
-  padding-top: 1rem;
-  border-top: 1px solid var(--accent-lime);
-} */
-/* SECTION 5 */
-/* .section5ProjectsImages img{
-  width: 40vw;
+.creativeSectionInfo h2{
+  padding: 1rem 0;
+}
+.creativeSectionInfo p{
+  border-top: 1px solid lime;
+  padding: 1rem 0;
+}
+.creativeSection img{
+  width: 100%;
   height: auto;
-  border-radius: 15px;
 }
-.section5Hr{
-  width: 60%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 1px;
-  border: 1px;
-  background-color: var(--accent-lime);
-} */
-@media (min-width:500px){
 
-  .section3ProjectsImages div:nth-child(3)  img{
-    width: 180px; 
-    height: 180px; 
-  }
-  .section4ProjectsImages{
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 3rem;
-  }
-  .section4Info{
-    width: 40%;
-  }  
-  .section4ProjectsImages img{
-    width: 50vw;
-  }
-  .section4Info h2{
-   font-size: 30px;
-  }
-  .section4Info p{
-    font-size: 18px;
-    width: 70%;
-  }
-}
 @media (min-width: 768px) {
   .projectsTitle{
     font-size: 50px;
@@ -208,7 +167,22 @@
   .privateSection img:nth-child(3) {
     width: 30%;
   }
-    
+  .projectSection4{
+    margin: 4rem 0;
+  }
+  .creativeSection{
+    flex-direction: row;
+    align-items: center;
+  }
+  .creativeSectionInfo{
+    width: 60%;
+  }
+  .creativeSectionInfo h2{
+    font-size: 40px;
+  }
+  .creativeSectionInfo p{
+   font-size: 20px;
+  } 
 }
   @media (min-width: 1240px){
     .projectsTitle{
@@ -260,16 +234,14 @@
     .privateSection img:nth-child(2){
       height: 700px;
     }
-    /* .section3ProjectsImages{
-      gap: 4rem;
+    .creativeSection{
+      justify-content: center;
+      gap: 5rem;
     }
-    .section3ProjectsImages div:nth-child(1) img,
-    .section3ProjectsImages div:nth-child(3) img {
-      width: 300px;
-      height: 350px;
+    .creativeSection img{
+      width: 50%;
     }
-    .section3ProjectsImages div:nth-child(2)  img{
-      width: 480px; 
-      height: 580px; 
-    } */
+    .creativeSectionInfo{
+      width: 30%;
+    }
   }
