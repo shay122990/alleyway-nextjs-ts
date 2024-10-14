@@ -6,7 +6,6 @@
     color: lime;
     font-size: 16px;
 }
-/* PROJECT SECTION 1 */
 .projectSection1{
   display: flex;
   flex-direction: row;
@@ -37,7 +36,6 @@
   text-transform: uppercase;
 }
 
-/* PROJECT SECTION 2 */
 .projectSection2{
   margin: 2rem 0;
 }
@@ -78,7 +76,6 @@
   border: 1px;
   background-color: var(--accent-orange);
 }
-/* SECTION 3 */
 .projectSection3{
   width: 100%;
 }
@@ -111,7 +108,7 @@
   padding: 1rem 0;
 }
 .creativeSectionInfo p{
-  border-top: 1px solid lime;
+  border-top: 1px solid var(--accent-lime);
   padding: 1rem 0;
 }
 .creativeSection img{
