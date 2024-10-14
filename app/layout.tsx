@@ -82,7 +82,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
     </Head>
     <body className={font.className}>
       <Navbar />
-      <main>{children}</main>
+      <>{children}</>
       <Footer />
       <WhatsApp isFloating={true} />
     </body>

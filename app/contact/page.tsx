@@ -20,9 +20,9 @@ export default function Contact() {
           titleClassName={styles.contactTitle}
           paragraphClassName={styles.contactParagraph}
         />
-      <>
+      <main className={styles.main}>
         <ContactForm />
-      </>
+      </main>
     </>
   );
 }

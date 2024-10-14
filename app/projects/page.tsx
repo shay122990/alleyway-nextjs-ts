@@ -33,7 +33,7 @@ export default function Projects() {
         titleClassName={styles.projectsTitle}
         paragraphClassName={styles.projectsParagraph}
       />
-
+      <main className={styles.main}>
       <motion.div
         ref={refExhibition}
         variants={sectionVariants}
@@ -101,6 +101,7 @@ export default function Projects() {
           <ImageBox imageSrc={projectsPageImages.image4} />
         </div>
       </motion.div>
+      </main>
     </>
   );
 }

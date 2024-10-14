@@ -1,4 +1,3 @@
-"use client"
 import styles from "./page.module.css";
 import Head from 'next/head';
 import Hero from "@/components/layout/hero/Hero";
@@ -31,11 +30,11 @@ export default function Home() {
         titleClassName={styles.homeTitle}
         paragraphClassName={styles.homeParagraph} 
       />
-      <>
+      <main className={styles.main}>
         <EventsSection />
         <Banner />
         <MasonryGrid />
-      </>
+      </main>
     </>
   );
 }

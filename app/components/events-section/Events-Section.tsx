@@ -21,6 +21,7 @@ const EventsSection = () => {
 
   return (
     <div>
+      {/* Exhibitions Section */}
       <motion.section
         ref={refExhibition}
         variants={sectionVariants}
@@ -45,6 +46,8 @@ const EventsSection = () => {
           </ul>
         </div>
       </motion.section>
+
+      {/* Private Events Section */}
       <motion.section
         ref={refPrivate}
         variants={sectionVariants}
@@ -69,6 +72,8 @@ const EventsSection = () => {
           </ul>
         </div>
       </motion.section>
+
+      {/* Creative Services Section */}
       <motion.section
         ref={refCreative}
         variants={sectionVariants}
@@ -93,6 +98,8 @@ const EventsSection = () => {
           </ul>
         </div>
       </motion.section>
+
+      {/* Audio Visual Section */}
       <motion.section
         ref={refAudio}
         variants={sectionVariants}

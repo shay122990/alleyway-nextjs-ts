@@ -42,7 +42,7 @@ export default function Services() {
         titleClassName={styles.servicesTitle}
         paragraphClassName={styles.servicesParagraph}
       />
-      <>
+      <main className={styles.main}>
         <div className={styles.serviceSection} id="exhibitions&tradeshows">
           <ExhibitionSection exhibitionData={exhibitionData} />
         </div>
@@ -58,7 +58,7 @@ export default function Services() {
         <div className={styles.serviceSection} id="other-services">
           <h2>Other Services</h2>
         </div>
-      </>
+      </main>
     </>
   );
 }
