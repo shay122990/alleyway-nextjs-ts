@@ -27,6 +27,8 @@ export default function Projects() {
         <meta name="description" content="The projects we've successfully completed" />
       </Head>
       <Hero 
+        width={1920}
+        height={1536}
         image={aboutImage} 
         title="Always up to the challenge!" 
         paragraph="The Projects we've successfully completed"
@@ -34,73 +36,73 @@ export default function Projects() {
         paragraphClassName={styles.projectsParagraph}
       />
       <main className={styles.main}>
-      <motion.div
-        ref={refExhibition}
-        variants={sectionVariants}
-        initial="hiddenRight"
-        animate={inViewExhibition ? "visible" : "hiddenRight"}
-        className={styles.projectSection1}
-        id="exhibitions&tradeshows"
-      >
-        <div className={styles.exhibitionsRow1}>
-          <ImageBox imageSrc={projectsPageImages.image3} />
-          <ImageBox imageSrc={projectsPageImages.image2} />
-        </div>
-        <div className={styles.exhibitionsRow2}>
-          <h2>The flawless design with effortless solutions</h2>
-          <ImageBox imageSrc={projectsPageImages.image1} />
-        </div>
-      </motion.div>
-
-      <motion.div
-        ref={refPrivate}
-        variants={sectionVariants}
-        initial="hiddenLeft"
-        animate={inViewPrivate ? "visible" : "hiddenLeft"}
-        className={styles.projectSection3}
-        id="private-events"
-      >
-        <div className={styles.privateSection}>
-          <ImageBox imageSrc={projectsPageImages.image3} />
-          <ImageBox imageSrc={projectsPageImages.image2} />
-          <ImageBox imageSrc={projectsPageImages.image1} />
-        </div>
-      </motion.div>
-
-      <motion.div
-        ref={refCreative}
-        variants={sectionVariants}
-        initial="hiddenRight"
-        animate={inViewCreative ? "visible" : "hiddenRight"}
-        className={styles.projectSection4}
-        id="creative-services"
-      >
-        <div className={styles.creativeSection}>
-          <div className={styles.creativeSectionInfo}>
-            <h2>Stage Up</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <motion.div
+          ref={refExhibition}
+          variants={sectionVariants}
+          initial="hiddenRight"
+          animate={inViewExhibition ? "visible" : "hiddenRight"}
+          className={styles.projectSection1}
+          id="exhibitions&tradeshows"
+        >
+          <div className={styles.exhibitionsRow1}>
+            <ImageBox imageSrc={projectsPageImages.image3} />
+            <ImageBox imageSrc={projectsPageImages.image2} />
           </div>
-          <ImageBox imageSrc={projectsPageImages.image1} />
-        </div>
-      </motion.div>
+          <div className={styles.exhibitionsRow2}>
+            <h2>The flawless design with effortless solutions</h2>
+            <ImageBox imageSrc={projectsPageImages.image1} />
+          </div>
+        </motion.div>
 
-      <motion.div
-        ref={refAudio}
-        variants={sectionVariants}
-        initial="hiddenLeft"
-        animate={inViewAudio ? "visible" : "hiddenLeft"}
-        className={styles.projectSection5}
-        id="audio&visual"
-      >
-        <hr className={styles.section5Hr} />
-        <div className={styles.audioSection}>
-          <ImageBox imageSrc={projectsPageImages.image1} />
-          <ImageBox imageSrc={projectsPageImages.image2} />
-          <ImageBox imageSrc={projectsPageImages.image3} />
-          <ImageBox imageSrc={projectsPageImages.image4} />
-        </div>
-      </motion.div>
+        <motion.div
+          ref={refPrivate}
+          variants={sectionVariants}
+          initial="hiddenLeft"
+          animate={inViewPrivate ? "visible" : "hiddenLeft"}
+          className={styles.projectSection3}
+          id="private-events"
+        >
+          <div className={styles.privateSection}>
+            <ImageBox imageSrc={projectsPageImages.image3} />
+            <ImageBox imageSrc={projectsPageImages.image2} />
+            <ImageBox imageSrc={projectsPageImages.image1} />
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={refCreative}
+          variants={sectionVariants}
+          initial="hiddenRight"
+          animate={inViewCreative ? "visible" : "hiddenRight"}
+          className={styles.projectSection4}
+          id="creative-services"
+        >
+          <div className={styles.creativeSection}>
+            <div className={styles.creativeSectionInfo}>
+              <h2>Stage Up</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <ImageBox imageSrc={projectsPageImages.image1} />
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={refAudio}
+          variants={sectionVariants}
+          initial="hiddenLeft"
+          animate={inViewAudio ? "visible" : "hiddenLeft"}
+          className={styles.projectSection5}
+          id="audio&visual"
+        >
+          <hr className={styles.section5Hr} />
+          <div className={styles.audioSection}>
+            <ImageBox imageSrc={projectsPageImages.image1} />
+            <ImageBox imageSrc={projectsPageImages.image2} />
+            <ImageBox imageSrc={projectsPageImages.image3} />
+            <ImageBox imageSrc={projectsPageImages.image4} />
+          </div>
+        </motion.div>
       </main>
     </>
   );
