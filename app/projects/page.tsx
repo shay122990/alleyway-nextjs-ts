@@ -27,8 +27,6 @@ export default function Projects() {
         <meta name="description" content="The projects we've successfully completed" />
       </Head>
       <Hero 
-        width={1920}
-        height={1536}
         image={aboutImage} 
         title="Always up to the challenge!" 
         paragraph="The Projects we've successfully completed"
