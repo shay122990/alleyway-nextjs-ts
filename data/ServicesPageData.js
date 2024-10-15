@@ -1,5 +1,5 @@
 import projectImage1 from "@/public/images/projects-image1.jpg";
-import projectImage2 from "@/public/images/projects-image2.jpg";
+// import projectImage2 from "@/public/images/projects-image2.jpg";
 import projectImage3 from "@/public/images/projects-image3.jpg";
 import projectImage4 from "@/public/images/projects-image4.jpg";
 import projectImage5 from "@/public/images/projects-image5.jpg";

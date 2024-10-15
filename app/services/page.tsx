@@ -3,7 +3,7 @@ import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
 import projectsImage from "@/public/images/projects-image.jpg";
-import { servicesPageData } from "@/data/servicesPageData";
+import { servicesPageData } from "@/data/ServicesPageData";
 
 
 export default function Services() {
