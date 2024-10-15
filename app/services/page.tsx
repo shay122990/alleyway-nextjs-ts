@@ -4,6 +4,7 @@ import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
 import projectsImage from "@/public/images/projects-image.jpg";
 import serviceImage1 from '@/public/images/projects-image1.jpg';
+import PrivateEvents from "./components/private-events/Private-Events";
 
 export default function Services() {
   const exhibitionData = [
@@ -47,7 +48,7 @@ export default function Services() {
           <ExhibitionSection exhibitionData={exhibitionData} />
         </div>
         <div className={styles.serviceSection} id="private-events">
-          <h2>Private Events</h2>
+          {/* <PrivateEvents/> */}
         </div>
         <div className={styles.serviceSection} id="creative-services">
           <h2>Creative Services</h2>

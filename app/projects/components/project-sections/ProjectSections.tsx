@@ -1,5 +1,4 @@
 "use client"
-// ProjectSections.jsx
 import styles from "./ProjectSections.module.css";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
