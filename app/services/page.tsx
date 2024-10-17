@@ -1,8 +1,8 @@
 import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
-import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
-import PrivateEvents from "./components/private-events/Private-Events";
+import ExhibitionSection from "./exhibition-section/ExhibitionSection";
+import PrivateEvents from "./private-events/Private-Events";
 import CreativeServices from "./components/creative-services/Creative-Secvices";
 import AudioVisual from "./audio-visual/Audio-Visual";
 
@@ -37,10 +37,10 @@ export default function Services() {
           {/* <CreativeServices title={servicesPageData.creativeServices.title} creativeServicesData={servicesPageData.creativeServices.services} /> */}
         </section>
         <section className={styles.serviceSection} id="audio-visual">
-          <AudioVisual title={servicesPageData.audioVisual.title}  audioVisualData={servicesPageData.audioVisual.images}/>
+          {/* <AudioVisual title={servicesPageData.audioVisual.title}  audioVisualData={servicesPageData.audioVisual.images}/> */}
         </section>
         <section className={styles.serviceSection} id="other-services">
-          <OtherServices title={servicesPageData.otherServices.title}/>
+          {/* <OtherServices title={servicesPageData.otherServices.title}/> */}
         </section>
       </main>
     </>

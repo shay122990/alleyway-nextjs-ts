@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Private-Events.module.css";
-import Carousel from "../carousel/Carousel";
+import Carousel from "../components/carousel/Carousel";
 import { StaticImageData } from "next/image";
 
 interface PrivateEventsProps {
