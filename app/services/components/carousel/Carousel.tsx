@@ -17,9 +17,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   return (
@@ -29,7 +27,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       </button>
       <ImageBox
         className={styles.carouselImage}
-        imageSrc={images[currentIndex].src} 
+        imageSrc={images[currentIndex].src}
         altText={`Image ${currentIndex + 1}`}
       />
       <button className={styles.nextButton} onClick={nextImage}>
@@ -38,5 +36,6 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
+
 
 export default Carousel;

@@ -2,8 +2,9 @@ import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
-// import PrivateEvents from "./components/private-events/Private-Events";
+import PrivateEvents from "./components/private-events/Private-Events";
 import projectsImage from "@/public/images/projects-image.jpg";
+import { servicesPageData } from "@/data/ServicesPageData";
 
 export default function Services() {
   return (
@@ -23,21 +24,21 @@ export default function Services() {
       />
       <main className={styles.main}>
         <section className={styles.serviceSection} id="exhibitions&tradeshows">
-          <h2>Exhibitions & Trade Shows</h2>
-          <ExhibitionSection />
+          <h2>{servicesPageData.exhibitions.title}</h2>
+          <ExhibitionSection images={servicesPageData.exhibitions.services} />
         </section>
         <section className={styles.serviceSection} id="private-events">
-          <h2>Private Events</h2>
-          {/* <PrivateEvents /> */}
+          <h2>{servicesPageData.privateEvents.title}</h2>
+          <PrivateEvents images={servicesPageData.privateEvents.images} />
         </section>
         <section className={styles.serviceSection} id="creative-services">
-          <h2>Creative Services</h2>
+          <h2>{servicesPageData.creativeServices.title}</h2>
         </section>
         <section className={styles.serviceSection} id="audio&visual">
-          <h2>Audio Visual</h2>
+          <h2>{servicesPageData.audioVisual.title}</h2>
         </section>
         <section className={styles.serviceSection} id="other-services">
-          <h2>Other Services</h2>
+          <h2>{servicesPageData.otherServices.title}</h2>
         </section>
       </main>
     </>

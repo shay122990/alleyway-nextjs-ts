@@ -44,4 +44,7 @@ export const servicesPageData = {
     title: "Audio Visual",
     images: [{ src: projectImage6 }],
   },
+  otherServices: {
+    title: "Other Services",
+  },
 };

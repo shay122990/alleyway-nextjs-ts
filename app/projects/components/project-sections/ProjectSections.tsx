@@ -8,8 +8,17 @@ import { projectsPageImages } from '@/data/ProjectsPageData';
 const sectionVariants = {
   hiddenLeft: { opacity: 0, x: -100 },
   hiddenRight: { opacity: 0, x: 100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+  visible: { 
+      opacity: 1, 
+      x: 0, 
+      transition: { 
+          duration: 0.6, 
+          ease: [0.6, 0.05, 0.2, 0.99] // Adjusted the last value from -0.01 to 0.2
+
+      } 
+  },
 };
+
 
 const ProjectSections = () => {
   const [refExhibition, inViewExhibition] = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -18,7 +27,7 @@ const ProjectSections = () => {
   const [refAudio, inViewAudio] = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
-    <main className={styles.main}>
+    <>
       <motion.div
         ref={refExhibition}
         variants={sectionVariants}
@@ -52,7 +61,7 @@ const ProjectSections = () => {
         </div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         ref={refCreative}
         variants={sectionVariants}
         initial="hiddenRight"
@@ -68,7 +77,7 @@ const ProjectSections = () => {
           </div>
           <ImageBox imageSrc={projectsPageImages.image1} />
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         ref={refAudio}
@@ -86,7 +95,7 @@ const ProjectSections = () => {
           <ImageBox imageSrc={projectsPageImages.image4} />
         </div>
       </motion.div>
-    </main>
+    </>
   );
 };
 

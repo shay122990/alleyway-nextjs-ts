@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./ExhibitionSection.module.css";
 import ImageBox from "@/components/common/image-box/Image-Box";
 import Links from "@/components/common/links/Links";
-import { servicesPageData } from "@/data/ServicesPageData"; 
-import { StaticImageData } from "next/image"; 
+import { StaticImageData } from "next/image";
 
 interface Exhibition {
   title: string;
@@ -12,13 +11,15 @@ interface Exhibition {
   href: string;
 }
 
-const ExhibitionSection: React.FC = () => {
-  const exhibitionData: Exhibition[] = servicesPageData.exhibitions.services;
+interface ExhibitionSectionProps {
+  images: Exhibition[];
+}
 
+const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ images }) => {
   return (
     <div className={styles.exhibitionsContainer}>
       <div className={styles.exhibitionsInfoContainer}>
-        {exhibitionData.map((exhibition, index) => (
+        {images.map((exhibition, index) => (
           <div key={index} className={styles.exhibitionSection}>
             <div className={styles.exhibitionImageContainer}>
               <ImageBox imageSrc={exhibition.imageSrc} />

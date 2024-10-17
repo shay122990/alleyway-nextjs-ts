@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
   }
   .exhibitionsRow1 , .exhibitionsRow2{
     display: flex;
@@ -12,6 +14,7 @@
     flex-direction: row;
     align-items: center;
     padding: 2rem 0;
+    max-width: 100%;
   }
   .exhibitionsRow1 img{
     width: 46%;
@@ -88,6 +91,9 @@
   }
   .projectSection4{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
   }
   .creativeSection{
     display: flex;
@@ -105,10 +111,9 @@
     padding: 1rem 0;
   }
   .creativeSection img{
-    width: 100%;
+    width: 90%;
     height: auto;
   }
-  
   .projectSection5{
     width: 100%;
     margin: 4rem 0 0 0;
