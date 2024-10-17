@@ -2,6 +2,7 @@ import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
+// import PrivateEvents from "./components/private-events/Private-Events";
 import projectsImage from "@/public/images/projects-image.jpg";
 
 export default function Services() {
