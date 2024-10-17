@@ -31,7 +31,6 @@ export const servicesPageData = {
         href: "/projects/#exhibitions&tradeshows",
       },
     ],
-    images: [{ src: projectImage1 }],
   },
   privateEvents: {
     title: "Private Events",
