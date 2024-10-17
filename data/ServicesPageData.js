@@ -38,7 +38,27 @@ export const servicesPageData = {
   },
   creativeServices: {
     title: "Creative Services",
-    images: [{ src: projectImage6 }, { src: projectImage5 }],
+    services: [
+      {
+        title: "Event Concept & Design",
+        description:
+          "We specialize in crafting unforgettable event experiences through innovative concept development and exquisite design. Whether it's a corporate gala, wedding, or private celebration, our expert team brings your vision to life by creating unique themes, stunning visual aesthetics, and immersive environments that captivate your guests.We focus on every detail—from layout and decor to lighting and ambiance—ensuring that your event is not just memorable, but truly extraordinary. Let us transform your ideas into a beautifully designed reality that leaves a lasting impression.",
+        imageSrc: projectImage3,
+      },
+      {
+        title: "Thematic Decor",
+        description:
+          "We create themed, customizable decorations that complement your event theme, making it a unique and memorable experience for your guests. Our expert team ensures that your decorations are not just visually appealing, but also engaging and immersive, making them stand out and captivate your guests. Whether it's a corporate gala, wedding, or private celebration, our expert team brings your vision to life by creating unique themes, stunning visual aesthetics, and immersive environments that captivate your guests. We focus on every detail—from layout and decor to lighting and ambiance—ensuring that your event is not just memorable, but truly extraordinary. Let us transform your ideas into a beautifully designed reality that leaves a lasting impression.",
+        imageSrc: projectImage3,
+      },
+      {
+        title: "Entertainment Planning",
+        description:
+          "We create themed, customizable entertainmentWe specialize in crafting unforgettable entertainment experiences for your events. Whether it's a corporate gathering, wedding, or private party, we curate the perfect lineup of performers, musicians, and interactive acts tailored to your theme and audience. From live bands to specialty acts, we ensure seamless, engaging entertainment that keeps the energy high and leaves a lasting impression. Let us turn your event into a spectacular celebration with entertainment that truly dazzles. that complements your event theme, making it a unique and memorable experience for your guests. Our expert team ensures that your entertainment is not just visually appealing, but also engaging and immersive, making them stand out and captivate your guests. Whether it's a corporate gala, wedding, or private celebration, our expert team brings your vision to life by creating unique themes, stunning visual aesthetics, and immersive environments that captivate your guests. We focus on every detail—from layout and decor to lighting and ambiance—ensuring that your event is not just memorable, but truly extraordinary. Let us transform your ideas into a beautifully designed reality that leaves a lasting impression.",
+        imageSrc: projectImage3,
+      },
+    ],
+    // images: [{ src: projectImage6 }, { src: projectImage5 }],
   },
   audioVisual: {
     title: "Audio Visual",
