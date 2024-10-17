@@ -12,12 +12,14 @@ interface Exhibition {
 }
 
 interface ExhibitionSectionProps {
+  title:string;
   exhibitionData: Exhibition[];
 }
 
-const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ exhibitionData }) => {
+const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ title, exhibitionData }) => {
   return (
     <div className={styles.exhibitionsContainer}>
+      <h2>{title}</h2>
       <div className={styles.exhibitionsInfoContainer}>
         {exhibitionData.map((exhibition, index) => (
           <div key={index} className={styles.exhibitionSection}>

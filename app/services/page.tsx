@@ -4,10 +4,11 @@ import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
 import PrivateEvents from "./components/private-events/Private-Events";
 import CreativeServices from "./components/creative-services/Creative-Secvices";
+import AudioVisual from "./audio-visual/Audio-Visual";
 
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
-import AudioVisual from "./audio-visual/Audio-Visual";
+import OtherServices from "./other-services/Other-Services";
 
 export default function Services() {
   return (
@@ -27,23 +28,19 @@ export default function Services() {
       />
       <main className={styles.main}>
         <section className={styles.serviceSection} id="exhibitions&tradeshows">
-          <h2>{servicesPageData.exhibitions.title}</h2>
-          {/* <ExhibitionSection exhibitionData={servicesPageData.exhibitions.services} /> */}
+          {/* <ExhibitionSection title={servicesPageData.exhibitions.title} exhibitionData={servicesPageData.exhibitions.services} /> */}
         </section>
         <section className={styles.serviceSection} id="private-events">
-          <h2>{servicesPageData.privateEvents.title}</h2>
-          {/* <PrivateEvents privateEventData={servicesPageData.privateEvents.images} /> */}
+          {/* <PrivateEvents title={servicesPageData.privateEvents.title} privateEventData={servicesPageData.privateEvents.images} /> */}
         </section>
         <section className={styles.serviceSection} id="creative-services">
-         <h2>{servicesPageData.creativeServices.title}</h2>
-          {/* <CreativeServices creativeServicesData={servicesPageData.creativeServices.services} /> */}
+          {/* <CreativeServices title={servicesPageData.creativeServices.title} creativeServicesData={servicesPageData.creativeServices.services} /> */}
         </section>
         <section className={styles.serviceSection} id="audio-visual">
-          <h2>{servicesPageData.audioVisual.title}</h2>
-          {/* <AudioVisual audioVisualData={servicesPageData.audioVisual.images}/> */}
+          <AudioVisual title={servicesPageData.audioVisual.title}  audioVisualData={servicesPageData.audioVisual.images}/>
         </section>
         <section className={styles.serviceSection} id="other-services">
-          <h2>{servicesPageData.otherServices.title}</h2>
+          <OtherServices title={servicesPageData.otherServices.title}/>
         </section>
       </main>
     </>

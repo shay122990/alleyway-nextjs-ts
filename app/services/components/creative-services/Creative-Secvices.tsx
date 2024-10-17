@@ -9,12 +9,14 @@ interface CreativeService {
 }
 
 interface CreativeServicesProps {
+  title: string,  
   creativeServicesData: CreativeService[];
 }
 
-const CreativeServices: React.FC<CreativeServicesProps> = ({ creativeServicesData }) => {
+const CreativeServices: React.FC<CreativeServicesProps> = ({title, creativeServicesData }) => {
   return (
     <div className={styles.creativeServicesContainer}>
+      <h2>{title}</h2>
       <section className={styles.creativeSectionOne}>
         <ImageBox imageSrc={creativeServicesData[0].imageSrc} altText={creativeServicesData[0].title} />
         <div className={styles.textContainer}>

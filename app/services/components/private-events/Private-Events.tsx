@@ -4,12 +4,14 @@ import Carousel from "../carousel/Carousel";
 import { StaticImageData } from "next/image";
 
 interface PrivateEventsProps {
+  title: string,
   privateEventData: { src: StaticImageData }[]; 
 }
 
-const PrivateEvents: React.FC<PrivateEventsProps> = ({ privateEventData }) => {
+const PrivateEvents: React.FC<PrivateEventsProps> = ({title, privateEventData }) => {
   return (
     <div className={styles.privateEventsContainer}>
+      <h2>{title}</h2>
       <h3>Wedding, Birthdays, Special Events & more</h3>
       <Carousel images={privateEventData} />
       <p>
