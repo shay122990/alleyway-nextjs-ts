@@ -1,0 +1,53 @@
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .prevButton,
+  .nextButton {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    color: #333;
+  }
+  
+  
