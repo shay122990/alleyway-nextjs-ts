@@ -20,7 +20,7 @@ const EventsSection = () => {
   const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div>
+    <>
       {/* Exhibitions Section */}
       <motion.section
         ref={refExhibition}
@@ -124,7 +124,7 @@ const EventsSection = () => {
           </ul>
         </div>
       </motion.section>
-    </div>
+    </>
   );
 };
 

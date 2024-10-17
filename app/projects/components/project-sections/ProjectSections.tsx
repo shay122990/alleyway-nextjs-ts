@@ -6,33 +6,25 @@ import ImageBox from "@/components/common/image-box/Image-Box";
 import { projectsPageImages } from '@/data/ProjectsPageData';
 
 const sectionVariants = {
-  hiddenLeft: { opacity: 0, x: -100 },
-  hiddenRight: { opacity: 0, x: 100 },
-  visible: { 
-      opacity: 1, 
-      x: 0, 
-      transition: { 
-          duration: 0.6, 
-          ease: [0.6, 0.05, 0.2, 0.99] // Adjusted the last value from -0.01 to 0.2
-
-      } 
-  },
+  hidden: { opacity: 0, scale: 0.8, x: 0 }, 
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.6 } },
+  exit: { opacity: 0, scale: 0.8, transition: { duration: 0.6 } },
 };
 
 
 const ProjectSections = () => {
-  const [refExhibition, inViewExhibition] = useInView({ triggerOnce: false, threshold: 0.2 });
-  const [refPrivate, inViewPrivate] = useInView({ triggerOnce: false, threshold: 0.2 });
-  const [refCreative, inViewCreative] = useInView({ triggerOnce: false, threshold: 0.2 });
-  const [refAudio, inViewAudio] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refExhibition, inViewExhibition] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [refPrivate, inViewPrivate] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [refCreative, inViewCreative] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [refAudio, inViewAudio] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <>
-      <motion.div
+    <div className={styles.projectSectionsContainer}>
+      <motion.section
         ref={refExhibition}
         variants={sectionVariants}
-        initial="hiddenRight"
-        animate={inViewExhibition ? "visible" : "hiddenRight"}
+        initial={{ ...sectionVariants.hidden, x: 100 }} 
+        animate={inViewExhibition ? sectionVariants.visible : sectionVariants.exit}
         className={styles.projectSection1}
         id="exhibitions&tradeshows"
       >
@@ -44,13 +36,13 @@ const ProjectSections = () => {
           <h2>The flawless design with effortless solutions</h2>
           <ImageBox imageSrc={projectsPageImages.image1} />
         </div>
-      </motion.div>
+      </motion.section>
 
-      <motion.div
+      <motion.section
         ref={refPrivate}
         variants={sectionVariants}
-        initial="hiddenLeft"
-        animate={inViewPrivate ? "visible" : "hiddenLeft"}
+        initial={{ ...sectionVariants.hidden, x: -100 }} 
+        animate={inViewPrivate ? sectionVariants.visible : sectionVariants.exit}
         className={styles.projectSection3}
         id="private-events"
       >
@@ -59,13 +51,13 @@ const ProjectSections = () => {
           <ImageBox imageSrc={projectsPageImages.image2} />
           <ImageBox imageSrc={projectsPageImages.image1} />
         </div>
-      </motion.div>
+      </motion.section>
 
-      <motion.div
+      <motion.section
         ref={refCreative}
         variants={sectionVariants}
-        initial="hiddenRight"
-        animate={inViewCreative ? "visible" : "hiddenRight"}
+        initial={{ ...sectionVariants.hidden, x: -100 }} 
+        animate={inViewCreative ? sectionVariants.visible : sectionVariants.exit}
         className={styles.projectSection4}
         id="creative-services"
       >
@@ -77,13 +69,13 @@ const ProjectSections = () => {
           </div>
           <ImageBox imageSrc={projectsPageImages.image1} />
         </div>
-      </motion.div>
+      </motion.section>
 
-      <motion.div
+      <motion.section
         ref={refAudio}
         variants={sectionVariants}
-        initial="hiddenLeft"
-        animate={inViewAudio ? "visible" : "hiddenLeft"}
+        initial={{ ...sectionVariants.hidden, x: -100 }} 
+        animate={inViewAudio ? sectionVariants.visible : sectionVariants.exit}
         className={styles.projectSection5}
         id="audio&visual"
       >
@@ -94,8 +86,8 @@ const ProjectSections = () => {
           <ImageBox imageSrc={projectsPageImages.image3} />
           <ImageBox imageSrc={projectsPageImages.image4} />
         </div>
-      </motion.div>
-    </>
+      </motion.section>
+    </div>
   );
 };
 

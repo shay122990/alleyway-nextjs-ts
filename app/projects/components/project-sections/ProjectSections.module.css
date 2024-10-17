@@ -1,10 +1,15 @@
+.projectSectionsContainer{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  border-top: 1px solid var(--accent-lime) ;
+}
 .projectSection1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     overflow-x: hidden;
-
   }
   .exhibitionsRow1 , .exhibitionsRow2{
     display: flex;
@@ -30,7 +35,6 @@
     line-height: 2rem;
     text-transform: uppercase;
   }
-  
   .projectSection2{
     margin: 2rem 0;
   }
@@ -79,7 +83,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
   }
   .privateSection img{
     width: 46%;
@@ -87,13 +91,11 @@
   }
   .privateSection img:nth-child(3) {
     width: 100%;
-    padding-top: 1rem;
   }
   .projectSection4{
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
   }
   .creativeSection{
     display: flex;
@@ -111,7 +113,7 @@
     padding: 1rem 0;
   }
   .creativeSection img{
-    width: 90%;
+    width: 100%;
     height: auto;
   }
   .projectSection5{
