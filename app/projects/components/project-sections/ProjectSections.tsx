@@ -61,7 +61,7 @@ const ProjectSections = () => {
         </div>
       </motion.div>
 
-      {/* <motion.div
+      <motion.div
         ref={refCreative}
         variants={sectionVariants}
         initial="hiddenRight"
@@ -77,7 +77,7 @@ const ProjectSections = () => {
           </div>
           <ImageBox imageSrc={projectsPageImages.image1} />
         </div>
-      </motion.div> */}
+      </motion.div>
 
       <motion.div
         ref={refAudio}
