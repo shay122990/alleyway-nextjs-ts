@@ -1,0 +1,44 @@
+.creativeServicesContainer {
+display: flex;
+flex-direction: column;
+gap: 2rem; 
+}
+
+.creativeSectionOne,
+.creativeSectionTwo,
+.creativeSectionThree {
+display: flex; 
+justify-content: center;
+width: 100%;
+}
+
+.creativeSectionOne img,
+.creativeSectionTwo img,
+.creativeSectionThree img {
+width: 50%; 
+height: 300px; 
+float: left; 
+margin-right: 20px; 
+}
+
+.creativeSectionTwo img {
+float: right; 
+margin-left: 20px; 
+}
+
+.textContainer {
+width: calc(50% - 20px);
+overflow: hidden; 
+}
+
+.serviceTitle {
+font-size: 1.5rem; 
+margin: 10px 0; 
+color: #333; 
+}
+
+.serviceDescription {
+font-size: 1rem; 
+color: #666; 
+}
+

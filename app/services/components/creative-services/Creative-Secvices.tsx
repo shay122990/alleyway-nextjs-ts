@@ -15,13 +15,29 @@ interface CreativeServicesProps {
 const CreativeServices: React.FC<CreativeServicesProps> = ({ creativeServicesData }) => {
   return (
     <div className={styles.creativeServicesContainer}>
-      {creativeServicesData.map((service, index) => (
-        <section key={index} className={styles[`creativeSection${index + 1}`]}>
-          <ImageBox imageSrc={service.imageSrc} />
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-        </section>
-      ))}
+      <section className={styles.creativeSectionOne}>
+        <ImageBox imageSrc={creativeServicesData[0].imageSrc} altText={creativeServicesData[0].title} />
+        <div className={styles.textContainer}>
+          <h3 className={styles.serviceTitle}>{creativeServicesData[0].title}</h3>
+          <p className={styles.serviceDescription}>{creativeServicesData[0].description}</p>
+        </div>
+      </section>
+
+      <section className={styles.creativeSectionTwo}>
+        <div className={styles.textContainer}>
+          <h3 className={styles.serviceTitle}>{creativeServicesData[1].title}</h3>
+          <p className={styles.serviceDescription}>{creativeServicesData[1].description}</p>
+        </div>
+        <ImageBox imageSrc={creativeServicesData[1].imageSrc} altText={creativeServicesData[1].title} />
+      </section>
+
+      <section className={styles.creativeSectionThree}>
+        <ImageBox imageSrc={creativeServicesData[2].imageSrc} altText={creativeServicesData[2].title} />
+        <div className={styles.textContainer}>
+          <h3 className={styles.serviceTitle}>{creativeServicesData[2].title}</h3>
+          <p className={styles.serviceDescription}>{creativeServicesData[2].description}</p>
+        </div>
+      </section>
     </div>
   );
 };

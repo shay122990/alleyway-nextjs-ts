@@ -54,9 +54,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 600px;
-  min-width: 348px;
-  max-width: 1500px;
   overflow-x: hidden;
   margin: 0 auto;
 }

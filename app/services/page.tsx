@@ -1,11 +1,11 @@
 import styles from "./Services.module.css";
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
-import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
-import PrivateEvents from "./components/private-events/Private-Events";
+// import ExhibitionSection from "./components/exhibition-section/ExhibitionSection";
+// import PrivateEvents from "./components/private-events/Private-Events";
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
-import CreativeServices from "./components/creative-services/Creative-Secvices";
+// import CreativeServices from "./components/creative-services/Creative-Secvices";
 
 export default function Services() {
   return (
@@ -26,11 +26,11 @@ export default function Services() {
       <main className={styles.main}>
         <section className={styles.serviceSection} id="exhibitions&tradeshows">
           <h2>{servicesPageData.exhibitions.title}</h2>
-          <ExhibitionSection exhibitionData={servicesPageData.exhibitions.services} />
+          {/* <ExhibitionSection exhibitionData={servicesPageData.exhibitions.services} /> */}
         </section>
         <section className={styles.serviceSection} id="private-events">
           <h2>{servicesPageData.privateEvents.title}</h2>
-          <PrivateEvents privateEventData={servicesPageData.privateEvents.images} />
+          {/* <PrivateEvents privateEventData={servicesPageData.privateEvents.images} /> */}
         </section>
         <section className={styles.serviceSection} id="creative-services">
          <h2>{servicesPageData.creativeServices.title}</h2>
