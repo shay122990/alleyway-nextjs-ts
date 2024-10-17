@@ -3,7 +3,7 @@ import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
 import ExhibitionSection from "./exhibition-section/ExhibitionSection";
 import PrivateEvents from "./private-events/Private-Events";
-import CreativeServices from "./components/creative-services/Creative-Secvices";
+import CreativeServices from "./creative-services/Creative-Secvices";
 import AudioVisual from "./audio-visual/Audio-Visual";
 
 import projectsImage from "@/public/images/projects-image.jpg";
