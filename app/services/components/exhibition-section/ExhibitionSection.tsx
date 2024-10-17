@@ -12,14 +12,14 @@ interface Exhibition {
 }
 
 interface ExhibitionSectionProps {
-  images: Exhibition[];
+  exhibitionData: Exhibition[];
 }
 
-const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ images }) => {
+const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ exhibitionData }) => {
   return (
     <div className={styles.exhibitionsContainer}>
       <div className={styles.exhibitionsInfoContainer}>
-        {images.map((exhibition, index) => (
+        {exhibitionData.map((exhibition, index) => (
           <div key={index} className={styles.exhibitionSection}>
             <div className={styles.exhibitionImageContainer}>
               <ImageBox imageSrc={exhibition.imageSrc} />
