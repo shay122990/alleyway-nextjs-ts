@@ -58,11 +58,14 @@ export const servicesPageData = {
         imageSrc: projectImage3,
       },
     ],
-    // images: [{ src: projectImage6 }, { src: projectImage5 }],
   },
   audioVisual: {
     title: "Audio Visual",
-    images: [{ src: projectImage6 }],
+    images: [
+      { src: projectImage6 },
+      { src: projectImage1 },
+      { src: projectImage3 },
+    ],
   },
   otherServices: {
     title: "Other Services",
