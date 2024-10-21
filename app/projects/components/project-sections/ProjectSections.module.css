@@ -2,7 +2,7 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  border-top: 1px solid var(--accent-lime) ;
+  border-top: 1px solid var(--accent-lime);
 }
 .projectSection1{
   display: flex;
