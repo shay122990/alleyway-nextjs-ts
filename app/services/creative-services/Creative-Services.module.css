@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     gap: 3rem; 
-    padding: 2rem 1rem;
+    padding: 2rem 4px;
     align-items: center;
     border-radius: 10px;
     background-color: #FA8BFF;
@@ -23,14 +23,13 @@
 .creativeSectionOne img,
 .creativeSectionTwo img,
 .creativeSectionThree img {
-    width: 50%; 
-    height: auto; 
+    width: 40%; 
+    height: auto;
     background: #2BD2FF;
     box-shadow:  7px 7px 14px #115466,
              -7px -7px 14px #45ffff;    
 }
 .textContainer {
-    width: calc(50% - 20px);
     overflow: scroll;    
 }
 
@@ -48,7 +47,7 @@
     .creativeSectionTwo img,
     .creativeSectionThree img {
         width: 60%;
-        height: 400px;   
+        height: 600px;   
 }
     .textContainer{
         width: 400px;
