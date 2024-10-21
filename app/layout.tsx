@@ -19,7 +19,7 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <Head>
-      <link
+      {/* <link
         rel="preload"
         href="/_next/static/css/b1f80d51dc5578d1.css"
         as="style"
@@ -33,10 +33,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       />
       <noscript>
         <link rel="stylesheet" href="/_next/static/css/b1f80d51dc5578d1.css" />
-      </noscript>
-      <link rel="preload" href="/_next/static/css/8ce5791442fa15ae.css" as="style" />
-      <link rel="preload" href="/_next/static/css/c7258dbf4828ea8f.css" as="style" />
-      <link rel="preload" href="/_next/static/css/32842244de662873.css" as="style" />  
+      </noscript>   */}
       {/* SEO Meta Tags */}
       <meta name="description" content="Event & Project Management Company In Dubai" />
       <meta name="keywords" content="events, project management, Dubai Events, Alleyway, Alleyway Events, event planner in dubai, project management company in dubai" />
