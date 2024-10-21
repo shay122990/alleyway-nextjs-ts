@@ -24,7 +24,7 @@ const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ title, exhibition
         {exhibitionData.map((exhibition, index) => (
           <div key={index} className={styles.exhibitionSection}>
             <div className={styles.exhibitionImageContainer}>
-              <ImageBox imageSrc={exhibition.imageSrc} />
+              <ImageBox imageSrc={exhibition.imageSrc} className={styles.exhibitionImages} />
               <Links href={exhibition.href}>
                 <span className={styles.viewMoreLink}>View More</span>
               </Links>

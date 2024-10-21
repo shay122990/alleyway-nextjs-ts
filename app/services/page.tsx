@@ -28,7 +28,7 @@ export default function Services() {
       />
       <main className={styles.main}>
         <section className={styles.serviceSection} id="exhibitions&tradeshows">
-          {/* <ExhibitionSection title={servicesPageData.exhibitions.title} exhibitionData={servicesPageData.exhibitions.services} /> */}
+          <ExhibitionSection title={servicesPageData.exhibitions.title} exhibitionData={servicesPageData.exhibitions.services} />
         </section>
         <section className={styles.serviceSection} id="private-events">
           {/* <PrivateEvents title={servicesPageData.privateEvents.title} privateEventData={servicesPageData.privateEvents.images} /> */}
