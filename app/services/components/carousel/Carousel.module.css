@@ -7,6 +7,7 @@
     margin: 0 auto; 
     overflow: hidden; 
     align-items: center;
+    border-radius: 15px;
   }
   
   .carouselImage {
@@ -20,7 +21,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: transparent; 
+    color: white;
     border: none; 
     cursor: pointer; 
     font-size: 2rem; 
@@ -38,11 +40,20 @@
   
   .prevButton:hover,
   .nextButton:hover {
-    background-color: rgba(255, 255, 255, 1); 
+    color: pink; 
   }
   
   .prevButton:focus,
   .nextButton:focus {
     outline: none; 
   }
-  
+  @media (min-width: 768px) {
+    .carouselContainer {
+      height: 450px;
+    }
+  }
+  @media (min-width: 1024px) {
+      .carouselContainer {
+        height: 600px;
+      }
+  }
