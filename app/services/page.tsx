@@ -40,7 +40,7 @@ export default function Services() {
           <AudioVisual title={servicesPageData.audioVisual.title}  audioVisualData={servicesPageData.audioVisual.images}/>
         </section>
         <section className={styles.serviceSection} id="other-services">
-          <OtherServices title={servicesPageData.otherServices.title}/>
+          <OtherServices title={servicesPageData.otherServices.title} services={servicesPageData.otherServices.services} />
         </section>
       </main>
     </>

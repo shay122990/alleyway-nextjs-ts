@@ -77,6 +77,7 @@ export const servicesPageData = {
           "regulatory compliance",
           "office space solutions",
         ],
+        stylesClass: "businessSetupStyle",
       },
       {
         title: "Logistics & forwarding",
@@ -85,6 +86,7 @@ export const servicesPageData = {
           "transportation services",
           "warehouse solutions",
         ],
+        stylesClass: "logisticsStyle",
       },
       {
         title: "Business Consulting",
@@ -93,6 +95,7 @@ export const servicesPageData = {
           "market analysis",
           "process improvement",
         ],
+        stylesClass: "consultingStyle",
       },
       {
         title: "Business Management",
@@ -101,6 +104,7 @@ export const servicesPageData = {
           "financial planning",
           "human resources",
         ],
+        stylesClass: "managementStyle",
       },
     ],
   },
