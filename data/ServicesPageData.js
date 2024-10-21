@@ -60,7 +60,7 @@ export const servicesPageData = {
     ],
   },
   audioVisual: {
-    title: "Audio Visual",
+    title: "Audio & Visual Services",
     images: [
       { src: projectImage6 },
       { src: projectImage1 },
