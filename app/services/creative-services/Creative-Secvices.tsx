@@ -17,18 +17,18 @@ const CreativeServices: React.FC<CreativeServicesProps> = ({title, creativeServi
   return (
     <div className={styles.creativeServicesContainer}>
       <h2>{title}</h2>
-      <div className={styles.crdivOne}>
+      <div className={styles.creativeSectionOne}>
         <ImageBox imageSrc={creativeServicesData[0].imageSrc} altText={creativeServicesData[0].title} />
         <div className={styles.textContainer}>
-          <h3 className={styles.serviceTitle}>{creativeServicesData[0].title}</h3>
-          <p className={styles.serviceDescription}>{creativeServicesData[0].description}</p>
+          <h3>{creativeServicesData[0].title}</h3>
+          <p>{creativeServicesData[0].description}</p>
         </div>
       </div>
 
       <div className={styles.creativeSectionTwo}>
         <div className={styles.textContainer}>
-          <h3 className={styles.serviceTitle}>{creativeServicesData[1].title}</h3>
-          <p className={styles.serviceDescription}>{creativeServicesData[1].description}</p>
+          <h3>{creativeServicesData[1].title}</h3>
+          <p>{creativeServicesData[1].description}</p>
         </div>
         <ImageBox imageSrc={creativeServicesData[1].imageSrc} altText={creativeServicesData[1].title} />
       </div>
@@ -36,8 +36,8 @@ const CreativeServices: React.FC<CreativeServicesProps> = ({title, creativeServi
       <div className={styles.creativeSectionThree}>
         <ImageBox imageSrc={creativeServicesData[2].imageSrc} altText={creativeServicesData[2].title} />
         <div className={styles.textContainer}>
-          <h3 className={styles.serviceTitle}>{creativeServicesData[2].title}</h3>
-          <p className={styles.serviceDescription}>{creativeServicesData[2].description}</p>
+          <h3>{creativeServicesData[2].title}</h3>
+          <p>{creativeServicesData[2].description}</p>
         </div>
       </div>
     </div>

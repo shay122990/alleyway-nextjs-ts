@@ -5,7 +5,7 @@
     width: 100%;
     gap: 2rem;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(249, 245, 239);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -17,8 +17,8 @@
     max-width: 500px;
 }
 @media (min-width: 768px) {
-   .privateEventsContainer{
-   }
+   /* .privateEventsContainer{
+   } */
   }
     
   @media (min-width: 1024px) {
