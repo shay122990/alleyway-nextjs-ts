@@ -1,3 +1,4 @@
+import styles from "./Other-Services.module.css"
 interface OtherServicesProps{
     title: string
 }

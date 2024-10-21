@@ -69,5 +69,39 @@ export const servicesPageData = {
   },
   otherServices: {
     title: "Other Services",
+    services: [
+      {
+        title: "Business Set up",
+        list: [
+          "company formation",
+          "regulatory compliance",
+          "office space solutions",
+        ],
+      },
+      {
+        title: "Logistics & forwarding",
+        list: [
+          "supply chain management",
+          "transportation services",
+          "warehouse solutions",
+        ],
+      },
+      {
+        title: "Business Consulting",
+        list: [
+          "strategy development",
+          "market analysis",
+          "process improvement",
+        ],
+      },
+      {
+        title: "Business Management",
+        list: [
+          "operations management",
+          "financial planning",
+          "human resources",
+        ],
+      },
+    ],
   },
 };
