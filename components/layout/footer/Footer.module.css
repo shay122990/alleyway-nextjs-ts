@@ -9,7 +9,6 @@
     background-color: transparent;
     border-top: 1px solid var(--accent-lime);
     margin-top: 4rem;
-    overflow: hidden;
 }
 .logoIconContainer{
     display: flex;
