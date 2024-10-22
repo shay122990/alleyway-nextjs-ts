@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Links from "@/components/common/links/Links";
-import styles from "../../layout/footer/Footer.module.css";
+import styles from "@/components/layout/footer/Footer.module.css";
 
 const footerNavItems = [
   { href: '/services/#about-us', label: 'About Us' },

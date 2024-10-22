@@ -2,17 +2,15 @@
 import styles from './Navbar.module.css';
 
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation'; 
-import Icons from '../../common/icons/Icons';
-import Links from '@/components/common/links/Links'; 
-import Logo from '@/components/logo/Logo';
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+import NavbarNavLinks from '../navigation-links/navbar-nav-links/Navbar-Nav-Links'; 
+import Icons from '../../common/icons/Icons';
+import Logo from '@/components/common/logo/Logo';
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const pathname = usePathname(); 
 
   const toggleMenu = () => setIsMenuOpen(prev => !prev);
   const closeMenu = () => setIsMenuOpen(false);
@@ -26,13 +24,6 @@ export default function Navbar() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' }
-  ];
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.hamburger} onClick={toggleMenu}>
@@ -42,15 +33,7 @@ export default function Navbar() {
         <Logo />
       </div>
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
-        <ul className={styles.menu}>
-          {navItems.map(({ href, label }, index) => (
-            <li key={index} className={pathname === href ? styles.active : ''}>
-              <Links href={href} onClick={closeMenu}>
-                {label}
-              </Links>
-            </li>
-          ))}
-        </ul>
+        <NavbarNavLinks closeMenu={closeMenu} />
         <Icons />
       </div>
       {isMobile && <WhatsApp className={styles.navbarWhatsApp}/>}

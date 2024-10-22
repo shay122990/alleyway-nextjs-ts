@@ -2,8 +2,8 @@ import '../styles/globals.css';
 import { Barlow } from 'next/font/google';
 import Head from 'next/head';
 import WhatsApp from '@/components/common/whatsapp/WhatsApp';
-import Navbar from '@/components/navigation/navbar/Navbar';
 import Footer from '@/components/layout/footer/Footer';
+import Header from '@/components/layout/header/Header';
 
 const font = Barlow({ weight: ['400', '700'], subsets: ['latin'], preload: true });
 
@@ -24,9 +24,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
       <title>Alleyway Events</title>
     </Head>
       <body className={font.className}>
-        <Navbar />
+        <Header />
           {children}  
-        <Footer  />
+        <Footer />
         <WhatsApp isFloating={true} />
       </body>
   </html>

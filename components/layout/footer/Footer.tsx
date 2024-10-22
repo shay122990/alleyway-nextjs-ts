@@ -1,9 +1,9 @@
 import styles from "./Footer.module.css";
 import Icons from "@/components/common/icons/Icons";
-import Logo from "@/components/logo/Logo";
+import Logo from "@/components/common/logo/Logo";
 import Button from "@/components/common/buttons/Button";
 import Links from "@/components/common/links/Links";
-import FooterNavLinks from '../../navigation/footer-nav-items/Footer-Nav-Links';  
+import FooterNavLinks from '../navigation-links/footer-nav-links/Footer-Nav-Links';  
 
 export default function Footer() {
   return (
