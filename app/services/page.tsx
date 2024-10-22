@@ -5,10 +5,9 @@ import ExhibitionSection from "./exhibition-section/ExhibitionSection";
 import PrivateEvents from "./private-events/Private-Events";
 import CreativeServices from "./creative-services/Creative-Secvices";
 import AudioVisual from "./audio-visual/Audio-Visual";
-
+import OtherServices from "./other-services/Other-Services";
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
-import OtherServices from "./other-services/Other-Services";
 
 export default function Services() {
   return (

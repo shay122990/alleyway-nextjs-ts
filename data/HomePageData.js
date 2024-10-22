@@ -8,7 +8,7 @@ import projectImage6 from "@/public/images/projects-image6.jpg";
 export const homePageData = {
   exhibitions: {
     title: "Exhibitions & Trade Shows",
-    images: [{ src: projectImage1 }], // Removed width and height
+    images: [{ src: projectImage1 }],
     links: [
       { name: "Booth Design & Set Up", href: "/services#exhibitions" },
       { name: "Logistics Management", href: "/services#exhibitions" },
@@ -19,7 +19,7 @@ export const homePageData = {
     title: "Private Events",
     images: [{ src: projectImage2 }, { src: projectImage3 }],
     links: [
-      { name: "Anniversary", href: "/services/private-events" },
+      { name: "Anniversary", href: "/services#private-events" },
       { name: "Birthday Parties", href: "/services#private-events" },
       { name: "Weddings", href: "/services#private-events" },
       { name: "Social Events", href: "/services#private-events" },

@@ -20,7 +20,7 @@ const AudioVisual = ({title, audioVisualData }: { audioVisualData: CarouselProps
        </ul>
        <p>We offer top-notch audio-visual services to elevate your event. From sound and lighting to video production and live streaming, we provide high-quality AV solutions that ensure a clear, engaging, and memorable experience for your audience.</p>
        </div>
-       <Carousel images={audioVisualData}/>
+       <Carousel images={audioVisualData}  />
     </div>
   );
 }
