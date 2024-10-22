@@ -15,8 +15,7 @@
       padding: 1rem 1rem 0.8rem 1rem;
       border-radius: 50%;
       cursor: pointer;
-      font-size: 24px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      font-size: 14px;
       transition: transform 0.3s ease-in-out;
       border: none;
     }

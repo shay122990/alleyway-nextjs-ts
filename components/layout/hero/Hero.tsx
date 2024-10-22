@@ -22,11 +22,11 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
         <Image 
           src={backgroundImage} 
           alt="Hero Image" 
-          fill 
           style={{ objectFit: 'cover' }}  
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  
           priority
-          placeholder="blur" 
+          width={width} 
+          height={height}
           blurDataURL="data:image/webp;base64,..."
           quality={60}  
           className={styles.backgroundImage}
