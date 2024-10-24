@@ -10,7 +10,7 @@ interface PrivateEventsProps {
 
 const PrivateEvents: React.FC<PrivateEventsProps> = ({title, privateEventData }) => {
   return (
-    <div className={styles.privateEventsContainer}>
+    <div className={styles.privateEventsContainer} id="private-events">
       <h2>{title}</h2>
       <h3>Wedding, Birthdays, Special Events & more</h3>
       <Carousel images={privateEventData} />

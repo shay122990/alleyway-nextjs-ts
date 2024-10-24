@@ -26,19 +26,19 @@ export default function Services() {
         paragraphClassName={styles.servicesParagraph}
       />
       <main className={styles.main}>
-        <section className={styles.serviceSection} id="exhibitions&tradeshows">
+        <section className={styles.serviceSection}>
           <ExhibitionSection title={servicesPageData.exhibitions.title} exhibitionData={servicesPageData.exhibitions.services} />
         </section>
-        <section className={styles.serviceSection} id="private-events">
+        <section className={styles.serviceSection}>
           <PrivateEvents title={servicesPageData.privateEvents.title} privateEventData={servicesPageData.privateEvents.images} />
         </section>
-        <section className={styles.serviceSection} id="creative-services">
+        <section className={styles.serviceSection}>
           <CreativeServices title={servicesPageData.creativeServices.title} creativeServicesData={servicesPageData.creativeServices.services} />
         </section>
-        <section className={styles.serviceSection} id="audio-visual">
+        <section className={styles.serviceSection}>
           <AudioVisual title={servicesPageData.audioVisual.title}  audioVisualData={servicesPageData.audioVisual.images}/>
         </section>
-        <section className={styles.serviceSection} id="other-services">
+        <section className={styles.serviceSection}>
           <OtherServices title={servicesPageData.otherServices.title} services={servicesPageData.otherServices.services} />
         </section>
       </main>

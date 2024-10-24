@@ -15,7 +15,7 @@ interface CreativeServicesProps {
 
 const CreativeServices: React.FC<CreativeServicesProps> = ({title, creativeServicesData }) => {
   return (
-    <div className={styles.creativeServicesContainer}>
+    <div className={styles.creativeServicesContainer} id="creative-services">
       <h2>{title}</h2>
       <div className={styles.creativeSectionOne}>
         <ImageBox imageSrc={creativeServicesData[0].imageSrc} altText={creativeServicesData[0].title} />

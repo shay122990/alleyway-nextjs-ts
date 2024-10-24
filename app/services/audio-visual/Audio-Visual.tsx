@@ -9,7 +9,7 @@ interface CarouselProps {
 
 const AudioVisual = ({title, audioVisualData }: { audioVisualData: CarouselProps['images'], title:string }) => {
   return (
-    <div className={styles.audioVisualSection}>
+    <div className={styles.audioVisualSection} id="audio-visual">
        <h2>{title}</h2>
        <div className={styles.audioVisualInfo}>
        <ul className={styles.audioVisualList}>

@@ -18,7 +18,7 @@ interface ExhibitionSectionProps {
 
 const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ title, exhibitionData }) => {
   return (
-    <div className={styles.exhibitionsContainer}>
+    <div className={styles.exhibitionsContainer} id="exhibitions">
       <h2>{title}</h2>
       <div className={styles.exhibitionsInfoContainer}>
         {exhibitionData.map((exhibition, index) => (

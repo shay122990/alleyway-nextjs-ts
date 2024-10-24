@@ -44,4 +44,8 @@ export const homePageData = {
       { name: "Technical Support", href: "/services#audio-visual" },
     ],
   },
+  otherServices: {
+    title: "Other Services",
+    link: "/services#other-services",
+  },
 };

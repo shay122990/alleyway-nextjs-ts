@@ -7,7 +7,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
 const Banner = () => {
   return (
     <div className={styles.bannerContainer}>
-      <Link href="/services#other-services" scroll={false} className={styles.bannerContent}>
+      <Link href="/services#other-services" className={styles.bannerContent}>
         <p>Our Services Are Limitless</p>
         <motion.div
           className={styles.bannerSideArrow}

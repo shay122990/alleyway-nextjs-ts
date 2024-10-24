@@ -14,7 +14,7 @@ interface OtherServicesProps {
 
 const OtherServices: React.FC<OtherServicesProps> = ({ title, services }) => {
   return (
-    <div className={styles.otherServicesContainer}>
+    <div className={styles.otherServicesContainer} id="other-services">
       <h2>{title}</h2>
       <div className={styles.servicesGrid}>
         {services.map((service, index) => (
