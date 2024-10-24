@@ -83,7 +83,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 .privateSection img{
   width: 46%;
