@@ -10,7 +10,6 @@ import WhatsApp from '@/components/common/whatsapp/WhatsApp';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile] = useState(typeof window !== 'undefined' ? window.innerWidth <= 1024 : false);
 
   const toggleMenu = () => setIsMenuOpen(prev => !prev);
   const closeMenu = () => setIsMenuOpen(false);
@@ -27,7 +26,7 @@ export default function Navbar() {
         <NavbarNavLinks closeMenu={closeMenu} />
         <Icons />
       </div>
-      {isMobile && <WhatsApp className={styles.navbarWhatsApp}/>}
+      <WhatsApp className={styles.navbarWhatsApp} />
     </nav>
   );
 }
