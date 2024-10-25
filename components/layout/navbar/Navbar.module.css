@@ -147,7 +147,9 @@
     gap: 1rem;
     padding: 0;
     height: 100px;
-
+  }
+  .navbarWhatsApp{
+    display: none;
   }
 }
 @media (min-width: 1240px){
