@@ -25,9 +25,9 @@ const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ title, exhibition
           <div key={index} className={styles.exhibitionSection}>
             <div className={styles.exhibitionImageContainer}>
               <ImageBox imageSrc={exhibition.imageSrc} />
-              <Links href={exhibition.href}>
-                <span className={styles.viewMoreLink}>View More</span>
-              </Links>
+              {/* <Links href={exhibition.href}>
+                <span className={styles.viewMoreLink}>View Projects</span>
+              </Links> */}
             </div>
             <div className={styles.exhibitionInfoSection}>
               <h3>{exhibition.title}</h3>

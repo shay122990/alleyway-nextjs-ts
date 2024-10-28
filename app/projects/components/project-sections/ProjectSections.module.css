@@ -13,20 +13,23 @@
 }
 .exhibitionsRow1 , .exhibitionsRow2{
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: 2rem;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   padding: 2rem 0;
   max-width: 100%;
 }
+.exhibitionsRow2{
+  gap:0;
+}
 .exhibitionsRow1 img{
-  width: 46%;
+  width: 42%;
   height: auto;
 }
 .exhibitionsRow2 img {
-  width: 65%; 
+  width: 60%; 
   height: auto;
 }
 .exhibitionsRow2 h2 {
@@ -47,7 +50,7 @@
   align-items: center;
 }
 .exhibitionSection2 img{
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 .exhibitionSection2Info{
@@ -82,15 +85,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 .privateSection img{
-  width: 46%;
+  width: 42%;
   height: auto;
 }
 .privateSection img:nth-child(3) {
-  width: 100%;
+  width: 90%;
 }
 .projectSection4{
   width: 100%;
@@ -100,6 +103,7 @@
 .creativeSection{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .creativeSectionInfo{
@@ -113,7 +117,7 @@
   padding: 1rem 0;
 }
 .creativeSection img{
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 .projectSection5{
@@ -134,12 +138,12 @@
 .audioSection{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2rem 0;
   gap: 2rem;
 }
 .audioSection img{
-  width: 45%;
+  width: 42%;
   height: auto;
 }
   
@@ -150,15 +154,22 @@
     .projectsParagraph{
       font-size: 24px;
     }
-    .exhibitionsRow1 , .exhibitionsRow2{
-      width: 50%;
+    .projectSection1{
+      justify-content: center;
+    }
+    .exhibitionsRow1{
+      width: 60%;
+      align-items: flex-start;
+      justify-content: left;
     }
     .exhibitionsRow2{
       flex-direction: column-reverse;
+      align-items: flex-start;
       justify-content: space-between;
+      width: 40%;
     }
     .exhibitionsRow2 img {
-      width: 80%;
+      width: 100%;
       height: auto; 
     }
     .exhibitionsRow2 h2 {
@@ -210,12 +221,10 @@
       width: 60%;
     }
     .audioSection{
-      justify-content: center;
-      gap: 4rem;
+      gap: 1rem;
     }
     .audioSection img{
-      width: 40%;
-      height: 500px;
+      width: 22%;
     } 
   }
     @media (min-width: 1240px){
@@ -228,18 +237,28 @@
       .projectSection2, .projectSection3, .projectSection4{
         margin: 8rem 0;
       }
+      .projectSection1{
+        justify-content: space-between;
+        gap: 4rem;
+      }
+      .exhibitionsRow1{
+        justify-content: space-between;
+        gap: 1rem;
+        width: 47%;
+      }
       .exhibitionsRow1 img{
-        width: 48%;
-        height: 500px;
+        width: 42%;
       }
       .exhibitionsRow2{
+        justify-content: center;
+        width: 47%;
         flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0 2rem;
-      }
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      } 
       .exhibitionsRow2 img {
         width: 50%;
-        height: 500px 
       }
       .exhibitionsRow2 h2 {
         font-size: 28px;
@@ -285,11 +304,8 @@
         margin: -2rem 0;
         width: 60%;
       }
-      .audioSection{
-        justify-content: center;
-        gap: 6rem;
-      }
-      .audioSection img{
-        height: 700px;
-      }
+     
+      /* .audioSection img{
+        width: 30%;
+      } */
     }
