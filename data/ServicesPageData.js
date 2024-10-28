@@ -6,6 +6,23 @@ import projectImage5 from "@/public/images/projects-image5.jpg";
 import projectImage6 from "@/public/images/projects-image6.jpg";
 
 export const servicesPageData = {
+  aboutUs: [
+    {
+      title: "Our Mission",
+      description: "Mission description",
+      stylesClass: "missionStyle",
+    },
+    {
+      title: "Our Vision",
+      description: "Vision description",
+      stylesClass: "visionStyle",
+    },
+    {
+      title: "Our Team",
+      description: "Team description",
+      stylesClass: "teamStyle",
+    },
+  ],
   exhibitions: {
     title: "Exhibitions & Trade Shows",
     services: [

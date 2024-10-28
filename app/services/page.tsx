@@ -8,6 +8,7 @@ import AudioVisual from "./audio-visual/Audio-Visual";
 import OtherServices from "./other-services/Other-Services";
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
+import AboutUs from "./about-us/About-Us";
 
 export default function Services() {
   return (
@@ -26,6 +27,9 @@ export default function Services() {
         paragraphClassName={styles.servicesParagraph}
       />
       <main className={styles.main}>
+        <section className={styles.servicesSection}>
+          {/* <AboutUs aboutUsData={servicesPageData.aboutUs}/> */}
+        </section>
         <section className={styles.serviceSection}>
           <ExhibitionSection title={servicesPageData.exhibitions.title} exhibitionData={servicesPageData.exhibitions.services} />
         </section>

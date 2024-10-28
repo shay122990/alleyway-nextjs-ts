@@ -1,0 +1,10 @@
+.aboutUsGrid{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+/* @media (min-width: 768px) {
+    .aboutUsGrid{
+        flex-direction: row;
+    }
+} */
