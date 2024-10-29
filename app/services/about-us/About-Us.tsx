@@ -14,6 +14,10 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
   return (
     <div id="about-us" className={styles.aboutUsContainer}>
       <div className={styles.aboutUsGrid}>
+        <div className={styles.aboutUsTitle}>
+          <h2>Who we are</h2>
+        </div>
+        <div className={styles.aboutInfo}>
         {aboutUsData.map((section, index) => (
           <CardFlip 
             key={index} 
@@ -22,6 +26,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
             stylesClass={section.stylesClass}  
           />
         ))}
+        </div>
       </div>
     </div>
   );

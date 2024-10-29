@@ -1,5 +1,12 @@
 .aboutUsGrid{
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.aboutInfo{
+    display: flex;
     flex-direction: row;
     gap: 1rem;
 }
