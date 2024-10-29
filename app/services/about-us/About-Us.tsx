@@ -1,5 +1,5 @@
 import styles from "./About-Us.module.css";
-import Card from "../components/card/Card";
+import CardFlip from "../components/card-flip/CardFlip";
 
 
 interface AboutUsProps {
@@ -15,7 +15,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
     <div id="about-us" className={styles.aboutUsContainer}>
       <div className={styles.aboutUsGrid}>
         {aboutUsData.map((section, index) => (
-          <Card 
+          <CardFlip 
             key={index} 
             title={section.title} 
             description={section.description} 

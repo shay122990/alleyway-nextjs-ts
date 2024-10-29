@@ -32,17 +32,8 @@
   .managementStyle {
     background: linear-gradient(180deg, rgba(255,130,3,1) 20%, rgba(253,104,33,1) 100%);
   }
- 
-  /* ABOUT US STYLES */
-  .missionStyle{
-    border: 1px solid red;
-  }
-  .visionStyle{
-    border: 1px solid blue;
-  }
-  .teamStyle{
-    border: 1px solid green;
-  }
+
+  
 @media (min-width: 600px) {
     .businessSetupStyle, .logisticsStyle, .consultingStyle, .managementStyle{
         height: 280px;
