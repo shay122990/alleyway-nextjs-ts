@@ -9,6 +9,7 @@
 .serviceSection{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   margin: 1rem 0;

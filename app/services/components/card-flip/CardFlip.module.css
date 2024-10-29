@@ -1,75 +1,78 @@
 .flipCardContainer {
+    width: 100%;
     perspective: 1000px;
-    width: 140px;
-    height: 200px;
     border-radius: 15px;
-  }
+    display: flex;
+    justify-content: center;
+}
   
-  .cardInner {
+.cardInner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 160px;
     transform-style: preserve-3d;
     transition: transform 0.6s;
-  }
-  
-  .flipCardContainer:hover .cardInner {
+}
+
+.flipCardContainer:hover .cardInner {
     transform: rotateY(180deg);
-  }
-  
-  .cardFace {
+}
+
+.cardFace {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 160px;
     backface-visibility: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
     border-radius: 8px;
-  }
-  
-  .cardFront, .cardBack {
-    color: #920f0f;
-    background-color: black;
-  }
-  
-  .cardBack {
+}
+
+.cardBack {
     transform: rotateY(180deg);
-  }
-  
-  /* Custom styles for each type of card */
-  .missionStyle .cardFront {
-    background-color: #FFD700; /* Example color for Mission */
+}
+
+.missionStyle .cardFront {
+    background: linear-gradient(180deg, rgba(255,230,3,1) 42%, rgba(254,122,58,1) 91%);
     color: #333;
-  }
-  
-  .visionStyle .cardFront {
-    background-color: #8A2BE2; /* Example color for Vision */
+}
+
+.visionStyle .cardFront {
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
     color: #fff;
-  }
-  
-  .teamStyle .cardFront {
-    background-color: #00BFFF; /* Example color for Team */
+}
+
+.teamStyle .cardFront {
+    background: linear-gradient(0deg, rgba(0,224,255,1) 0%, rgba(4,59,255,1) 100%);
     color: #000;
-  }
-  
-  /* Additional card back colors */
-  .missionStyle .cardBack {
-    background-color: #FFD700;
+}
+
+.missionStyle .cardBack {
+    background-color: #FFE603;
     color: #333;
-  }
-  
-  .visionStyle .cardBack {
+}
+
+.visionStyle .cardBack {
     background-color: #8A2BE2;
     color: #fff;
-  }
-  
-  .teamStyle .cardBack {
-    background-color: #00BFFF;
+}
+
+.teamStyle .cardBack {
+    background-color: #00E0FF;
     color: #000;
-  }
-  
-  /* Add additional styles here for each specific card */
+}
+
+@media (min-width: 768px) {
+    .cardInner, .cardFace{
+        height: 300px;
+    }
+}
+@media (min-width: 1024px ) {
+    .cardInner, .cardFace{
+        height: 400px;
+    }
+}
+
   
