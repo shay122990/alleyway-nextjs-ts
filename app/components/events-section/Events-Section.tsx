@@ -33,7 +33,7 @@ const EventsSection = () => {
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.exhibitionImages}>
             {homePageData.exhibitions.images.map((image, index) => (
-              <ImageBox key={index} imageSrc={image.src}  />
+              <ImageBox key={index} imageSrc={image.src} altText="Exhibition Image"/>
             ))}
           </div>
           <ul className={styles.linksContainer}>
@@ -59,7 +59,7 @@ const EventsSection = () => {
         <div className={`${styles.imageAndLinksContainer} ${styles.private}`}>
           <div className={styles.privateEventImages}>
             {homePageData.privateEvents.images.map((image, index) => (
-              <ImageBox key={index} imageSrc={image.src}  />
+              <ImageBox key={index} imageSrc={image.src} altText="Private Event Image" />
             ))}
           </div>
           <ul className={styles.linksContainer}>
@@ -85,7 +85,7 @@ const EventsSection = () => {
         <div className={`${styles.imageAndLinksContainer} ${styles.creative}`}>
           <div className={styles.creativeServiceImages}>
             {homePageData.creativeServices.images.map((image, index) => (
-              <ImageBox key={index} imageSrc={image.src}  />
+              <ImageBox key={index} imageSrc={image.src} altText="Creative Services Image" />
             ))}
           </div>
           <ul className={styles.linksContainer}>
@@ -111,7 +111,7 @@ const EventsSection = () => {
         <div className={`${styles.imageAndLinksContainer} ${styles.audio}`}>
           <div className={styles.audioVisualImages}>
             {homePageData.audioVisual.images.map((image, index) => (
-              <ImageBox key={index} imageSrc={image.src}  />
+              <ImageBox key={index} imageSrc={image.src} altText="Audio & Video Services Image"  />
             ))}
           </div>
           <ul className={styles.linksContainer}>
