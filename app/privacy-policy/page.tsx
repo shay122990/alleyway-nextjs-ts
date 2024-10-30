@@ -21,6 +21,7 @@ const PrivacyPolicy = () => {
         <meta property="og:image" content="https://alleywaydxb.com/images/header-home.jpg" />
         <meta property="og:url" content="https://alleywaydxb.com/privacy-policy" />
         <meta property="og:type" content="website" />
+        
       </Head>
       <Hero 
         width={1920}

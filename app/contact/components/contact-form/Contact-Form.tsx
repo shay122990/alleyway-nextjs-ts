@@ -14,16 +14,24 @@ export type FormData = {
 };
 
 const ContactForm: FC = () => {
-  const { register, handleSubmit, reset } = useForm<FormData>();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
+  const [loading, setLoading] = useState(false);
 
   async function onSubmit(data: FormData) {
+    setLoading(true); 
     try {
       await sendEmail(data);
-      setMessage({ text: 'Your message was sent successfully! We will contact you shortly', type: 'success' });
-      reset(); 
+      setMessage({ text: 'Your message was sent successfully! We will contact you shortly.', type: 'success' });
+      
+      setTimeout(() => {
+        reset(); 
+        setMessage(null); 
+      }, 3000); 
     } catch (error) {
-      setMessage({ text: 'There was an error sending your message. Please try again, or WhatsApp us. ', type: 'error' });
+      setMessage({ text: 'There was an error sending your message. Please try again, or WhatsApp us.', type: 'error' });
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -74,8 +82,9 @@ const ContactForm: FC = () => {
               type='text'
               placeholder='Name'
               className={styles.input}
-              {...register('name', { required: true })}
+              {...register('name', { required: 'Name is required' })}
             />
+            {errors.name && <span className={styles.error}>{errors.name.message}</span>}
           </motion.div>
           <motion.div className={styles.field} initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}>
             <label htmlFor='email' className={styles.label}>
@@ -85,8 +94,9 @@ const ContactForm: FC = () => {
               type='email'
               placeholder='example@domain.com'
               className={styles.input}
-              {...register('email', { required: true })}
+              {...register('email', { required: 'Email is required' })}
             />
+            {errors.email && <span className={styles.error}>{errors.email.message}</span>}
           </motion.div>
           <motion.div className={styles.field} initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 0.6 }}>
             <label htmlFor='message' className={styles.label}>
@@ -96,11 +106,14 @@ const ContactForm: FC = () => {
               rows={5}
               placeholder='How can we assist you?'
               className={styles.inputMessage}
-              {...register('message', { required: true })}
+              {...register('message', { required: 'Message is required' })}
             ></textarea>
+            {errors.message && <span className={styles.error}>{errors.message.message}</span>}
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
-            <Button buttonType="submit">Submit</Button>
+            <Button buttonType="submit" disabled={loading}>
+              {loading ? 'Sending...' : 'Submit'}
+            </Button>
           </motion.div>
         </motion.form>
       )}
