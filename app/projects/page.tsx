@@ -12,6 +12,11 @@ export default function Projects() {
         <title>Projects | Alleyway</title>
         <meta name="description" content="The projects we've successfully completed" />
         <link rel="preload" href={aboutImage.src} as="image" />
+        <meta property="og:title" content="Our Projects - Alleyway" />
+        <meta property="og:description" content="Discover the projects we have successfully completed." />
+        <meta property="og:image" content="https://alleywaydxb.com/images/about-image.webp" />
+        <meta property="og:url" content="https://alleywaydxb.com/projects" />
+        <meta property="og:type" content="website" />
       </Head>
       <Hero 
         width={1920}

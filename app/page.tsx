@@ -14,6 +14,11 @@ export default function Home() {
         <title>Event & Project Management Company in Dubai | Alleyway</title>
         <meta name="description" content="Alleyway is a leading event and project management company in Dubai, offering comprehensive services for all types of events." />
         <link rel="preload" href={homeHero.src} as="image" />
+        <meta property="og:title" content="Alleyway - Premier Events Management Company in Dubai" />
+        <meta property="og:description" content="Alleyway is a top events management company in Dubai, specializing in event planning and project management." />
+        <meta property="og:image" content="https://alleywaydxb.com/images/homeHero.webp" />  
+        <meta property="og:url" content="https://alleywaydxb.com" />
+        <meta property="og:type" content="website" />
       </Head>
       <Hero 
         width={1920}

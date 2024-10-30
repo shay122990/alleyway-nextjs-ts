@@ -16,7 +16,11 @@ const PrivacyPolicy = () => {
         <title>Privacy Policy - Alleyway</title>
         <meta name="description" content="Alleyway - Privacy Policy" />
         <link rel="preload" href={homeImage.src} as="image" />
-
+        <meta property="og:title" content="Privacy Policy - Alleyway" />
+        <meta property="og:description" content="Your privacy is our priority at Alleyway. Read our Privacy Policy for details." />
+        <meta property="og:image" content="https://alleywaydxb.com/images/header-home.jpg" />
+        <meta property="og:url" content="https://alleywaydxb.com/privacy-policy" />
+        <meta property="og:type" content="website" />
       </Head>
       <Hero 
         width={1920}

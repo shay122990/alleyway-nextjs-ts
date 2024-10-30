@@ -21,14 +21,14 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
       {image && backgroundImage && (
         <Image 
           src={backgroundImage} 
-          alt="Hero Image" 
+          alt="Hero Image | Alleyway Events" 
           style={{ objectFit: 'cover' }}  
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  
           priority
           width={width} 
           height={height}
           blurDataURL="data:image/webp;base64,..."
-          quality={60}  
+          // quality={60}  
           className={styles.backgroundImage}
         />
       )}
