@@ -14,14 +14,14 @@ const PrivacyPolicy = () => {
     <>
       <Head>
         <title>Privacy Policy - Alleyway</title>
-        <meta name="description" content="Alleyway - Privacy Policy" />
+        <meta name="description" content="Your privacy is our priority at Alleyway. Read our Privacy Policy for details on how we protect your information." />
         <link rel="preload" href={homeImage.src} as="image" />
         <meta property="og:title" content="Privacy Policy - Alleyway" />
-        <meta property="og:description" content="Your privacy is our priority at Alleyway. Read our Privacy Policy for details." />
+        <meta property="og:description" content="Learn about our commitment to protecting your privacy and how we manage your data." />
         <meta property="og:image" content="https://alleywaydxb.com/images/header-home.jpg" />
         <meta property="og:url" content="https://alleywaydxb.com/privacy-policy" />
         <meta property="og:type" content="website" />
-        
+        <meta name="keywords" content="Privacy Policy, Alleyway, Data Protection, User Privacy, Information Security, Dubai" />
       </Head>
       <Hero 
         width={1920}
