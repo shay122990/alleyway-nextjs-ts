@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Event & Project Management Company in Dubai | Alleyway</title>
         <meta name="description" content="Alleyway is a leading event and project management company in Dubai, offering comprehensive services for all types of events." />
-        <meta name="keywords" content="event management, project management, corporate events, wedding planning, event planning, Dubai events, private events, exhibition planning, audio-visual services" />
+        <meta name="keywords" content="event management, trade shows, project management, corporate events, wedding planning, event planning, Dubai events, private events, exhibition planning, audio-visual services, creative services, exhibition design, logistics management, event coordination" />
         <link rel="preload" href={homeHero.src} as="image" />
         <meta property="og:title" content="Alleyway - Premier Events Management Company in Dubai" />
         <meta property="og:description" content="Alleyway is a top events management company in Dubai, specializing in event planning and project management." />
