@@ -96,13 +96,6 @@
 .menu .active{
   color: lime;
 }
-/* 
-.navIcons {
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 10px;
-  border: 1px solid pink !important;
-} */
 .navbarWhatsApp{
   background: transparent;
   border: none;
@@ -117,15 +110,15 @@
 
 @media (min-width: 1024px) {
   .navbar{
-    top: 9rem;
+    top: 8rem;
     justify-content: space-around;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
   .hamburger {
     display: none;
   }
   .heroLogoContainer{
-    top: -5rem;
+    top: -4rem;
     width: 130px;
     height: 130px;
   }
