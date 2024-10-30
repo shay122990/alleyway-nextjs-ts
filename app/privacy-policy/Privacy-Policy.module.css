@@ -19,10 +19,13 @@
 .emailLink{
   text-transform: lowercase;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 4px;
 }
 .emailLink:hover{
   color: var(--accent-lime);
+}
+.dateUpdate{
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
     .privacyTitle{

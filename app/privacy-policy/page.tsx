@@ -89,8 +89,7 @@ const PrivacyPolicy = () => {
               hello@alleywaydxb.com
             </a>.
           </p>
-
-          <p>Last Updated: {currentDate}</p> 
+          <p className={styles.dateUpdate}>Last Updated: {currentDate}</p> 
         </div>
       </main>
     </>
