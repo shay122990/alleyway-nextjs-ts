@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Alleyway - Event & Project Management Company in Dubai</title>
-        <meta name="description" content="Alleyway - Plan Any Event & Project With Us" />
+        <title>Event & Project Management Company in Dubai | Alleyway</title>
+        <meta name="description" content="Alleyway is a leading event and project management company in Dubai, offering comprehensive services for all types of events." />
         <link rel="preload" href={homeHero.src} as="image" />
       </Head>
       <Hero 

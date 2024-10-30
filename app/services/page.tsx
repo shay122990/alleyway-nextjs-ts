@@ -14,15 +14,15 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Alleyway Services</title>
-        <meta name="description" content="Comprehensive event management services in Dubai" />
+        <title>Alleyway Services | Alleyway</title>
+        <meta name="description" content="From corporate events to special celebrations or business restructuring, we offer an array of services to make your life stress free." />
       </Head>
       <Hero 
         width={1920}
         height={1080}
         image={projectsImage} 
         title="What We Do" 
-        paragraph="At Alleyway, we offer a comprehensive range of event management services designed to make your event memorable and stress-free." 
+        paragraph="At Alleyway, we offer a comprehensive range of event management services designed to make your event memorable." 
         titleClassName={styles.servicesTitle}
         paragraphClassName={styles.servicesParagraph}
       />

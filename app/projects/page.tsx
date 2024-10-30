@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Alleyway</title>
+        <title>Projects | Alleyway</title>
         <meta name="description" content="The projects we've successfully completed" />
         <link rel="preload" href={aboutImage.src} as="image" />
       </Head>
