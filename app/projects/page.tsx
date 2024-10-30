@@ -11,6 +11,7 @@ export default function Projects() {
       <Head>
         <title>Projects - Alleyway</title>
         <meta name="description" content="The projects we've successfully completed" />
+        <link rel="preload" href={aboutImage.src} as="image" />
       </Head>
       <Hero 
         width={1920}

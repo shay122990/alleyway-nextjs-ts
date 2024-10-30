@@ -2,10 +2,9 @@ import styles from "./page.module.css";
 import Head from 'next/head';
 import Hero from "@/components/layout/hero/Hero";
 import homeHero from "@/public/images/homeHero.webp";
-import EventsSection from "./components/events-section/Events-Section";
-import Banner from "./components/banner/Banner";
-import MasonryGrid from "./components/masonry-grid/MasonryGrid";
-
+import EventsSection from "@/app/components/events-section/Events-Section";
+import Banner from "@/app/components/banner/Banner";
+import MasonryGrid from "@/app/components/masonry-grid/MasonryGrid";
 
 export default function Home() {
   return (

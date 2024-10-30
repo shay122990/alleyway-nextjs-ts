@@ -10,6 +10,7 @@ export default function Contact() {
       <Head>
         <title>Contact Alleyway</title>
         <meta name="description" content="Get in touch with Alleyway" />
+        <link rel="preload" href={contactImage.src} as="image" />
       </Head>
         <Hero 
           width={1920}
