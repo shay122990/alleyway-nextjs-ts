@@ -5,11 +5,9 @@
     width: 100%;
     background-color: var(--accent-orange);
     padding: 0 2rem;
-    margin: 2rem 0 3rem 0;
 
-    @media (min-width: 768px) {
+    @media (min-width:1024px) {
         justify-content: end;
-        margin: 3rem 0 5rem 0;
     }
 }
 .bannerContent {
