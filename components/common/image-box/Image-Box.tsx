@@ -1,4 +1,3 @@
-import styles from './Image-Box.module.css';
 import Image, { StaticImageData } from 'next/image';
 
 interface ImageBoxProps {
@@ -16,7 +15,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', 
       alt={altText}
       priority={true}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      className={`${styles.imageBox} ${className}`}
+      className={`${className}`}
       width={width} 
       height={height}
     />
