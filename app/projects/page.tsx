@@ -1,4 +1,4 @@
-import styles from "@/styles/globals.css";
+import styles from "./Projects.module.css";
 import Head from 'next/head';
 import aboutImage from "@/public/images/about-image.webp";
 import Hero from "@/components/layout/hero/Hero";

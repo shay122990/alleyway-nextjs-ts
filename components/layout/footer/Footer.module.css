@@ -4,56 +4,52 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     gap: 3rem;
-    background-color: transparent;
     border-top: 1px solid var(--accent-lime);
     margin-top: 4rem;
 }
 .logoIconContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.logoFooterContainer img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
+    gap: 1rem;
+    align-items: flex-end;
 }
 .logoFooterContainer{
     display: flex;
-    width: 110px;
-    height: 110px;
-
+    width: 40%;
+    justify-content: flex-end;
 }
-.socialMedia{
+.logoFooterContainer img {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; 
+}
+.socialMediaContainer{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 60%;
+    width: 70%;
 }
 .socialIntro{
     color: var(--accent-lime);
-    height: 150px;
 }
 .companyContactContainer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: flex-start;
     width: 100%;
 }
 .quoteContainer{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    min-height: 100px;
     gap: 1rem;
+    width: 80%;
 }
 .linksContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
 }
 .company{
@@ -109,7 +105,7 @@
         width: 40%;
         gap: 2rem;
     }
-    .socialMedia{
+    .socialMediaConatiner{
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: 2rem;

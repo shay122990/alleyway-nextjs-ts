@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={styles.logoFooterContainer}>
           <Logo />
         </div>
-        <div className={styles.socialMedia}>
+        <div className={styles.socialMediaContainer}>
           <Icons />
           <p className={styles.socialIntro}>
             Stay connected with us for the latest updates, exclusive offers, and more! <br /> Follow us on our social media platforms and be part of our community.

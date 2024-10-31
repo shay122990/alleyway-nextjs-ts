@@ -5,6 +5,7 @@ import Links from "@/components/common/links/Links";
 import styles from "@/components/layout/footer/Footer.module.css";
 
 const footerNavItems = [
+  {href: '/', label: 'Home'},
   { href: '/services/#about-us', label: 'About Us' },
   { href: '/contact', label: 'Contact Us' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
@@ -14,8 +15,8 @@ const footerNavItems = [
   { href: '/services/#audio-visual', label: 'Audio & Visual' }
 ];
 
-const companyLinks = footerNavItems.slice(0, 3);
-const serviceLinks = footerNavItems.slice(3);
+const companyLinks = footerNavItems.slice(0, 4);
+const serviceLinks = footerNavItems.slice(4);
 
 export default function FooterNavLinks() {
   const pathname = usePathname();
