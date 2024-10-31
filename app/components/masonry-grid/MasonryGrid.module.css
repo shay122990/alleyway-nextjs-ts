@@ -1,7 +1,6 @@
 .masonryContainer {
   position: relative; 
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +11,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: center / cover no-repeat;
 }
 
 .imageContainer img {
@@ -24,10 +21,8 @@
 
 .imageOverlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background-color: rgba(0, 0, 0, 0.138); 
   z-index: 1;
 }
@@ -35,11 +30,10 @@
 .titleText {
   position: absolute;
   width: 90%;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   letter-spacing: 1px;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 20px; 
   font-weight: bold;
   z-index: 2; 
   text-align: center;
@@ -59,7 +53,7 @@
 
 @media (min-width: 768px) {
   .imageContainer img {
-    height: 600px;
+    height: 600px; 
   }
   .titleText {
     width: 60%;
@@ -69,7 +63,7 @@
 
 @media (min-width: 1024px) {
   .imageContainer img {
-    height: 800px;
+    height: 800px; 
   }
   .titleText {
     font-size: 32px;
