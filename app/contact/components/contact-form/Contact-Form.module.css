@@ -1,4 +1,4 @@
-.formContainer{
+.formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,22 +11,25 @@
     width: 100%;
     height: 600px;
 }
-.contactInfo{
+
+.contactInfo {
     width: 100%; 
 }
-.formTitle{
+
+.formTitle {
     font-size: 20px;
     margin-bottom: 20px;
 }
-.formDescription{
-   letter-spacing: 0.2px;
+
+.formDescription {
+    letter-spacing: 0.2px;
 }
+
 .waLink {
     text-transform: capitalize;
     position: relative;
     display: inline-block;
-    text-decoration: underline;
-    text-decoration-color: var(--main-text-color); 
+    text-decoration: underline var(--main-text-color);
     text-underline-offset: 6px; 
 }
 
@@ -49,88 +52,77 @@
 .waLink:hover {
     text-decoration: none; 
 }
-.contactForm{
+
+.contactForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     width: 100%;
 }
-.field{
+
+.field {
     display: flex;
     flex-direction: column;
 }
-.label{
-    color:var(--accent-lime);
+
+.label {
+    color: var(--accent-lime);
     margin-bottom: 4px;
 }
-.input {
+
+.input, .inputMessage {
     height: 42px;
     border: 1px solid var(--accent-lime);
     border-radius: 5px;
     transition: border-width 0.3s ease;
 }
-.input:focus {
-    border-width: 3px;
+
+.input:focus, .inputMessage:focus {
+    border-width: 3px; 
     outline: none;
 }
-.inputMessage{
-    border-radius: 5px;
-    border: 1px solid var(--accent-lime);
-    font-family: inherit;
-    transition: border-width 0.3 ease;
+
+.inputMessage {
+    font-family: inherit; 
 }
-.inputMessage:focus {
-    border-width: 1px;
-    outline: none;
-}
+
 @media (min-width: 768px) {
-    .formContainer{
+    .formContainer {
         flex-direction: row;
         gap: 4rem;
         height: 500px;
     }
-    .contactInfo{
+    .contactInfo, .contactForm {
         width: 50%;
     }
-    .formTitle{
+    .formTitle {
         font-size: 24px;
     }
-    .formDescription{
+    .formDescription {
         font-size: 18px;
         line-height: 24px;
     }
-    .contactForm{
-        width: 50%;
-    }
 }
-@media (min-width: 1024px){
-    .formContainer{
+@media (min-width: 1024px) {
+    .formContainer {
         width: 80%;
         padding: 30px;
         justify-content: space-around;
         height: 700px;
     }
-    .contactInfo{
-        width: 400px
+    .contactInfo, .contactForm {
+        width: 400px;
     }
-    .formTitle{
+    .formTitle {
         font-size: 30px;
     }
-    .formDescription{
+    .formDescription {
         font-size: 20px;
         line-height: 28px;
     }
-    .contactForm{
-        gap: 30px;
-        width: 400px;
-    }
 }
 @keyframes underlineAnimation {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+    from { width: 0; }
+    to { width: 100%; }
+}
