@@ -1,25 +1,3 @@
-.homeTitle {
-  font-size: 30px;
-}
-.homeParagraph {
-  font-size: 16px;
-}
-@media (min-width: 768px) {
-  .homeTitle{
-    font-size: 50px;
-  }
-  .homeParagraph{
-    font-size: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  .homeTitle{
-    font-size: 100px;
-  }
-  .homeParagraph{
-    font-size: 32px;
-  }
-}
 
 
 

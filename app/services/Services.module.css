@@ -1,33 +1,13 @@
 .servicesTitle {
   color: var(--accent-yellow);
-  font-size: 30px;
 }
 .servicesParagraph {
   width: 80%;
-  font-size: 16px;
 }
 .serviceSection{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
-  align-items: center;
   margin: 1rem 0;
 }
-@media (min-width: 768px) {
-  .servicesTitle {
-    font-size: 50px;
-  }
-  .servicesParagraph {
-    font-size: 24px;
-  }
-}
 
-@media (min-width: 1024px) {
-  .servicesTitle {
-    font-size: 100px;
-  }
-  .servicesParagraph {
-    font-size: 32px;
-  }
-}
