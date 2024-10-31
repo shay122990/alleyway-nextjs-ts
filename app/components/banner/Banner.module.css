@@ -1,4 +1,4 @@
-.bannerContainer{
+.bannerContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,42 +6,40 @@
     background-color: var(--accent-orange);
     padding: 0 2rem;
     margin: 2rem 0 3rem 0;
+
+    @media (min-width: 768px) {
+        justify-content: end;
+        margin: 3rem 0 5rem 0;
+    }
 }
-.bannerContent{
+.bannerContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1rem 0;
-}
-.bannerContent p{
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.bannerSideArrow{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-@media (min-width: 768px) {
-    .bannerContainer{
-        justify-content: end;
-    }
-    .bannerContent{
+
+    @media (min-width: 768px) {
         width: 70%;
         justify-content: space-around;
     }
-    .bannerContent p{
+}
+.bannerContent p {
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
         font-size: 20px;
         letter-spacing: 2px;
     }
-    .bannerSideArrow{
-        font-size: 30px;
-    }
 }
-@media (min-width: 1024px) {
-    .bannerContainer{
-        margin: 3rem 0 5rem 0;
+.bannerSideArrow {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 30px;
     }
 }
