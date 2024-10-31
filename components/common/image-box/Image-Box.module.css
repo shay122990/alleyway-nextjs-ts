@@ -1,0 +1,6 @@
+.imageBox{
+  border-radius: 15px;
+  box-shadow:  5px 5px 18px #040010,
+           -5px -5px 18px #0a0131;
+  object-fit: cover;
+}
