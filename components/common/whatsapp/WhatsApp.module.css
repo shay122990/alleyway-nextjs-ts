@@ -1,26 +1,26 @@
 .floating-whatsapp {
-    display: none;
+  display: none;
 }
-  
-  @media (min-width: 768px) {
-    .floating-whatsapp {
-      display: inline;
-      position: fixed;
-      left: 20px;
-      top: 70%;
-      transform: translateY(-50%);
-      z-index: 1000;
-      background-color: #25d366;
-      color: white;
-      padding: 1rem 1rem 0.8rem 1rem;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 24px;
-      transition: transform 0.3s ease-in-out;
-      border: none;
-    }
-    
-    .floating-whatsapp:hover {
-      transform: scale(1.1) translateY(-50%);
-    }
+
+@media (min-width: 768px) {
+  .floating-whatsapp {
+    display: inline; 
+    position: fixed;
+    left: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: #25d366;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    border: none;
   }
+
+  .floating-whatsapp:hover {
+    transform: scale(1.1);
+  }
+}
