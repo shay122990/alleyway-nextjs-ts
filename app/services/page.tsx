@@ -1,6 +1,7 @@
-import styles from "./Services.module.css";
+import styles from "./Services.module.css"
 import Head from "next/head";
 import Hero from "@/components/layout/hero/Hero";
+import AboutUs from "./about-us/About-Us";
 import ExhibitionSection from "./exhibition-section/ExhibitionSection";
 import PrivateEvents from "./private-events/Private-Events";
 import CreativeServices from "./creative-services/Creative-Secvices";
@@ -8,7 +9,6 @@ import AudioVisual from "./audio-visual/Audio-Visual";
 import OtherServices from "./other-services/Other-Services";
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
-import AboutUs from "./about-us/About-Us";
 
 export default function Services() {
   return (
@@ -34,7 +34,7 @@ export default function Services() {
         paragraphClassName={styles.servicesParagraph}
       />
       <main className={styles.main}>
-        <section className={styles.servicesSection}>
+        <section className={styles.serviceSection}>
           <AboutUs aboutUsData={servicesPageData.aboutUs}/>
         </section>
         <section className={styles.serviceSection}>

@@ -1,12 +1,12 @@
 .privacyContainer{
-    width:100%;
-    align-items: flex-start;
-    gap: 1rem;
-    background-color: var(--main-text-color);
-    color: var(--dark-text-color);
-    padding: 2rem;
-    border: 2px solid var(--accent-lime);
-    border-radius: 10px;
+  width:100%;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--main-text-color);
+  color: var(--dark-text-color);
+  padding: 2rem;
+  border: 2px solid var(--accent-lime);
+  border-radius: 10px;
 }
 .privacyTitle{
     color: var(--accent-yellow);
