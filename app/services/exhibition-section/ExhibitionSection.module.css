@@ -40,32 +40,21 @@
     box-shadow:  8px 8px 16px #00d0eb8b,
              -8px -8px 16px #00f2ff77;
 }
-.viewMoreLink {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: yellow;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 10;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    transform: translate(-50%, -50%)
-}
-.viewMoreLink:hover {
-    background-color: var(--accent-yellow);
-    color: black;
-}
+
 .exhibitionInfoSection{
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 @media (min-width: 768px) {
   .exhibitionsInfoContainer{
     flex-direction: row;
+    padding: 1rem 0;
+  }
+  .exhibitionsInfoContainer p{
+    font-size: 18px;
   }
   .exhibitionSection{
     width: 30%;
@@ -77,4 +66,7 @@
     .exhibitionSection{
         height: 500px;
     }
+    .exhibitionsInfoContainer{
+        padding: 2rem 0;
+      } 
 }

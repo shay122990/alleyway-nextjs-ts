@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ExhibitionSection.module.css";
 import ImageBox from "@/components/common/image-box/Image-Box";
-import Links from "@/components/common/links/Links";
 import { StaticImageData } from "next/image";
 
 interface Exhibition {
@@ -25,9 +24,6 @@ const ExhibitionSection: React.FC<ExhibitionSectionProps> = ({ title, exhibition
           <div key={index} className={styles.exhibitionSection}>
             <div className={styles.exhibitionImageContainer}>
               <ImageBox imageSrc={exhibition.imageSrc} />
-              {/* <Links href={exhibition.href}>
-                <span className={styles.viewMoreLink}>View Projects</span>
-              </Links> */}
             </div>
             <div className={styles.exhibitionInfoSection}>
               <h3>{exhibition.title}</h3>
