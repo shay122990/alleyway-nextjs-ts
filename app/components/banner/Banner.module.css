@@ -5,6 +5,7 @@
     width: 100%;
     background-color: var(--accent-orange);
     padding: 0 2rem;
+    margin-bottom: 1.4rem;
 
     @media (min-width:1024px) {
         justify-content: end;
