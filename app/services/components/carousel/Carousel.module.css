@@ -31,16 +31,16 @@
   }
   
   .prevButton {
-    left: 10px; 
+    left: 20px; 
   }
   
   .nextButton {
-    right: 10px; 
+    right: 20px; 
   }
   
   .prevButton:hover,
   .nextButton:hover {
-    color: pink; 
+    color: var(--accent-lime); 
   }
   
   .prevButton:focus,
