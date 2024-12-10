@@ -10,7 +10,7 @@ const MasonryGrid = () => {
         <div className={styles.imageOverlay}></div>
         <ImageBox
           imageSrc={image1}
-          altText="Project image 1"
+          altText="Project images"
           className={styles.image1}
         />
         <Links href="/projects">

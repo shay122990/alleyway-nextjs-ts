@@ -16,12 +16,12 @@ export default function Services() {
       <Head>
         <title>Alleyway Services | Alleyway</title>
         <meta name="description" content="From corporate events to special celebrations or business restructuring, we offer an array of services to make your life stress free." />
+        <link rel="preload" href={projectsImage.src} as="image" />
         <meta property="og:title" content="Our Services - Alleyway" />
         <meta property="og:description" content="Explore our comprehensive range of event & management services designed to make your event memorable." />
         <meta property="og:image" content="https://alleywaydxb.com/images/projects-image.jpg" />
         <meta property="og:url" content="https://alleywaydxb.com/services" />
         <meta property="og:type" content="website" />
-        <link rel="preload" href={projectsImage.src} as="image" />
         <meta name="keywords" content="event management, corporate events, wedding planning, private events, audio-visual services, Dubai events, creative services, exhibition planning, project management" />
       </Head>
       <Hero 
