@@ -25,6 +25,7 @@
     }
 }
 .bannerContent p {
+    color: var(--accent-orange);
     font-size: 16px;
     text-transform: uppercase;
 
@@ -37,6 +38,8 @@
     display: flex;
     align-items: center;
     font-size: 20px;
+    color: var(--main-background);
+
 
     @media (min-width: 768px) {
         font-size: 30px;

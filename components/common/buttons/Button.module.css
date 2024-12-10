@@ -36,7 +36,7 @@
 /* Button styles */
 .btnPrimary {
   background-color: var(--accent-orange);
-  color: var(--main-text-color);
+  color: var(--main-background);
 }
 
 .btnSubmit {
