@@ -11,15 +11,17 @@ interface ImageBoxProps {
 
 const ImageBox: React.FC<ImageBoxProps> = ({ imageSrc, altText = 'Event Image', className , width, height}) => {
   return (
-    <Image 
-      src={imageSrc} 
-      alt={altText}
-      priority={true}
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      className={`${styles.imageBox} ${className}`}
-      width={width} 
-      height={height}
-    />
+    <Image
+    src={imageSrc}
+    alt={altText}
+    width={width || 1920}
+    height={height || 1080}
+    loading="lazy" 
+    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 50vw"
+    priority={false}
+    className={`${styles.imageBox} ${className}`}
+  />
+  
   );
 };
 

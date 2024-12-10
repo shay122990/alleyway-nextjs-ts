@@ -33,7 +33,7 @@ const EventsSection = () => {
         <div className={`${styles.imageAndLinksContainer} ${styles.exhibition}`}>
           <div className={styles.exhibitionImages}>
             {homePageData.exhibitions.images.map((image, index) => (
-              <ImageBox key={index} imageSrc={image.src} altText="Exhibition Image"/>
+              <ImageBox key={index} imageSrc={image.src} altText="Exhibition Image" />
             ))}
           </div>
           <ul className={styles.linksContainer}>

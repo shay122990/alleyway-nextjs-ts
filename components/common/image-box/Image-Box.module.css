@@ -1,6 +1,20 @@
 .imageBox{
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow:  5px 5px 18px #040010,
            -5px -5px 18px #0a0131;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .imageBox {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .imageBox {
+    width: 50%; 
+  }
 }
