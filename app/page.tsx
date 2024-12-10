@@ -1,34 +1,48 @@
-import styles from "@/styles/globals.css";
+import styles from "../styles/globals.css"
 import Head from 'next/head';
-import Hero from "@/components/layout/hero/Hero";
-import homeHero from "@/public/images/homeHero.webp";
-import EventsSection from "./components/events-section/Events-Section";
-import Banner from "./components/banner/Banner";
-import MasonryGrid from "./components/masonry-grid/MasonryGrid";
-
+import Hero from '@/components/layout/hero/Hero';
+import homeHero from '@/public/images/homeHero.webp';
+import EventsSection from '@/app/components/events-section/Events-Section';
+import Banner from '@/app/components/banner/Banner';
+import MasonryGrid from '@/app/components/masonry-grid/MasonryGrid';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Event & Project Management Company in Dubai | Alleyway</title>
-        <meta name="description" content="Alleyway is a leading event and project management company in Dubai, offering comprehensive services for all types of events." />
-        <meta name="keywords" content="event management, trade shows, project management, corporate events, wedding planning, event planning, Dubai events, private events, exhibition planning, audio-visual services, creative services, exhibition design, logistics management, event coordination" />
-        <link rel="preload" href={homeHero.src} as="image" />
-        <meta property="og:title" content="Alleyway - Premier Events Management Company in Dubai" />
-        <meta property="og:description" content="Alleyway is a top events management company in Dubai, specializing in event planning and project management." />
-        <meta property="og:image" content="https://alleywaydxb.com/images/homeHero.webp" />  
+        <meta
+          name="description"
+          content="Alleyway is a leading event and project management company in Dubai, offering comprehensive services for all types of events."
+        />
+        <meta
+          name="keywords"
+          content="event management, trade shows, project management, corporate events, wedding planning, event planning, Dubai events, private events, exhibition planning, audio-visual services, creative services, exhibition design, logistics management, event coordination"
+        />
+        <meta
+          property="og:title"
+          content="Alleyway - Premier Events Management Company in Dubai"
+        />
+        <meta
+          property="og:description"
+          content="Alleyway is a top events management company in Dubai, specializing in event planning and project management."
+        />
+        <meta
+          property="og:image"
+          content="https://alleywaydxb.com/images/homeHero.webp"
+        />
         <meta property="og:url" content="https://alleywaydxb.com" />
         <meta property="og:type" content="website" />
       </Head>
-      <Hero 
+      <Hero
         width={1920}
         height={1440}
         image={homeHero}
-        title="The Events Management Company" 
-        paragraph="We provide top-notch services to meet your needs." 
+        title="The Events Management Company"
+        paragraph="We provide top-notch services to meet your needs."
         titleClassName={styles.homeTitle}
-        paragraphClassName={styles.homeParagraph} 
+        paragraphClassName={styles.homeParagraph}
+        priority={true}
       />
       <main className={styles.main}>
         <EventsSection />

@@ -11,6 +11,7 @@ interface HeroProps {
   paragraphClassName?: string;
   width?: number; 
   height?: number; 
+  priority?: boolean
 }
 
 const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, width, height }: HeroProps) => {
@@ -19,18 +20,14 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
   return (
     <motion.div className={styles.hero}>
       {image && backgroundImage && (
-        <Image 
-          src={backgroundImage} 
-          alt="Hero Image | Alleyway Events" 
-          style={{ objectFit: 'cover' }}  
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  
-          priority
-          width={width} 
+        <Image
+          width={width}
           height={height}
-          blurDataURL="data:image/webp;base64,..."
-          // quality={60}  
+          src={image}
+          alt={title}
+          priority 
           className={styles.backgroundImage}
-        />
+      />
       )}
       <div className={styles.heroContent}>
         <div className={styles.heroInfo}>
