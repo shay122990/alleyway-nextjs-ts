@@ -24,8 +24,6 @@ const PrivacyPolicy = () => {
         <meta name="keywords" content="Privacy Policy, Alleyway, Data Protection, User Privacy, Information Security, Dubai" />
       </Head>
       <Hero 
-        width={1920}
-        height={1280}
         image={homeImage}  
         title="Privacy Policy" 
         paragraph="Your privacy is your business" 

@@ -25,8 +25,6 @@ export default function Services() {
         <meta name="keywords" content="event management, corporate events, wedding planning, private events, audio-visual services, Dubai events, creative services, exhibition planning, project management" />
       </Head>
       <Hero 
-        width={1920}
-        height={1080}
         image={projectsImage} 
         title="What We Do" 
         paragraph="At Alleyway, we offer a comprehensive range of event management services designed to make your event memorable." 

@@ -21,8 +21,9 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
     <motion.div className={styles.hero}>
       {image && backgroundImage && (
         <Image
-          width={width}
-          height={height}
+          width={width || 1920} 
+          height={height || 1080}  
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 50vw"
           src={image}
           alt={title}
           priority 

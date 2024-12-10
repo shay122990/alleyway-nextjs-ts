@@ -19,8 +19,6 @@ export default function Projects() {
         <meta name="keywords" content="Projects, Event Management, Alleyway, Corporate Events, Dubai, Private Celebrations" />
       </Head>
       <Hero 
-        width={1920}
-        height={1536}
         image={aboutImage} 
         title="Always up to the challenge!" 
         paragraph="The Projects we've successfully completed"
