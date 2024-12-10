@@ -24,7 +24,6 @@ const Hero = ({ image, title, paragraph, titleClassName, paragraphClassName, wid
           width={width || 1920} 
           height={height || 1080}  
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 50vw"
-          loading='lazy'
           src={image}
           alt={title}
           className={styles.backgroundImage}
