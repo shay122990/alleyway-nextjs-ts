@@ -80,8 +80,10 @@ const ContactForm: FC = () => {
             </label>
             <input
               type='text'
+              id="name"
               placeholder='Name'
               className={styles.input}
+              autoComplete="name"
               {...register('name', { required: 'Name is required' })}
             />
             {errors.name && <span className={styles.error}>{errors.name.message}</span>}
@@ -92,8 +94,10 @@ const ContactForm: FC = () => {
             </label>
             <input
               type='email'
+              id="email"
               placeholder='example@domain.com'
               className={styles.input}
+              autoComplete="email"
               {...register('email', { required: 'Email is required' })}
             />
             {errors.email && <span className={styles.error}>{errors.email.message}</span>}
@@ -103,9 +107,11 @@ const ContactForm: FC = () => {
               Message
             </label>
             <textarea
+              id="message"
               rows={5}
               placeholder='How can we assist you?'
               className={styles.inputMessage}
+               autoComplete="off"
               {...register('message', { required: 'Message is required' })}
             ></textarea>
             {errors.message && <span className={styles.error}>{errors.message.message}</span>}
