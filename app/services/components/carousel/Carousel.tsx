@@ -22,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   return (
     <div className={styles.carouselContainer}>
-      <button className={styles.prevButton} onClick={prevImage}>
+      <button className={styles.prevButton} onClick={prevImage} aria-label="Previous image">
         <BsChevronCompactLeft />
       </button>
       <ImageBox
@@ -30,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         imageSrc={images[currentIndex].src}
         altText={`Image ${currentIndex + 1}`}
       />
-      <button className={styles.nextButton} onClick={nextImage}>
+      <button className={styles.nextButton} onClick={nextImage} aria-label="Next image">
         <BsChevronCompactRight />
       </button>
     </div>
