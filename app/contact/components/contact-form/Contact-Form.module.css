@@ -72,6 +72,7 @@
 }
 
 .input, .inputMessage {
+    padding-left: 12px;
     height: 42px;
     border: 1px solid var(--accent-lime);
     border-radius: 5px;
@@ -84,7 +85,14 @@
 }
 
 .inputMessage {
-    font-family: inherit; 
+    width: 100%;
+    height: auto; 
+    min-height: 150px; 
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical; 
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
