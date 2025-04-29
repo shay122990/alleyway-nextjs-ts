@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation'; 
 import Links from '@/components/common/links/Links'; 
 import styles from '../../navbar/Navbar.module.css';
+import { MdOutlineEmail } from "react-icons/md";
 
 interface NavbarNavLinksProps {
   closeMenu: () => void; 
@@ -14,7 +15,8 @@ export default function NavbarNavLinks({ closeMenu }: NavbarNavLinksProps) {
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/contact', label: 'Contact' },
+    { href: 'mailto:hello@alleywaydxb.com', label: <MdOutlineEmail size={20} /> }
   ];
 
   return (

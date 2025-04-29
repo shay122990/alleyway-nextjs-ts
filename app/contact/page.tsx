@@ -26,6 +26,7 @@ export default function Contact() {
       />
       <main className={styles.main}>
         <ContactForm />
+        
       </main>
     </>
   );
