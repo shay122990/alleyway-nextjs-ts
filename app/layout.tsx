@@ -1,15 +1,18 @@
 import './globals.css';
 import { Barlow } from 'next/font/google';
-// import WhatsApp from '@/components/common/whatsapp/WhatsApp';
-// import Footer from '@/components/layout/footer/Footer';
-// import Header from '@/components/layout/header/Header';
-import ComingSoon from '@/components/ComingSoon';
+import WhatsApp from '@/components/common/whatsapp/WhatsApp';
+import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+// import ComingSoon from '@/components/ComingSoon';
 
 const font = Barlow({ weight: ['400', '700'], subsets: ['latin'], preload: true });
 
 export const metadata = {
   title: 'Alleyway',
   description: 'Event & Project Management Company In Dubai',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 interface RootLayoutProps {
@@ -19,11 +22,11 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
     <body className={font.className}>
-      <ComingSoon/>
-      {/* <Header />
+      {/* <ComingSoon/> */}
+      <Navbar />
       {children}
       <Footer />
-      <WhatsApp isFloating={true} /> */}
+      <WhatsApp isFloating={true} />
     </body>
   </html>
 );

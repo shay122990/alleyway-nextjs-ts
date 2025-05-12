@@ -1,10 +1,9 @@
-import styles from "../app/globals.css"
 import Head from 'next/head';
-import Hero from '@/components/layout/hero/Hero';
-// import homeHero from '@/public/images/homeHero.webp';
-import EventsSection from '@/app/components/events-section/Events-Section';
-import Banner from '@/app/components/banner/Banner';
-import MasonryGrid from '@/app/components/masonry-grid/MasonryGrid';
+import Hero from '@/components/layout/Hero';
+import HomeIntro from "./components/Home-Intro";
+import HomeServicesSections from "./components/Home-Services-Sections";
+import TimelineProjects from './components/TimeLineProjects';
+import ClientLogoBanner from './components/ClientLogoBanner';
 
 export default function Home() {
   return (
@@ -26,15 +25,15 @@ export default function Home() {
         video="/hero-video.mp4"
         title="The Events Management Company"
         paragraph="We provide top-notch services to meet your needs."
-        titleClassName={styles.homeTitle}
-        paragraphClassName={styles.homeParagraph}
         priority={true}
         hideContent={true}
+        isHomePage={true}
       />
-      <main className={styles.main}>
-        <EventsSection />
-        <Banner />
-        <MasonryGrid />
+      <main className='bg-eggshell'>
+        <HomeIntro />
+        <HomeServicesSections/>
+        <ClientLogoBanner/>
+        <TimelineProjects/>
       </main>
     </>
   );

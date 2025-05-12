@@ -1,6 +1,6 @@
 import styles from "./Privacy-Policy.module.css";
 import Head from "next/head";
-import Hero from "@/components/layout/hero/Hero";
+import Hero from "@/components/layout/Hero";
 import homeImage from "@/public/images/header-home.jpg";
 
 const PrivacyPolicy = () => {

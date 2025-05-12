@@ -1,8 +1,11 @@
-import styles from "./Projects.module.css";
+"use client";
+
 import Head from 'next/head';
 import aboutImage from "@/public/images/about-image.webp";
-import Hero from "@/components/layout/hero/Hero";
-import ProjectSections from "./components/project-sections/ProjectSections";
+import Hero from "@/components/layout/Hero";
+import SuccessfullyDeliveredSections from './components/SuccessfullyDeliveredSections';
+import HowWeWork from './components/HowWeWorkSection';
+import SatisfiedClientsSection from './components/SatisfiedClientsSection';
 
 export default function Projects() {
   return (
@@ -18,15 +21,19 @@ export default function Projects() {
         <meta property="og:type" content="website" />
         <meta name="keywords" content="Projects, Event Management, Alleyway, Corporate Events, Dubai, Private Celebrations" />
       </Head>
+
       <Hero 
         image={aboutImage} 
         title="Always up to the challenge!" 
         paragraph="The Projects we've successfully completed"
-        titleClassName={styles.projectsTitle}
-        paragraphClassName={styles.projectsParagraph}
+        titleClassName="text-lightMustard text-5xl md:text-7xl font-bold"
+        paragraphClassName="text-grayCustom mt-4 text-lg md:text-xl"
       />
-      <main className={styles.main}>
-       <ProjectSections/>
+
+      <main className="relative overflow-hidden">
+        <HowWeWork/>
+        <SuccessfullyDeliveredSections />
+        <SatisfiedClientsSection/>
       </main>
     </>
   );

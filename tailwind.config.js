@@ -6,7 +6,33 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        grayCustom: "#545454",
+        mustard: "#df8a16",
+        lightMustard: "#fea536",
+        eggshell: "#fef5e7",
+        tealCustom: "#2bbfbb",
+      },
+      scale: {
+        120: "1.2",
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 40s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      perspective: {
+        1000: "1000px",
+      },
+      rotate: {
+        "y-180": "180deg",
+      },
+    },
   },
   plugins: [],
 };
