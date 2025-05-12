@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { projectSectionsData } from "@/data/projectsPageData";
+import { projectSectionsData } from "../../../data/ProjectsPageData";
 
 export default function SuccessfullyDeliveredSections() {
   return (
