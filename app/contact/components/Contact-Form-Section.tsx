@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { sendEmail } from "@/utils/send-email";
-import MessageDisplay from "./message-display/Message-Display";
+import MessageDisplay from "./Message-Display";
 
 export type FormData = {
   name: string;
