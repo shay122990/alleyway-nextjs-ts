@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Hero from '@/components/layout/Hero';
+import VideoHero from '@/components/layout/VideoHero';
 import HomeIntro from "./components/Home-Intro";
 import HomeServicesSections from "./components/Home-Services-Sections";
-import TimelineProjects from './components/TimeLineProjects';
-import ClientLogoBanner from './components/ClientLogoBanner';
+import TimelineProjects from './components/Time-Line-Projects';
+import ClientLogoBanner from './components/Client-Logo-Banner';
 
 export default function Home() {
   return (
@@ -21,13 +21,8 @@ export default function Home() {
         <meta property="og:url" content="https://alleywaydxb.com" />
         <meta property="og:type" content="website" />
       </Head>
-      <Hero
+      <VideoHero
         video="/hero-video.mp4"
-        title="The Events Management Company"
-        paragraph="We provide top-notch services to meet your needs."
-        priority={true}
-        hideContent={true}
-        isHomePage={true}
       />
       <main className='bg-eggshell'>
         <HomeIntro />

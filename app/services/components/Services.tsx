@@ -28,8 +28,6 @@ const ServicesSection: React.FC<ServicesProps> = ({
 }) => {
   return (
     <section id={id} className={`relative text-eggshell py-10 lg:py-24 px-6 overflow-hidden ${bgColor}`}>
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2bbfbb10] to-[#df8a1610] pointer-events-none" />
-
       <div className="relative z-10 flex flex-col items-left w-full">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}

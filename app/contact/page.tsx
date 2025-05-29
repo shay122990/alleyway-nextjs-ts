@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import Hero from "@/components/layout/Hero";
+import ImageHero from "@/components/layout/ImageHero";
 import contactImage from "@/public/images/contact-image.jpg";
 import MeetTheTeamSection from "./components/Meet-The-Team-Section";
 import ContactFormSection from "./components/Contact-Form-Section";
@@ -20,14 +20,13 @@ export default function Contact() {
         <meta name="keywords" content="Alleyway, Events, Contact, Event Management, Project Management, Dubai" />
       </Head>
 
-      <Hero 
+      <ImageHero 
         image={contactImage} 
         title="Contact Us"
         paragraph="Let Us Make Your Life Easier"
-        titleClassName="text-4xl md:text-6xl font-extrabold text-lightMustard text-center"
-        paragraphClassName="text-lg md:text-xl text-aqua text-center mt-4"
+        titleClassName="text-lightMustard text-[clamp(2rem,6vw,6rem)] font-bold"
+        paragraphClassName="text-white mt-4 text-[clamp(1rem,3vw,2rem)] font-semibold"
       />
-
       <main>
         <MeetTheTeamSection/>
         <ContactFormSection/>

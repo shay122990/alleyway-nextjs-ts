@@ -2,6 +2,8 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa"; 
+import Link from "next/link";
+
 
 const clientLogos = [
   "/images/client-logos/img1.png",
@@ -101,7 +103,7 @@ export default function SatisfiedClientsSection() {
           <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
             {clientLogos.map((logo, index) => (
               <div key={index} className="break-inside-avoid">
-                <div className="bg-white rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto">
+                <div className="bg-eggshell rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto">
                   <Image
                     src={logo}
                     alt={`Client logo ${index + 1}`}
@@ -120,9 +122,26 @@ export default function SatisfiedClientsSection() {
           className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
         >
           <div className="bg-grayCustom p-2 rounded-full shadow-lg opacity-90">
-            <FaChevronDown className="text-tealCustom text-2xl animate-bounce" />
+            <FaChevronDown className="text-tealCustom text-2xl" />
           </div>
         </div>
+      </div>
+      <div className="relative z-10 mt-16 flex justify-center">
+        <Link
+          href="/services"
+          className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg"
+        >
+          Explore how we deliver
+          <svg
+            className="w-4 h-4 transition-transform group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </Link>
       </div>
     </section>
   );
