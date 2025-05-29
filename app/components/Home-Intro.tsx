@@ -42,7 +42,7 @@ const HomeIntro = () => {
           transition={{ duration: 0.8 }}
           className="relative z-10 w-full md:w-1/2 px-0 md:pl-10 mb-10 md:mb-0"
         >
-          <p className="text-xl md:text-2xl lg:text-3xl text-eggshell leading-relaxed text-left">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed text-left">
             <span className="block mb-2">
               You bring the vision.
             </span>
@@ -53,7 +53,7 @@ const HomeIntro = () => {
               Precision is our craft — making your dreams a reality.
             </span>
           </p>
-          <p className="mt-8 text-base md:text-lg text-eggshell/90 leading-relaxed">
+          <p className="mt-8 text-base md:text-lg text-white leading-relaxed">
           Alleyway is a powerhouse of event project management, where bold creativity meets
           flawless execution. We are not just planners—we are doers, problem solvers, and
           experienced creators. From high-impact global summits to immersive brand activations,

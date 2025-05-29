@@ -27,7 +27,6 @@ export default function Footer() {
     <footer className="flex flex-col items-center justify-center w-full p-4 gap-12  bg-grayCustom 
       md:flex-row md:items-end md:justify-center md:gap-0 md:py-16
     ">
-      {/* Left Side */}
       <div className="flex flex-row justify-between items-end w-full md:flex-col md:items-start md:w-2/5 md:gap-4">
         <div className="w-28">
           <Image src={logo} alt="Company Logo" />
@@ -40,11 +39,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
-      {/* Right Side */}
       <div className="flex flex-col w-full gap-8 md:flex-row-reverse md:justify-between md:items-end md:w-4/5">
-        
-        {/* Quote + Button */}
         <div className="flex flex-col max-w-md min-h-[100px] gap-4 w-full md:w-3/5 lg:w-2/3  text-eggshell">
           <h3 className="text-2xl font-bold lg:text-4xl">Ready to launch your next project?</h3>
           <p className="text-base">
@@ -54,10 +49,7 @@ export default function Footer() {
             <button className="text-2xl bg-lightMustard w-full py-4 rounded hover:bg-mustard text-grayCustom uppercase font-bold">Book Us</button>
           </Link>
         </div>
-
-        {/* Footer Navigation */}
         <div className="flex flex-row justify-between w-full md:w-2/3 lg:w-1/2">
-          {/* Company */}
           <div className="w-1/2">
             <h4 className="text-base font-bold pb-4 md:text-xl text-tealCustom">Company</h4>
             <ul>
@@ -65,8 +57,8 @@ export default function Footer() {
                 <li key={index} className="pb-2">
                   <Link
                     href={href}
-                    className={`relative inline-block capitalize text-mustard
-                      after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-tealCustom after:transition-all after:duration-300 hover:after:w-full
+                    className={`relative inline-block capitalize text-white
+                      after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-mustard after:transition-all after:duration-300 hover:after:w-full
                       ${pathname === href ? 'text-tealCustom font-bold' : ''}
                     `}
                   >
@@ -76,8 +68,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Services */}
           <div className="w-1/2">
             <h4 className="text-base font-bold pb-4 md:text-xl text-tealCustom">Services</h4>
             <ul>
@@ -85,8 +75,8 @@ export default function Footer() {
                 <li key={index} className="pb-2">
                   <Link
                     href={href}
-                    className={`relative inline-block capitalize text-mustard
-                      after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-tealCustom after:transition-all after:duration-300 hover:after:w-full
+                    className={`relative inline-block capitalize text-white
+                      after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-mustard after:transition-all after:duration-300 hover:after:w-full
                       ${pathname === href ? 'text-tealCustom font-bold' : ''}
                     `}
                   >

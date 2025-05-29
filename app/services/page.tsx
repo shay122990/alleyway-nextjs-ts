@@ -2,13 +2,7 @@
 
 import Head from "next/head";
 import Hero from "@/components/layout/Hero";
-import AboutUs from "./components/About-Us";
-import BrandActivationsSection from "./components/BrandActivationsSection";
-import EventProductionSection from "./components/EventProductionSection";
-import ExhibitionsSection from "./components/ExhibitionsSection";
-import EventLogisticsSection from "./components/EventLogisticsSection";
-import VipExperienceSection from "./components/VipExperienceSection";
-import CreativeDevelopmentSection from "./components/CreativeDevelopmentSection";
+import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import projectsImage from "@/public/images/projects-image.jpg";
 import { servicesPageData } from "@/data/ServicesPageData";
 import ServicesSection from "./components/Services";
@@ -36,15 +30,15 @@ export default function Services() {
         paragraphClassName="text-grayCustom mt-4 text-lg md:text-xl"
       />
       <section className="py-12 lg:py-24 px-4 bg-eggshell">
-        <AboutUs />
+        <WhyChooseUsSection />
       </section>
       <main className="relative overflow-hidden text-white ">
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-gray-900 to-black"></div>
-          <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-gradient-to-tr from-pink-400 via-orange-400 to-tealCustom rounded-full blur-[100px] opacity-70"></div>
+          <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-gradient-to-tr from-lightMustard via-orange-400 to-tealCustom rounded-full blur-[100px] opacity-70"></div>
           <div className="absolute top-[30%] right-[-200px] w-[500px] h-[500px] bg-gradient-to-bl from-tealCustom via-lightMustard to-grayCustom rounded-full blur-[100px] opacity-70"></div>
-          <div className="absolute bottom-[-150px] left-[-150px] w-[400px] h-[400px] bg-gradient-to-br from-pink-400 via-rose-300 to-lightMustard rounded-full blur-[100px] opacity-70"></div>
-          <div className="absolute top-[55%] left-[20%] w-[400px] h-[400px] bg-gradient-to-tl from-amber-300 via-lightMustard to-white rounded-full blur-[120px] opacity-50"></div>
+          <div className="absolute bottom-[-150px] left-[-150px] w-[400px] h-[400px] bg-gradient-to-br from-lightMustard via-mustard to-lightMustard rounded-full blur-[100px] opacity-70"></div>
+          <div className="absolute top-[55%] left-[20%] w-[400px] h-[400px] bg-gradient-to-tl from-mustard via-lightMustard to-white rounded-full blur-[120px] opacity-50"></div>
         </div>
         <ServicesSection
           id="brand-activations"
@@ -81,42 +75,6 @@ export default function Services() {
           title={servicesPageData.numberSix.title}
           data={servicesPageData.numberSix.services}
         />
-        {/* <section>
-          <BrandActivationsSection
-            title={servicesPageData.numberOne.title}
-            exhibitionData={servicesPageData.numberOne.services}
-          />
-        </section>
-        <section>
-          <EventProductionSection
-            title={servicesPageData.numberTwo.title}
-            productionData={servicesPageData.numberTwo.services}
-          />
-        </section>
-        <section>
-          <ExhibitionsSection
-            title={servicesPageData.numberThree.title}
-            exhibitionServicesData={servicesPageData.numberThree.services}
-          />
-        </section>
-        <section>
-          <EventLogisticsSection
-            title={servicesPageData.numberFour.title}
-            logisticsData={servicesPageData.numberFour.services}
-          />
-        </section>
-        <section>
-          <VipExperienceSection
-            title={servicesPageData.numberFive.title}
-            vipData={servicesPageData.numberFive.services}
-          />
-        </section>
-        <section>
-          <CreativeDevelopmentSection
-            title={servicesPageData.numberSix.title}
-            creativeData={servicesPageData.numberSix.services}
-          />
-        </section> */}
       </main>
     </>
   );

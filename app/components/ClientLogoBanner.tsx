@@ -65,10 +65,10 @@ const clientLogos = [
 
 export default function ClientLogoBanner() {
   return (
-    <div className="relative w-full overflow-hidden py-4 my-10  lg:my-16 bg-gradient-to-r from-[#2bbfbb]  to-[#1a3ef6]">
+    <div className="relative w-full overflow-hidden py-4 my-10  lg:my-16 bg-[#545454]">
       <div className="flex w-max animate-scroll whitespace-nowrap">
         {[...clientLogos, ...clientLogos].map((logo, index) => (
-          <div key={index} className="flex items-center justify-center mx-2 px-2 rounded-lg bg-white">
+          <div key={index} className="flex items-center justify-center mx-2 px-4 rounded-lg bg-eggshell">
             <Image
               src={logo}
               alt={`Client Logo ${index + 1}`}

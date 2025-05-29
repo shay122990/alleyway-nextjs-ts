@@ -30,7 +30,7 @@ const ServicesSection: React.FC<ServicesProps> = ({
     <section id={id} className={`relative text-eggshell py-24 px-6 overflow-hidden ${bgColor}`}>
       <div className="absolute inset-0 bg-gradient-to-br from-[#2bbfbb10] to-[#df8a1610] pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col items-center w-full">
+      <div className="relative z-10 flex flex-col items-left w-full">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,30 +51,29 @@ const ServicesSection: React.FC<ServicesProps> = ({
               viewport={{ once: true }}
               className={`flex flex-col md:flex-row ${index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center gap-6 sm:gap-10`}
             >
-              <motion.div
-                initial={{ scaleY: 1.1, opacity: 0 }}
-                whileInView={{ scaleY: 1, opacity: 1 }}
-                transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
-                viewport={{ once: true }}
-                className="relative w-full md:w-1/2 h-[300px] sm:h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl origin-top"
-              >
-                <Image
-                  src={item.imageSrc}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 80vw, 50vw"
-                  priority
-                />
-              </motion.div>
-
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+              viewport={{ once: true }}
+              className="relative w-full md:w-1/2 h-[300px] sm:h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src={item.imageSrc}
+                alt={item.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 80vw, 50vw"
+                priority
+              />
+            </motion.div>
               <div className="w-full md:w-1/2 text-center px-2 sm:px-4">
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-left text-[#fea536]"
+                  className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-left text-lightMustard"
                 >
                   {item.title}
                 </motion.h3>

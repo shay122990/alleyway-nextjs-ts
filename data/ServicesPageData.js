@@ -14,6 +14,8 @@ export const servicesPageData = {
     services: [
       {
         title: "Immersive product launches, pop-ups, experiential campaigns.",
+        description:
+          "We bring brands to life through immersive, high-energy activations that leave lasting impressions. Whether it’s an interactive product launch, a VIP pop-up, or a full-scale experiential campaign, we craft moments that connect brands with audiences in meaningful ways.",
         imageSrc: projectImage6,
         href: "/projects/#exhibitions&tradeshows",
       },
@@ -30,6 +32,8 @@ export const servicesPageData = {
       {
         title:
           "Large-scale summits, conferences, private events, and gala dinners.",
+        description:
+          " From intimate gatherings to large-scale global summits we design, plan an execute seamless, high-caliber events that engage, inspire, and drive results. Every detail—venue, content, entertainment, and tech — is meticulously curated to ensure a world-class experience.",
         imageSrc: projectImage3,
         href: "/projects/#exhibitions&tradeshows",
       },
@@ -46,6 +50,8 @@ export const servicesPageData = {
       {
         title:
           "Striking, high-end immersive exhibition spaces, corporate spaces & brand environments.",
+        description:
+          "We design and construct striking exhibition spaces and bespoke brand environments that make an impact. Whether it’s a trade show, a corporate showcase, or a multi-brand experience zone, we ensure your presence stands out and drives engagement.",
         imageSrc: projectImage1,
       },
       {
@@ -61,6 +67,8 @@ export const servicesPageData = {
       {
         title:
           "Transport, international imports, permitting, build-up, and execution.",
+        description:
+          "Flawless execution starts with precise logistics and seamless operations. We handle everything—transport, permits, imports, on-site coordination—ensuring every moving piece of your event is executed with precision, eﬃciency, and global expertise. ",
         imageSrc: projectImage3,
       },
       {
@@ -75,11 +83,13 @@ export const servicesPageData = {
       {
         title:
           "Luxury incentive programs, executive retreats, and premium hospitality.",
+        description:
+          "We craft bespoke destination experiences that go beyond expectations. From securing elite venues to curating luxury incentive programs and executive hospitality, we create unforgettable journeys that cater to C-level professionals, global brands, and changemakers. ",
         imageSrc: projectImage3,
       },
       {
         title:
-          "High-profile experiences for C-level executives, global brands, and changemakers.",
+          "High-profile experiences for C-level executives, global brands, and change makers.",
         imageSrc: projectImage4,
       },
     ],

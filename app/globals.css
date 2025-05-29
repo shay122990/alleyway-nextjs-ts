@@ -35,7 +35,7 @@ ul {
 
 .scrollbar-always {
   scrollbar-width: auto;
-  scrollbar-color: #fea536 #2b2b2b;
+  scrollbar-color: #fea537 #2b2b2b;
 }
 
 /* Chrome, Safari */
@@ -48,7 +48,7 @@ ul {
 }
 
 .scrollbar-always::-webkit-scrollbar-thumb {
-  background-color: #fea536;
+  background-color: #fea537;
   border-radius: 10px;
   border: 2px solid #2b2b2b;
 }

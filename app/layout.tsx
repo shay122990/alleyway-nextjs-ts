@@ -1,6 +1,6 @@
 import './globals.css';
 import { Barlow } from 'next/font/google';
-import WhatsApp from '@/components/common/whatsapp/WhatsApp';
+import WhatsApp from '@/components/layout/WhatsApp';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
 // import ComingSoon from '@/components/ComingSoon';

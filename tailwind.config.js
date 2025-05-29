@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         grayCustom: "#545454",
-        mustard: "#df8a16",
-        lightMustard: "#fea536",
-        eggshell: "#fef5e7",
+        mustard: "#df8a17",
+        lightMustard: "#fea537",
+        eggshell: "#fdf5e6",
         tealCustom: "#2bbfbb",
       },
       scale: {

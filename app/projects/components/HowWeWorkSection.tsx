@@ -37,8 +37,7 @@ const steps = [
 
 export default function HowWeWork() {
   return (
-    <section className="bg-gradient-to-br from-tealCustom  to-eggshells py-20 lg:py-28 px-4 relative overflow-hidden text-white">
-      {/* Top Part */}
+    <section className="bg-lightMustard py-20 lg:py-28 px-4 relative overflow-hidden text-white">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-6xl font-extrabold text-eggshell mb-4 tracking-wide uppercase">
           HOW WE WORK
@@ -48,11 +47,9 @@ export default function HowWeWork() {
         </div>
       </div>
 
-      {/* Steps Grid */}
       <div className="grid grid-cols-2 lg:flex lg:flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col lg:flex-row items-center h-full">
-            {/* Step Card */}
             <div className="relative group bg-eggshell backdrop-blur-lg border border-white/10 p-4 md:p-6 rounded-2xl md:rounded-3xl flex flex-col items-center text-center shadow-xl hover:shadow-[#2bbfbb]/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] w-full h-full flex-1">
               <div className="absolute top-4 left-4 text-3xl md:text-5xl font-bold text-mustard/50 select-none">
                 {index + 1}
@@ -66,15 +63,15 @@ export default function HowWeWork() {
                 {step.title}
               </h3>
 
-              <p className="text-xs md:text-sm text-grayCustom font-bold mb-2">
+              <p className="text-xs md:text-sm text-mustard font-bold mb-2">
                 {step.step}
               </p>
 
-              <p className="text-xs md:text-sm text-tealCustom">{step.description}</p>
+              <p className="text-xs md:text-sm text-grayCustom">{step.description}</p>
             </div>
 
             {index < steps.length - 1 && (
-              <div className="hidden lg:flex mx-4 text-[#2bbfbb] text-2xl">
+              <div className="hidden lg:flex mx-4 text-grayCustom text-2xl">
                 <FaArrowRight />
               </div>
             )}

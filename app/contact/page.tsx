@@ -3,9 +3,8 @@
 import Head from "next/head";
 import Hero from "@/components/layout/Hero";
 import contactImage from "@/public/images/contact-image.jpg";
-// import ContactForm from "./components/Contact-Form";
-// import MeetTheTeam from "./components/MeetTheTeam";
-import ContactSection from "./components/Contact-Form";
+import MeetTheTeamSection from "./components/Meet-The-Team-Section";
+import ContactFormSection from "./components/Contact-Form-Section";
 
 export default function Contact() {
   return (
@@ -30,17 +29,8 @@ export default function Contact() {
       />
 
       <main>
-        {/* <div className="relative bg-gradient-to-b from-[#fef5e7] via-[#c9eee8] via-40% to-[#fea536] overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-          <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[radial-gradient(circle, #2bbfbb33 0%, transparent 70%)]"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle, #fea53633 0%, transparent 70%)]"></div>
-        </div>
-          <MeetTheTeam />
-        <div className="relative z-10">
-          <ContactForm />
-        </div>
-        </div> */}
-        <ContactSection />
+        <MeetTheTeamSection/>
+        <ContactFormSection/>
       </main>
     </>
   );

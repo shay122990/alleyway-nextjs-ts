@@ -37,7 +37,6 @@ export default function Hero({image,title,paragraph,titleClassName,paragraphClas
           transition={{ duration: 0.6 }}
         >
       <div className={`relative flex items-center justify-center overflow-hidden ${heroHeightClasses}`}>
-      {/* Background Video or Image */}
       {backgroundVideo ? (
         <video
           autoPlay
@@ -47,7 +46,6 @@ export default function Hero({image,title,paragraph,titleClassName,paragraphClas
           className="absolute top-0 left-0 w-full h-full object-cover md:object-cover lg:object-cover bg-stone-800"
         >
           <source src={backgroundVideo} type="video/mp4" />
-          {/* Add this for captions */}
           <track 
             kind="captions" 
             src="/captions.vtt" 
@@ -71,22 +69,18 @@ export default function Hero({image,title,paragraph,titleClassName,paragraphClas
           />
         )
       )}
-
-      {/* Overlay */}
       {backgroundVideo ? (
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/20 via-orange/80 to-transparent z-10"></div>
       ) : (
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
       )}
-
-      {/* Hero Content */}
       {!hideContent && (
         <div className="relative z-20 flex flex-col items-center justify-center text-center px-4">
           <motion.h1
             initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: "tween", duration: 0.7 }}
-            className="text-[clamp(2rem,5vw,6rem)] text-eggshell font-bold"
+            className="text-[clamp(2rem,8vw,10rem)] text-eggshell font-bold"
           >
             {title}
           </motion.h1>
@@ -102,7 +96,6 @@ export default function Hero({image,title,paragraph,titleClassName,paragraphClas
         </div>
       )}
     </div>
-
     </motion.div>
   );
 }

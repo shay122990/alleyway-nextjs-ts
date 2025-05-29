@@ -69,62 +69,61 @@ function getRandomWidth() {
   }
   
   function getRandomHeight() {
-    const heights = [50, 60, 70];
+    const heights = [80, 60, 70];
     return heights[Math.floor(Math.random() * heights.length)];
   }
   
 export default function SatisfiedClientsSection() {
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-    const handleScrollClick = () => {
-      if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollBy({
-          top: 200, 
-          behavior: "smooth",
-        });
-      }
-    };
-    return (
-        <section className="relative overflow-hidden py-20 px-4 bg-gray-900">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] animate-backgroundMove opacity-20"></div>
-              <div className="relative z-10 text-center mb-14">
-            <h2 className="text-5xl font-extrabold text-lightMustard uppercase">They trust us</h2>
-          </div>
-          <div className="relative z-10 max-w-7xl mx-auto">
-            <div 
-              ref={scrollContainerRef} 
-              className="max-h-[400px] overflow-y-scroll scrollbar-always relative px-2"
-            >
-              <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
-                {clientLogos.map((logo, index) => (
-                  <div key={index} className="break-inside-avoid">
-                    <div className="bg-white rounded-md shadow-md p-2 flex items-center justify-center">
-                      <Image
-                        src={logo}
-                        alt={`Client logo ${index + 1}`}
-                        width={150}
-                        height={150}
-                        className="object-contain w-full h-auto"
-                        style={{
-                          height: getRandomHeight(),
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
+  const handleScrollClick = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        top: 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <section className="relative overflow-hidden py-20 px-4 bg-gray-900">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] animate-backgroundMove opacity-20"></div>
+
+      <div className="relative z-10 text-center mb-14">
+        <h2 className="text-5xl font-extrabold text-lightMustard uppercase">They trust us</h2>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div 
+          ref={scrollContainerRef} 
+          className="max-h-[400px] overflow-y-scroll scrollbar-always relative px-2"
+        >
+          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
+            {clientLogos.map((logo, index) => (
+              <div key={index} className="break-inside-avoid">
+                <div className="bg-white rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto">
+                  <Image
+                    src={logo}
+                    alt={`Client logo ${index + 1}`}
+                    width={120}
+                    height={80}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
               </div>
-            </div>
-            <div 
-              onClick={handleScrollClick}
-              className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
-            >
-              <div className="bg-grayCustom p-2 rounded-full shadow-lg opacity-90">
-                <FaChevronDown className="text-tealCustom text-2xl animate-bounce" />
-              </div>
-            </div>
+            ))}
           </div>
-        </section>
-      );
-      
-         
+        </div>
+
+        <div 
+          onClick={handleScrollClick}
+          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
+        >
+          <div className="bg-grayCustom p-2 rounded-full shadow-lg opacity-90">
+            <FaChevronDown className="text-tealCustom text-2xl animate-bounce" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

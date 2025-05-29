@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Link from "next/link";
-import { FaMicrophoneAlt, FaTools, FaTruck, FaPlane, FaPalette } from "react-icons/fa";
-import { PiRocketLaunchThin } from "react-icons/pi";
+import { FaMicrophoneAlt, FaTools, FaTruck, FaPlane, FaPalette, FaRocket } from "react-icons/fa";
+import {IoIosArrowRoundForward} from "react-icons/io"
 
 const icons = [
-  <PiRocketLaunchThin />,
+  <FaRocket />,
   <FaMicrophoneAlt />,
   <FaTools />,
   <FaTruck />,
@@ -46,13 +46,14 @@ const ServiceSection = ({ service, isReversed, index }: { service: any; isRevers
 
         <div className="flex flex-col items-start border-l-4 border-[#2bbfbb] pl-6 relative z-10">
           <div className="flex items-center gap-4 mb-4">
-            <div className="text-2xl sm:text-4xl md:text-5xl text-[#2bbfbb]">{icons[index]}</div>
+            <div className="text-2xl sm:text-4xl md:text-5xl text-[#fea536]">{icons[index]}</div>
             <Link
               href={`/services#${service.slug}`}
-              className="relative text-xl sm:text-3xl md:text-5xl font-extrabold leading-tight pb-2 bg-gradient-to-r from-[#fea536] to-tealCustom bg-clip-text text-transparent transition hover:opacity-80 after:absolute after:left-0 after:bottom-[-12px] after:h-[1px] after:w-full after:bg-[#fea536] after:content-[''] uppercase"
+              className="relative text-xl sm:text-3xl md:text-5xl font-extrabold leading-tight pb-2 bg-tealCustom bg-clip-text text-transparent transition hover:opacity-80 after:absolute after:left-0 after:bottom-[-12px] after:h-[1px] after:w-full after:bg-[#fea536] after:content-[''] uppercase"
               style={{ fontSize: "clamp(1.2rem, 5vw, 3rem)" }}
             >
-              {service.title} {">"}
+              {service.title} <IoIosArrowRoundForward  className="text-tealCustom"/>
+
             </Link>
           </div>
         </div>
