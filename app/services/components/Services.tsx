@@ -27,7 +27,7 @@ const ServicesSection: React.FC<ServicesProps> = ({
   bgColor = "bg-transparent",
 }) => {
   return (
-    <section id={id} className={`relative text-eggshell py-24 px-6 overflow-hidden ${bgColor}`}>
+    <section id={id} className={`relative text-eggshell py-10 lg:py-24 px-6 overflow-hidden ${bgColor}`}>
       <div className="absolute inset-0 bg-gradient-to-br from-[#2bbfbb10] to-[#df8a1610] pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-left w-full">
@@ -41,7 +41,7 @@ const ServicesSection: React.FC<ServicesProps> = ({
           {title}
         </motion.h2>
 
-        <div className="flex flex-col gap-24 w-full max-w-7xl mx-auto">
+        <div className="flex flex-col gap-10 lg:gap-24 w-full max-w-7xl mx-auto">
           {data.map((item, index) => (
             <motion.div
               key={index}
