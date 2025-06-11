@@ -10,6 +10,7 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa"
 const footerNavItems = [
   { href: '/', label: 'Home' },
   { href: '/services/#about-us', label: 'About Us' },
+  { href: '/fabrics', label: 'Fabrics' },
   { href: '/contact', label: 'Contact Us' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
   { href: '/services/#brand-activations', label: 'Brand Activation' },
@@ -19,7 +20,7 @@ const footerNavItems = [
   { href: '/services/#vip-experience', label: 'Vip Experience' }
 ];
 
-const companyLinks = footerNavItems.slice(0, 4);
+const companyLinks = footerNavItems.slice(0, 5);
 const serviceLinks = footerNavItems.slice(4);
 
 export default function Footer() {
