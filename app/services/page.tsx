@@ -29,7 +29,7 @@ export default function Services() {
         titleClassName="text-lightMustard text-[clamp(2rem,6vw,6rem)] font-bold"
         paragraphClassName="text-white mt-4 text-[clamp(1rem,3vw,2rem)] font-semibold"
       />
-      <section className="bg-eggshell">
+      <section className="bg-white">
         <WhyChooseUsSection />
       </section>
       <main className="relative overflow-hidden text-white ">
