@@ -57,7 +57,7 @@ export default function WhyChooseUsSection() {
                   </h3>
                 </div>
 
-                <div className="absolute w-full h-full rounded-[8px] flex justify-center items-center text-center px-4 bg-grayCustom text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="absolute w-full h-full rounded-[8px] flex justify-center items-center  px-4 bg-grayCustom text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <p className="text-left text-lg lg:text-2xl">
                     {item.description}
                   </p>

@@ -40,18 +40,19 @@ export default function Footer() {
             Stay connected with us for the latest updates, exclusive offers, and more!<br />
             Follow us on our social media platforms and be part of our community.
           </p>
-        </div>
-          <div className="lg:flex gap-4">
-          <a href="mailto:hello@alleywaydxb.com" className="text-white hover:text-tealCustom transition text-2xl">
-            <FaEnvelope />
-          </a>
-          <a href="https://instagram.com/" target="_blank" className="text-white hover:text-tealCustom transition text-2xl">
-            <FaInstagram />
-          </a>
-          <a href="https://linkedin.com/" target="_blank" className="text-white hover:text-tealCustom transition text-2xl">
-            <FaLinkedin />
-          </a>
-        </div>
+          <div className="flex flex-row gap-4">
+            <a href="mailto:hello@alleywaydxb.com" className="text-white hover:text-tealCustom transition text-2xl">
+              <FaEnvelope />
+            </a>
+            <a href="https://instagram.com/" target="_blank" className="text-white hover:text-tealCustom transition text-2xl">
+              <FaInstagram />
+            </a>
+            <a href="https://linkedin.com/" target="_blank" className="text-white hover:text-tealCustom transition text-2xl">
+              <FaLinkedin />
+            </a>
+          </div>
+      </div>
+          
       </div>
       <div className="flex flex-col w-full gap-8 md:flex-row-reverse md:justify-between md:items-end md:w-4/5">
         <div className="flex flex-col max-w-md min-h-[100px] gap-4 w-full md:w-3/5 lg:w-2/3  text-eggshell">
