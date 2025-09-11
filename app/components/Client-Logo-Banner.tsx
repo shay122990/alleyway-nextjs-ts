@@ -1,5 +1,6 @@
 "use client";
 
+import { div } from "framer-motion/client";
 import Image from "next/image";
 
 const clientLogos = [
@@ -65,19 +66,28 @@ const clientLogos = [
 
 export default function ClientLogoBanner() {
   return (
-    <div className="relative w-full overflow-hidden py-4 my-10  lg:my-16 bg-[#545454]">
-      <div className="flex w-max animate-scroll whitespace-nowrap">
-        {[...clientLogos, ...clientLogos].map((logo, index) => (
-          <div key={index} className="flex items-center justify-center mx-2 px-4 rounded-lg bg-eggshell">
-            <Image
-              src={logo}
-              alt={`Client Logo ${index + 1}`}
-              width={70}
-              height={70}
-              className="object-cover"
-            />
-          </div>
-        ))}
+    <div className="w-full text-center">
+      <h3 className="text-tealCustom uppercase w-full font-bold text-xl lg:text-4xl">
+        They trust us
+      </h3>
+
+      <div className="relative w-full overflow-hidden py-4 my-10  lg:my-16 bg-[#545454]">
+        <div className="flex w-max animate-scroll whitespace-nowrap">
+          {[...clientLogos, ...clientLogos].map((logo, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center mx-2 px-4 rounded-lg bg-eggshell"
+            >
+              <Image
+                src={logo}
+                alt={`Client Logo ${index + 1}`}
+                width={70}
+                height={70}
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
