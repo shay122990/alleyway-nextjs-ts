@@ -1,9 +1,22 @@
-import projectImage1 from "@/public/images/projects-image1.jpg";
-import projectImage2 from "@/public/images/projects-image2.jpg";
-import projectImage3 from "@/public/images/projects-image3.jpg";
-import projectImage4 from "@/public/images/projects-image4.jpg";
-import projectImage5 from "@/public/images/projects-image5.jpg";
-import projectImage6 from "@/public/images/projects-image6.jpg";
+import deloitte from "@/public/images/projects-page/deloitte-event.webp";
+import snapchat from "@/public/images/projects-page/snapchat.webp";
+import monshaat from "@/public/images/projects-page/monshaat.webp";
+import gitex from "@/public/images/projects-page/gitex.webp";
+import amadeus from "@/public/images/projects-page/amadeus.webp";
+import nofilterdxb from "@/public/images/projects-page/nofilterdxb.webp";
+import spaceX from "@/public/images/projects-page/spaceX.webp";
+import starlinkbeats from "@/public/images/projects-page/starlinkbeats.webp";
+
+import santalucia from "@/public/images/projects-page/santalucia.webp";
+import hotmart from "@/public/images/projects-page/hotmart.webp";
+import phonak from "@/public/images/projects-page/phonak.webp";
+import mercedes from "@/public/images/projects-page/mercedes.webp";
+import gitexafrica1 from "@/public/images/projects-page/gitex-africa1.webp";
+import gitexafrica2 from "@/public/images/projects-page/gitex-africa2.webp";
+import aziziprivate1 from "@/public/images/projects-page/azizi-private1.webp";
+import aziziprivate2 from "@/public/images/projects-page/azizi-private2.webp";
+import lexus from "@/public/images/projects-page/lexus.webp";
+import azizigala from "@/public/images/projects-page/azizi-gala.webp";
 
 export const projectSectionsData = [
   {
@@ -24,12 +37,12 @@ export const projectSectionsData = [
       },
     ],
     images: [
-      { src: projectImage1, alt: "Deloitte Event" },
-      { src: projectImage2, alt: "Snapchat Conference" },
-      { src: projectImage3, alt: "Gitex Investor Lounge" },
-      { src: projectImage4, alt: "Monsha'at Forum" },
-      { src: projectImage5, alt: "Amadeus Altitude" },
-      { src: projectImage6, alt: "NoFilterDXB Motor Show" },
+      { src: deloitte, alt: "Deloitte Event" },
+      { src: snapchat, alt: "Snapchat Conference" },
+      { src: gitex, alt: "Gitex Investor Lounge" },
+      { src: monshaat, alt: "Monsha'at Forum" },
+      { src: amadeus, alt: "Amadeus Altitude" },
+      { src: nofilterdxb, alt: "NoFilterDXB Motor Show" },
     ],
   },
   {
@@ -46,12 +59,12 @@ export const projectSectionsData = [
       { h2: "MERCEDES BENZ", p: "Switch to Go - Portugal" },
     ],
     images: [
-      { src: projectImage3, alt: "Starlink Beats" },
-      { src: projectImage4, alt: "Mercedes Event" },
-      { src: projectImage5, alt: "Santa Lucia Event" },
-      { src: projectImage6, alt: "Hotmart Talks" },
-      { src: projectImage1, alt: "Phonak Launch" },
-      { src: projectImage4, alt: "Phonak Launch" },
+      { src: spaceX, alt: "Starlink Beats" },
+      { src: starlinkbeats, alt: "Starlink Beats" },
+      { src: mercedes, alt: "Mercedes Event" },
+      { src: santalucia, alt: "Santa Lucia Event" },
+      { src: hotmart, alt: "Hotmart Talks" },
+      { src: phonak, alt: "Phonak Launch" },
     ],
   },
   {
@@ -67,12 +80,12 @@ export const projectSectionsData = [
       { h2: "AZIZI DEVELOPMENTS", p: "Annual Gala - UAE" },
     ],
     images: [
-      { src: projectImage5, alt: "Gitex Africa Event" },
-      { src: projectImage6, alt: "Azizi Private Event" },
-      { src: projectImage3, alt: "Lexus Training" },
-      { src: projectImage4, alt: "Azizi Gala" },
-      { src: projectImage1, alt: "Phonak Launch" },
-      { src: projectImage2, alt: "Phonak Launch" },
+      { src: gitexafrica1, alt: "Gitex Africa Event" },
+      { src: gitexafrica2, alt: "Gitex Africa Event" },
+      { src: aziziprivate1, alt: "Azizi Private Event" },
+      { src: aziziprivate2, alt: "Azizi Private Event" },
+      { src: lexus, alt: "Lexus Training" },
+      { src: azizigala, alt: "Azizi Gala" },
     ],
   },
 ];
