@@ -83,7 +83,7 @@ export default function Footer() {
             We make event and project management a seamless experience.
           </p>
           <Link href="/contact#contact-form">
-            <button className="text-2xl bg-lightMustard w-full py-4 rounded hover:bg-mustard text-grayCustom uppercase font-bold">
+            <button className="text-2xl bg-lightMustard w-full py-4 rounded hover:text-tealCustom text-grayCustom uppercase font-bold">
               Book Us
             </button>
           </Link>
