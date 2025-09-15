@@ -24,12 +24,6 @@ const icons = [
   <FaPalette key="palette" />,
 ];
 
-const slugify = (str: string) =>
-  str
-    .toLowerCase()
-    .replace(/\s+/g, "")
-    .replace(/[^a-z0-9]/g, "");
-
 const ServiceSection = ({
   service,
   isReversed,

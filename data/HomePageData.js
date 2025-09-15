@@ -1,4 +1,4 @@
-import img1 from "@/public/images/projects-image1.jpg";
+import img1 from "@/public/images/home-page/home-brand-activation.webp";
 import img2 from "@/public/images/projects-image2.jpg";
 import img3 from "@/public/images/projects-image3.jpg";
 import img4 from "@/public/images/projects-image4.jpg";

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logoIconTeal from "@/public/images/logo-icons/alleyway logo_icon_teal variation.png";
-import introImage from "@/public/images/home/who-we-are.jpg";
+import introImage from "@/public/images/home-page/who-we-are.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
