@@ -1,9 +1,21 @@
-import img1 from "@/public/images/home-page/home-brand-activation.webp";
-import img2 from "@/public/images/projects-image2.jpg";
-import img3 from "@/public/images/projects-image3.jpg";
-import img4 from "@/public/images/projects-image4.jpg";
-import img5 from "@/public/images/projects-image5.jpg";
-import img6 from "@/public/images/projects-image6.jpg";
+import img1 from "@/public/images/projects-page/mercedes.webp";
+import img2 from "@/public/images/projects-page/gitex.webp";
+import img3 from "@/public/images/projects-page/amadeus.webp";
+import img4 from "@/public/images/home-page/home-exhibitions.webp";
+import img5 from "@/public/images/home-page/home-vip.webp";
+import img6 from "@/public/images/home-page/home-creative.webp";
+
+import awards from "@/public/images/home-page/home-awards.webp";
+import wedding from "@/public/images/home-page/home-wedding.webp";
+import corporate from "@/public/images/home-page/home-corporate.webp";
+import deloitte from "@/public/images/projects-page/deloitte-event.webp";
+
+export const homeHighlights = [
+  { image: awards, label: "Award Ceremony" },
+  { image: wedding, label: "Luxury Wedding" },
+  { image: corporate, label: "Corporate Event" },
+  { image: deloitte, label: "Expo Showcase" },
+];
 
 export const homeServicesData = [
   {
@@ -23,14 +35,14 @@ export const homeServicesData = [
     id: 3,
     title: "Exhibitions, Custom Builds & Spatial Fit-Outs",
     slug: "exhibitions",
-    image: img3,
+    image: img4,
   },
   {
     id: 4,
     title: "Event Logistics & Operations",
     slug: "event-logistics",
-    image: img4,
-    extraImage: img4,
+    image: img3,
+    extraImage: img3,
   },
   {
     id: 5,

@@ -1,12 +1,12 @@
-import projectImage1 from "@/public/images/projects-image1.jpg";
-
-import projectImage2 from "@/public/images/projects-image2.jpg";
+import img1 from "@/public/images/services-page/services-immersive.webp";
+import img2 from "@/public/images/projects-page/santalucia.webp";
+import img3 from "@/public/images/services-page/services-event-production.webp";
+import img4 from "@/public/images/services-page/services-end-to-end.webp";
+import projectImage1 from "@/public/images/projects-image2.jpg";
 
 import projectImage3 from "@/public/images/projects-image3.jpg";
 import projectImage4 from "@/public/images/projects-image4.jpg";
 import projectImage5 from "@/public/images/projects-image5.jpg";
-
-import projectImage6 from "@/public/images/projects-image6.jpg";
 
 export const servicesPageData = {
   numberOne: {
@@ -16,12 +16,12 @@ export const servicesPageData = {
         title: "Immersive product launches, pop-ups, experiential campaigns.",
         description:
           "We bring brands to life through immersive, high-energy activations that leave lasting impressions. Whether it’s an interactive product launch, a VIP pop-up, or a full-scale experiential campaign, we craft moments that connect brands with audiences in meaningful ways.",
-        imageSrc: projectImage6,
+        imageSrc: img1,
         href: "/projects/#exhibitions&tradeshows",
       },
       {
         title: "Engaging B2B & B2C activations for top brands.",
-        imageSrc: projectImage6,
+        imageSrc: img2,
         href: "/projects/#exhibitions&tradeshows",
       },
     ],
@@ -34,12 +34,12 @@ export const servicesPageData = {
           "Large-scale summits, conferences, private events, and gala dinners.",
         description:
           " From intimate gatherings to large-scale global summits we design, plan an execute seamless, high-caliber events that engage, inspire, and drive results. Every detail—venue, content, entertainment, and tech — is meticulously curated to ensure a world-class experience.",
-        imageSrc: projectImage3,
+        imageSrc: img3,
         href: "/projects/#exhibitions&tradeshows",
       },
       {
         title: "End-to-end event design, content, and production.",
-        imageSrc: projectImage2,
+        imageSrc: img4,
         href: "/projects/#exhibitions&tradeshows",
       },
     ],

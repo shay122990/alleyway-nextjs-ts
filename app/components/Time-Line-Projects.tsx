@@ -2,14 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-
-const highlights = [
-  { image: "/images/projects-image.jpg", label: "Festival Launch" },
-  { image: "/images/projects-image1.jpg", label: "Award Ceremony" },
-  { image: "/images/projects-image2.jpg", label: "Luxury Wedding" },
-  { image: "/images/projects-image3.jpg", label: "Corporate Event" },
-  { image: "/images/projects-image4.jpg", label: "Expo Showcase" },
-];
+import { homeHighlights } from "@/data/HomePageData";
 
 export default function TimelineProjects() {
   return (
@@ -21,9 +14,10 @@ export default function TimelineProjects() {
           </div>
         </Link>
       </div>
+
       <div className="overflow-x-auto lg:mt-10 scrollbar-thin scrollbar-thumb-[#fea536] scrollbar-track-[#fef5e7]">
         <div className="flex items-center gap-8 w-max px-10 py-10">
-          {highlights.map((item, idx) => (
+          {homeHighlights.map((item, idx) => (
             <Link
               href="/projects"
               key={idx}
@@ -35,16 +29,17 @@ export default function TimelineProjects() {
                   alt={`Highlight image of ${item.label}`}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 320px, 420px"
+                  priority={idx < 2}
                 />
-                <div className="absolute inset-0 bg-black/40 z-10 transition duration-300 group-hover:bg-black/20" />
-                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 px-4 text-center">
-                  <p className="text-white text-2xl font-bold group-hover:text-tealCustom transition">
-                    {item.label}
-                  </p>
+                <div className="absolute inset-0 bg-black/40 z-10 transition duration-300 " />
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 px-4 text-center">
+                  <p className="text-white text-2xl font-bold">{item.label}</p>
                 </div>
               </div>
             </Link>
           ))}
+
           <Link
             href="/projects"
             className="min-w-[250px] flex justify-center items-center"

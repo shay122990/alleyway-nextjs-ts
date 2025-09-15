@@ -3,27 +3,38 @@ import Link from "next/link";
 import Head from "next/head";
 import ImageHero from "@/components/layout/ImageHero";
 import WhyChooseUsSection from "./components/Why-Choose-Us-Section";
-import projectsImage from "@/public/images/projects-image.jpg";
+import servicesHero from "@/public/images/services-hero.webp";
 import { servicesPageData } from "@/data/ServicesPageData";
 import ServicesSection from "./components/Services";
-
 
 export default function Services() {
   return (
     <>
       <Head>
         <title>Alleyway Services | Alleyway</title>
-        <meta name="description" content="From corporate events to luxury VIP experiences, we deliver unforgettable services tailored to your brand." />
-        <link rel="preload" href={projectsImage.src} as="image" />
+        <meta
+          name="description"
+          content="From corporate events to luxury VIP experiences, we deliver unforgettable services tailored to your brand."
+        />
+        <link rel="preload" href={servicesHero.src} as="image" />
         <meta property="og:title" content="Our Services - Alleyway" />
-        <meta property="og:description" content="Explore our comprehensive range of event & management services designed to make your event memorable." />
-        <meta property="og:image" content="https://alleywaydxb.com/images/projects-image.jpg" />
+        <meta
+          property="og:description"
+          content="Explore our comprehensive range of event & management services designed to make your event memorable."
+        />
+        <meta
+          property="og:image"
+          content="https://alleywaydxb.com/images/services-hero.webp"
+        />
         <meta property="og:url" content="https://alleywaydxb.com/services" />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="event management, corporate events, private events, VIP experiences, creative storytelling, exhibitions, Dubai events" />
+        <meta
+          name="keywords"
+          content="event management, corporate events, private events, VIP experiences, creative storytelling, exhibitions, Dubai events"
+        />
       </Head>
-      <ImageHero 
-        image={projectsImage}
+      <ImageHero
+        image={servicesHero}
         title="What We Do"
         paragraph="We don't just manage events - we engineer impact."
         titleClassName="text-lightMustard text-[clamp(2rem,6vw,6rem)] font-bold"
@@ -75,7 +86,7 @@ export default function Services() {
           title={servicesPageData.numberSix.title}
           data={servicesPageData.numberSix.services}
         />
-         <div className="relative z-10 my-10 flex justify-center">
+        <div className="relative z-10 my-10 flex justify-center">
           <Link
             href="/contact"
             className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg"
