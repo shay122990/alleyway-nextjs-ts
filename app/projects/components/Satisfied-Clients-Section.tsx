@@ -1,9 +1,8 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-import { FaChevronDown } from "react-icons/fa"; 
+import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
-
 
 const clientLogos = [
   "/images/client-logos/img1.png",
@@ -64,17 +63,24 @@ const clientLogos = [
   "/images/client-logos/img56.png",
   "/images/client-logos/img57.jpg",
   "/images/client-logos/img58.webp",
+  "/images/client-logos/img59.png",
+  "/images/client-logos/img60.png",
+  "/images/client-logos/img61.png",
+  "/images/client-logos/img62.png",
+  "/images/client-logos/img63.png",
+  "/images/client-logos/img64.png",
+  "/images/client-logos/img65.png",
 ];
 function getRandomWidth() {
-    const widths = [80, 100, 120];
-    return widths[Math.floor(Math.random() * widths.length)];
-  }
-  
-  function getRandomHeight() {
-    const heights = [80, 60, 70];
-    return heights[Math.floor(Math.random() * heights.length)];
-  }
-  
+  const widths = [80, 100, 120];
+  return widths[Math.floor(Math.random() * widths.length)];
+}
+
+function getRandomHeight() {
+  const heights = [80, 60, 70];
+  return heights[Math.floor(Math.random() * heights.length)];
+}
+
 export default function SatisfiedClientsSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -92,12 +98,14 @@ export default function SatisfiedClientsSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] animate-backgroundMove opacity-20"></div>
 
       <div className="relative z-10 text-center mb-14">
-        <h2 className="text-5xl font-extrabold text-lightMustard uppercase">They trust us</h2>
+        <h2 className="text-5xl font-extrabold text-lightMustard uppercase">
+          They trust us
+        </h2>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div 
-          ref={scrollContainerRef} 
+        <div
+          ref={scrollContainerRef}
           className="max-h-[400px] overflow-y-scroll scrollbar-always relative px-2"
         >
           <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
@@ -117,7 +125,7 @@ export default function SatisfiedClientsSection() {
           </div>
         </div>
 
-        <div 
+        <div
           onClick={handleScrollClick}
           className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
         >

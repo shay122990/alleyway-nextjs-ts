@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import ImageHero from "@/components/layout/ImageHero";
 import WhyChooseUsSection from "./components/Why-Choose-Us-Section";
-import servicesHero from "@/public/images/services-hero.webp";
+import servicesHero from "@/public/images/services-page/services-hero.webp";
 import { servicesPageData } from "@/data/ServicesPageData";
 import ServicesSection from "./components/Services";
 

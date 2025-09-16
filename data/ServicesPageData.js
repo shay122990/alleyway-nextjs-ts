@@ -2,11 +2,14 @@ import img1 from "@/public/images/services-page/services-immersive.webp";
 import img2 from "@/public/images/projects-page/santalucia.webp";
 import img3 from "@/public/images/services-page/services-event-production.webp";
 import img4 from "@/public/images/services-page/services-end-to-end.webp";
-import projectImage1 from "@/public/images/projects-image2.jpg";
-
-import projectImage3 from "@/public/images/projects-image3.jpg";
-import projectImage4 from "@/public/images/projects-image4.jpg";
-import projectImage5 from "@/public/images/projects-image5.jpg";
+import img5 from "@/public/images/home-page/home-exhibitions.webp";
+import img6 from "@/public/images/projects-page/hotmart.webp";
+import img7 from "@/public/images/projects-page/lexus.webp";
+import img8 from "@/public/images/services-page/services-seamless-coord.webp";
+import img9 from "@/public/images/services-page/services-luxury-incentives.webp";
+import img10 from "@/public/images/projects-page/phonak.webp";
+import img11 from "@/public/images/services-page/services-creative1.webp";
+import img12 from "@/public/images/services-page/services-creative2.webp";
 
 export const servicesPageData = {
   numberOne: {
@@ -21,6 +24,8 @@ export const servicesPageData = {
       },
       {
         title: "Engaging B2B & B2C activations for top brands.",
+        description:
+          "We design and deliver impactful brand activations that connect with both business and consumer audiences. From trade shows and corporate showcases to retail pop-ups and public experiences, our team creates memorable touchpoints that drive engagement, awareness, and lasting brand loyalty.",
         imageSrc: img2,
         href: "/projects/#exhibitions&tradeshows",
       },
@@ -39,6 +44,8 @@ export const servicesPageData = {
       },
       {
         title: "End-to-end event design, content, and production.",
+        description:
+          "From concept to curtain call, we handle every aspect of your event. Our team designs immersive experiences, develops tailored content, and manages full-scale production to ensure a seamless journey from idea to execution.",
         imageSrc: img4,
         href: "/projects/#exhibitions&tradeshows",
       },
@@ -52,12 +59,14 @@ export const servicesPageData = {
           "Striking, high-end immersive exhibition spaces, corporate spaces & brand environments.",
         description:
           "We design and construct striking exhibition spaces and bespoke brand environments that make an impact. Whether it’s a trade show, a corporate showcase, or a multi-brand experience zone, we ensure your presence stands out and drives engagement.",
-        imageSrc: projectImage1,
+        imageSrc: img5,
       },
       {
         title:
           "Full design, construction, and management of trade show experiences.",
-        imageSrc: projectImage5,
+        description:
+          "We provide turnkey solutions for trade shows, covering stand design, custom construction, and onsite management. Our approach ensures your brand stands out with a functional, eye catching presence that attracts visitors and delivers measurable results.",
+        imageSrc: img6,
       },
     ],
   },
@@ -69,11 +78,13 @@ export const servicesPageData = {
           "Transport, international imports, permitting, build-up, and execution.",
         description:
           "Flawless execution starts with precise logistics and seamless operations. We handle everything—transport, permits, imports, on-site coordination—ensuring every moving piece of your event is executed with precision, eﬃciency, and global expertise. ",
-        imageSrc: projectImage3,
+        imageSrc: img7,
       },
       {
         title: "Seamless coordination of all moving parts in complex events.",
-        imageSrc: projectImage4,
+        description:
+          "We bring clarity to complexity by managing every detail of your event suppliers, schedules, logistics, and onsite operations ensuring everything runs smoothly and flawlessly from start to finish.",
+        imageSrc: img8,
       },
     ],
   },
@@ -85,12 +96,14 @@ export const servicesPageData = {
           "Luxury incentive programs, executive retreats, and premium hospitality.",
         description:
           "We craft bespoke destination experiences that go beyond expectations. From securing elite venues to curating luxury incentive programs and executive hospitality, we create unforgettable journeys that cater to C-level professionals, global brands, and changemakers. ",
-        imageSrc: projectImage3,
+        imageSrc: img9,
       },
       {
         title:
           "High-profile experiences for C-level executives, global brands, and change makers.",
-        imageSrc: projectImage4,
+        description:
+          "We specialize in delivering premium experiences tailored for senior executives, international brands, and influential leaders. From exclusive gatherings to large scale showcases, we craft environments that inspire, engage, and leave a lasting impact.",
+        imageSrc: img10,
       },
     ],
   },
@@ -100,12 +113,16 @@ export const servicesPageData = {
       {
         title:
           "Concept ideation, storytelling, event themes and immersive brand experiences that resonate with audiences.",
-        imageSrc: projectImage3,
+        description:
+          "We transform ideas into powerful narratives through creative concept development, thematic design, and immersive brand experiences. Our goal is to craft stories that captivate audiences and create lasting connections.",
+        imageSrc: img11,
       },
       {
         title:
           "Designing narratives, journeys, and visual themes that align with brand identity, campaign goals, and trending topics.",
-        imageSrc: projectImage4,
+        description:
+          "Narratives, journeys and visual themes are designed to reflect brand identity, align with campaign objectives and connect with cultural trends, ensuring every event feels relevant, authentic and memorable.",
+        imageSrc: img12,
       },
     ],
   },

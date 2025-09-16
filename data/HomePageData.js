@@ -4,7 +4,8 @@ import img3 from "@/public/images/projects-page/amadeus.webp";
 import img4 from "@/public/images/home-page/home-exhibitions.webp";
 import img5 from "@/public/images/home-page/home-vip.webp";
 import img6 from "@/public/images/home-page/home-creative.webp";
-
+import img7 from "@/public/images/projects-page/snapchat.webp";
+import img8 from "@/public/images/home-page/home-logistics.webp";
 import awards from "@/public/images/home-page/home-awards.webp";
 import wedding from "@/public/images/home-page/home-wedding.webp";
 import corporate from "@/public/images/home-page/home-corporate.webp";
@@ -29,7 +30,7 @@ export const homeServicesData = [
     title: "Event Production & Management",
     slug: "event-production",
     image: img2,
-    extraImage: img2,
+    extraImage: img7,
   },
   {
     id: 3,
@@ -42,7 +43,7 @@ export const homeServicesData = [
     title: "Event Logistics & Operations",
     slug: "event-logistics",
     image: img3,
-    extraImage: img3,
+    extraImage: img8,
   },
   {
     id: 5,
