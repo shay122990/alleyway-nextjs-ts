@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/public/images/logo-dark.png"
+import logo from "@/public/images/logo-icons/logo-dark.png";
 
 export default function ComingSoon() {
   return (
@@ -14,7 +14,7 @@ export default function ComingSoon() {
         transition={{ duration: 0.8 }}
         className="text-6xl md:text-7xl font-extrabold text-[#df8a16] mb-4 drop-shadow"
       >
-        <Image src={logo} alt="logo-image" width={300} height={300}/>
+        <Image src={logo} alt="logo-image" width={300} height={300} />
       </motion.h1>
 
       <motion.h2
@@ -36,7 +36,7 @@ export default function ComingSoon() {
           Get in touch with us for inquiries!
         </p>
         <a
-          href="https://wa.me/+971528182368" 
+          href="https://wa.me/+971528182368"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#25D366] p-3 rounded-full hover:bg-[#1ebe5b] transition"

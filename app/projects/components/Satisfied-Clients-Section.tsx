@@ -71,15 +71,15 @@ const clientLogos = [
   "/images/client-logos/img64.png",
   "/images/client-logos/img65.png",
 ];
-function getRandomWidth() {
-  const widths = [80, 100, 120];
-  return widths[Math.floor(Math.random() * widths.length)];
-}
+// function getRandomWidth() {
+//   const widths = [80, 100, 120];
+//   return widths[Math.floor(Math.random() * widths.length)];
+// }
 
-function getRandomHeight() {
-  const heights = [80, 60, 70];
-  return heights[Math.floor(Math.random() * heights.length)];
-}
+// function getRandomHeight() {
+//   const heights = [80, 60, 70];
+//   return heights[Math.floor(Math.random() * heights.length)];
+// }
 
 export default function SatisfiedClientsSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -111,7 +111,7 @@ export default function SatisfiedClientsSection() {
           <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
             {clientLogos.map((logo, index) => (
               <div key={index} className="break-inside-avoid">
-                <div className="bg-eggshell rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto">
+                <div className="bg-lightMustard rounded-md shadow-md p-2 flex items-center justify-center w-[160px] h-[100px] mx-auto">
                   <Image
                     src={logo}
                     alt={`Client logo ${index + 1}`}

@@ -32,7 +32,7 @@ export default function ClientLogoBanner() {
           {[...clientLogos, ...clientLogos].map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center mx-2 px-4 rounded-lg bg-eggshell"
+              className="flex items-center justify-center mx-2 px-4 rounded-lg bg-white"
             >
               <Image
                 src={logo}

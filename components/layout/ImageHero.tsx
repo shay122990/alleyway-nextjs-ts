@@ -47,7 +47,7 @@ export default function ImageHero({
           priority={priority}
         />
 
-        <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10" />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-10" />
 
         <div className="relative z-20 flex flex-col items-center justify-center text-center px-4">
           <motion.h1
