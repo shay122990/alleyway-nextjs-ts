@@ -40,52 +40,85 @@ export default function Services() {
         titleClassName="text-lightMustard text-[clamp(2rem,6vw,6rem)] font-bold"
         paragraphClassName="text-white mt-4 text-[clamp(1rem,3vw,2rem)] font-semibold"
       />
-      <section className="bg-white">
+      <section className="bg-white relative z-0">
         <WhyChooseUsSection />
       </section>
-      <main className="relative overflow-hidden text-white ">
-        <div className="absolute inset-0 -z-10">
+
+      <main className="relative z-10 text-white overflow-visible py-6">
+        <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-gray-900 to-black"></div>
           <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-gradient-to-tr from-lightMustard via-orange-400 to-tealCustom rounded-full blur-[100px] opacity-70"></div>
           <div className="absolute top-[30%] right-[-200px] w-[500px] h-[500px] bg-gradient-to-bl from-tealCustom via-lightMustard to-grayCustom rounded-full blur-[100px] opacity-70"></div>
           <div className="absolute bottom-[-150px] left-[-150px] w-[400px] h-[400px] bg-gradient-to-br from-lightMustard via-mustard to-lightMustard rounded-full blur-[100px] opacity-70"></div>
           <div className="absolute top-[55%] left-[20%] w-[400px] h-[400px] bg-gradient-to-tl from-mustard via-lightMustard to-white rounded-full blur-[120px] opacity-50"></div>
         </div>
+
+        <div
+          id="brand-activations"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="brand-activations"
           title={servicesPageData.numberOne.title}
           data={servicesPageData.numberOne.services}
         />
 
+        <div
+          id="event-production"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="event-production"
           title={servicesPageData.numberTwo.title}
           data={servicesPageData.numberTwo.services}
         />
 
+        <div
+          id="exhibitions"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="exhibitions"
           title={servicesPageData.numberThree.title}
           data={servicesPageData.numberThree.services}
         />
 
+        <div
+          id="event-logistics"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="event-logistics"
           title={servicesPageData.numberFour.title}
           data={servicesPageData.numberFour.services}
         />
 
+        <div
+          id="vip-experience"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="vip-experience"
           title={servicesPageData.numberFive.title}
           data={servicesPageData.numberFive.services}
         />
 
+        <div
+          id="creative-development"
+          className="relative -top-32 md:-top-40 h-0"
+          aria-hidden="true"
+        />
         <ServicesSection
           id="creative-development"
           title={servicesPageData.numberSix.title}
           data={servicesPageData.numberSix.services}
         />
+
         <div className="relative z-10 my-10 flex justify-center">
           <Link
             href="/contact"

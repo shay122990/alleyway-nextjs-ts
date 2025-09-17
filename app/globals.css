@@ -19,9 +19,9 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  color: #545454; 
+  color: #545454;
   min-height: 100%;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 a {
@@ -55,8 +55,12 @@ ul {
 
 /* Client Logo Banner Animation */
 @keyframes client-logo-scroll {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-scroll {
@@ -64,7 +68,10 @@ ul {
 }
 /* used in contact page */
 .radial-gradient-bg {
-  background-image: 
-    radial-gradient(circle at 30% 30%, #ffffff33 10%, transparent 40%),
+  background-image: radial-gradient(
+      circle at 30% 30%,
+      #ffffff33 10%,
+      transparent 40%
+    ),
     radial-gradient(circle at 70% 70%, #ffffff33 10%, transparent 40%);
 }

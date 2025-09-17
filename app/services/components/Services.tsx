@@ -27,7 +27,10 @@ const ServicesSection: React.FC<ServicesProps> = ({
   bgColor = "bg-transparent",
 }) => {
   return (
-    <section id={id} className={`relative text-eggshell py-10 lg:py-24 px-6 overflow-hidden ${bgColor}`}>
+    <section
+      id={id}
+      className={`relative text-eggshell py-10 lg:py-24 px-6 ${bgColor}`}
+    >
       <div className="relative z-10 flex flex-col items-left w-full">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -45,26 +48,32 @@ const ServicesSection: React.FC<ServicesProps> = ({
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut", delay: index * 0.2 }}
+              transition={{
+                duration: 0.9,
+                ease: "easeOut",
+                delay: index * 0.2,
+              }}
               viewport={{ once: true }}
-              className={`flex flex-col md:flex-row ${index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center gap-6 sm:gap-10`}
+              className={`flex flex-col md:flex-row ${
+                index % 2 !== 0 ? "md:flex-row-reverse" : ""
+              } items-center gap-6 sm:gap-10`}
             >
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-              viewport={{ once: true }}
-              className="relative w-full md:w-1/2 h-[300px] sm:h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl"
-            >
-              <Image
-                src={item.imageSrc}
-                alt={item.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 80vw, 50vw"
-                priority
-              />
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                viewport={{ once: true }}
+                className="relative w-full md:w-1/2 h-[300px] sm:h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl"
+              >
+                <Image
+                  src={item.imageSrc}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 80vw, 50vw"
+                  priority
+                />
+              </motion.div>
               <div className="w-full md:w-1/2 text-center px-2 sm:px-4">
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}

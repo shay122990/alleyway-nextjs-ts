@@ -8,16 +8,16 @@ import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const footerNavItems = [
   { href: "/", label: "Home" },
-  { href: "/services/#why-choose-us", label: "Why Us?" },
+  { href: "/services#why-choose-us", label: "Why Us?" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact Us" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/services/#brand-activations", label: "Brand Activation" },
-  { href: "/services/#event-production", label: "Event Production" },
-  { href: "/services/#exhibitions", label: "Exhibitions" },
-  { href: "/services/#event-logistics", label: "Event Logistics" },
-  { href: "/services/#vip-experience", label: "Vip Experience" },
-  { href: "/services/#creative-development", label: "Creative Development" },
+  { href: "/services#brand-activations", label: "Brand Activation" },
+  { href: "/services#event-production", label: "Event Production" },
+  { href: "/services#exhibitions", label: "Exhibitions" },
+  { href: "/services#event-logistics", label: "Event Logistics" },
+  { href: "/services#vip-experience", label: "Vip Experience" },
+  { href: "/services#creative-development", label: "Creative Development" },
 ];
 
 const companyLinks = footerNavItems.slice(0, 5);

@@ -42,7 +42,10 @@ export default function WhyChooseUsSection() {
 
       <div className="flex flex-col md:flex-row flex-wrap justify-center gap-6">
         {chooseUsData.map((item, index) => (
-          <div key={index} className="w-full md:w-[45%] lg:w-[22%] flex justify-center">
+          <div
+            key={index}
+            className="w-full md:w-[45%] lg:w-[22%] flex justify-center"
+          >
             <div className="w-full [perspective:1000px] group">
               <div className="relative w-full min-h-[160px] md:min-h-[300px] lg:min-h-[400px] transition-transform duration-[1000ms] ease-in-out [transform-style:preserve-3d] [transform:translateZ(0)] will-change-transform group-hover:[transform:rotateY(180deg)]">
                 <div
