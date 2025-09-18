@@ -9,7 +9,7 @@ export default function SuccessfullyDeliveredSections() {
       {projectSectionsData.map((section, index) => (
         <section
           key={index}
-          className={`py-24 px-4 sm:px-6 ${section.backgroundColor} ${
+          className={` py-10 lg:py-24 px-4 sm:px-6 ${section.backgroundColor} ${
             section.backgroundColor === "bg-black" ? "text-white" : ""
           }`}
         >
