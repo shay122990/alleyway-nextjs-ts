@@ -10,8 +10,8 @@ export const sendEmail = async (data: {
       "service_1y8x8jd",
       "template_pz2pz5f",
       {
-        from_name: data.name,
-        reply_to: data.email,
+        name: data.name,
+        email: data.email,
         message: data.message,
       },
       "3VxZ2XS6rmTPLzTwV"
