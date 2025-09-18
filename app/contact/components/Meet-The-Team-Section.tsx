@@ -17,12 +17,12 @@ const teamMembers = [
 
 export default function MeetTheTeamSection() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden bg-eggshell">
+    <section className="relative py-10 lg:py-24 px-6 overflow-hidden bg-eggshell">
       <div className="absolute inset-0 bg-gradient-to-br from-[#2bbfbb10] to-[#df8a1610] pointer-events-none z-0" />
       <div className="absolute inset-0 bg-[url('/images/logo-icons/alleyway%20logo_icon_teal%20variation.png')] bg-no-repeat bg-right bg-contain opacity-20 mix-blend-multiply z-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-10">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-mustard tracking-tight leading-tight">
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-4 lg:gap-10">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-mustard tracking-tight leading-tight">
           Meet the team
         </h2>
 
@@ -32,9 +32,10 @@ export default function MeetTheTeamSection() {
 
         <div className="bg-white/60 backdrop-blur-lg p-8 rounded-xl border border-gray-300 shadow-md max-w-4xl">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Story</h3>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="md:text-lg text-gray-700 leading-relaxed">
             From freelancers with a dream to global changemakers —<br />
-            Now, you're collaborating directly with the experts who bring bold visions to life.
+            Now, you're collaborating directly with the experts who bring bold
+            visions to life.
           </p>
         </div>
 
