@@ -98,20 +98,20 @@ export default function SatisfiedClientsSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] animate-backgroundMove opacity-20"></div>
 
       <div className="relative z-10 text-center mb-14">
-        <h2 className="text-5xl font-extrabold text-lightMustard uppercase">
+        <h2 className="text-xl md:text-5xl font-extrabold text-lightMustard uppercase">
           They trust us
         </h2>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 md:max-w-7xl mx-auto">
         <div
           ref={scrollContainerRef}
           className="max-h-[400px] overflow-y-scroll scrollbar-always relative px-2"
         >
-          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 space-y-2">
+          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5  space-y-2">
             {clientLogos.map((logo, index) => (
               <div key={index} className="break-inside-avoid">
-                <div className="bg-lightMustard rounded-md shadow-md p-2 flex items-center justify-center w-[160px] h-[100px] mx-auto">
+                <div className="bg-lightMustard rounded-md shadow-md p-4 md:p-2 flex items-center justify-center w-[160px] h-[100px] md:w-auto md:h-auto mx-auto">
                   <Image
                     src={logo}
                     alt={`Client logo ${index + 1}`}
