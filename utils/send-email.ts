@@ -5,25 +5,22 @@ export const sendEmail = async (data: {
   email: string;
   message: string;
 }) => {
-  try {
-    const response = await emailjs.send(
-      "service_1y8x8jd",
-      "template_pz2pz5f",
-      {
-        name: data.name,
-        email: data.email,
-        message: data.message,
-      },
-      "3VxZ2XS6rmTPLzTwV"
-    );
+  const params = {
+    name: data.name,
+    email: data.email,
+    message: data.message,
 
-    if (response.status !== 200) {
-      throw new Error("Failed to send email");
-    }
+    from_name: data.name,
+    reply_to: data.email,
+    user_email: data.email,
+  };
 
-    console.log("SUCCESS!", response.status, response.text);
-  } catch (error) {
-    console.error("FAILED...", error);
-    throw error;
-  }
+  const res = await emailjs.send(
+    "service_1y8x8jd",
+    "template_pz2pz5f",
+    params,
+    "3VxZ2XS6rmTPLzTwV"
+  );
+
+  if (res.status !== 200) throw new Error(`EmailJS failed: ${res.text}`);
 };
