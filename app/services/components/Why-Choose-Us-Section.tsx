@@ -31,8 +31,8 @@ const chooseUsData: ChooseUsItem[] = [
 export default function WhyChooseUsSection() {
   return (
     <div id="why-choose-us" className="my-10 px-14 lg:px-10">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-6xl font-extrabold text-tealCustom mb-4 tracking-wide uppercase">
+      <div className="text-center mb-8 lg:mb-16">
+        <h2 className="text-xl md:text-6xl font-extrabold text-tealCustom mb-4 tracking-wide uppercase">
           Why choose us
         </h2>
         <div className="flex justify-center">
@@ -61,7 +61,7 @@ export default function WhyChooseUsSection() {
                 </div>
 
                 <div className="absolute w-full h-full rounded-[8px] flex justify-center items-center  px-4 bg-grayCustom text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                  <p className="text-left text-lg lg:text-2xl">
+                  <p className="text-left text-sm md:text-2xl">
                     {item.description}
                   </p>
                 </div>
