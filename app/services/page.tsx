@@ -6,6 +6,7 @@ import WhyChooseUsSection from "./components/Why-Choose-Us-Section";
 import servicesHero from "@/public/images/services-page/services-hero.webp";
 import { servicesPageData } from "@/data/ServicesPageData";
 import ServicesSection from "./components/Services";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Services() {
   return (
@@ -125,15 +126,7 @@ export default function Services() {
             className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg"
           >
             Start your project with us
-            <svg
-              className="w-4 h-4 transition-transform group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
+            <FaArrowRight className="text-lightMustard text-xl" />
           </Link>
         </div>
       </main>

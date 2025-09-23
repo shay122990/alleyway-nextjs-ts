@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 const clientLogos = [
@@ -71,31 +71,17 @@ const clientLogos = [
   "/images/client-logos/img64.png",
   "/images/client-logos/img65.png",
 ];
-// function getRandomWidth() {
-//   const widths = [80, 100, 120];
-//   return widths[Math.floor(Math.random() * widths.length)];
-// }
-
-// function getRandomHeight() {
-//   const heights = [80, 60, 70];
-//   return heights[Math.floor(Math.random() * heights.length)];
-// }
 
 export default function SatisfiedClientsSection() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleScrollClick = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        top: 200,
-        behavior: "smooth",
-      });
-    }
+    scrollRef.current?.scrollBy({ top: 200, behavior: "smooth" });
   };
 
   return (
     <section className="relative overflow-hidden py-20 px-4 bg-gray-900">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] animate-backgroundMove opacity-20"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#fea536_10%,transparent_40%),radial-gradient(circle_at_80%_80%,#2bbfbb_10%,transparent_40%)] opacity-20" />
 
       <div className="relative z-10 text-center mb-14">
         <h2 className="text-xl md:text-5xl font-extrabold text-lightMustard uppercase">
@@ -105,50 +91,65 @@ export default function SatisfiedClientsSection() {
 
       <div className="relative z-10 md:max-w-7xl mx-auto">
         <div
-          ref={scrollContainerRef}
+          ref={scrollRef}
           className="max-h-[400px] overflow-y-scroll scrollbar-always relative px-2"
         >
-          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5  space-y-2">
-            {clientLogos.map((logo, index) => (
-              <div key={index} className="break-inside-avoid">
-                <div className="bg-lightMustard rounded-md shadow-md p-4 md:p-2 flex items-center justify-center w-[160px] h-[100px] md:w-auto md:h-auto mx-auto">
-                  <Image
-                    src={logo}
-                    alt={`Client logo ${index + 1}`}
-                    width={120}
-                    height={80}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
+          {/* MOBILE: simple grid (no masonry) */}
+          <div className="grid grid-cols-2 gap-3 md:hidden">
+            {clientLogos.map((logo, i) => (
+              <div
+                key={i}
+                className="bg-lightMustard rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto"
+              >
+                <Image
+                  src={logo}
+                  alt={`Client logo ${i + 1}`}
+                  width={120}
+                  height={80}
+                  sizes="(max-width: 768px) 160px"
+                  className="object-contain w-full h-full"
+                />
               </div>
             ))}
           </div>
-        </div>
 
-        <div
-          onClick={handleScrollClick}
-          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
-        >
-          <div className="bg-grayCustom p-2 rounded-full shadow-lg opacity-90">
-            <FaChevronDown className="text-tealCustom text-2xl" />
+          {/* DESKTOP/TABLET: masonry  */}
+          <div className="hidden md:block">
+            <div className="columns-4 lg:columns-5 space-y-2">
+              {clientLogos.map((logo, i) => (
+                <div key={i} className="break-inside-avoid">
+                  <div className="bg-lightMustard rounded-md shadow-md p-2 flex items-center justify-center md:w-auto md:h-auto w-[160px] h-[100px] mx-auto">
+                    <Image
+                      src={logo}
+                      alt={`Client logo ${i + 1}`}
+                      width={160}
+                      height={100}
+                      sizes="(min-width: 1024px) 240px, (min-width: 768px) 200px, 160px"
+                      className="object-contain w-full h-full"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
+        <button
+          onClick={handleScrollClick}
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-grayCustom p-2 rounded-full shadow-lg opacity-90"
+          aria-label="Scroll logos"
+        >
+          <FaChevronDown className="text-tealCustom text-2xl" />
+        </button>
       </div>
+
       <div className="relative z-10 mt-16 flex justify-center">
         <Link
           href="/services"
           className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg"
         >
           Explore how we deliver
-          <svg
-            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M13 6l6 6-6 6" />
-          </svg>
+          <FaArrowRight className="text-lightMustard text-xl" />
         </Link>
       </div>
     </section>

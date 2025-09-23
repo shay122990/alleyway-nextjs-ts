@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { homeHighlights } from "@/data/HomePageData";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function TimelineProjects() {
   return (
@@ -44,8 +45,8 @@ export default function TimelineProjects() {
             href="/projects"
             className="min-w-[250px] flex justify-center items-center"
           >
-            <div className="bg-tealCustom text-white rounded-full px-12 py-6 font-bold text-2xl hover:scale-110 transition-transform duration-300 shadow-lg whitespace-nowrap">
-              View All Projects →
+            <div className="flex flex-row gap-1 items-center bg-tealCustom text-white rounded-full px-12 py-6 font-bold text-2xl hover:scale-110 transition-transform duration-300 shadow-lg whitespace-nowrap">
+              View All Projects <FaArrowRight className=" text-xl" />
             </div>
           </Link>
         </div>
