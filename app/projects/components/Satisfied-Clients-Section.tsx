@@ -79,10 +79,10 @@ export default function SatisfiedClientsSection() {
       <div className="relative z-10 mt-16 flex justify-center">
         <Link
           href="/services"
-          className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg"
+          className="group inline-flex items-center gap-2 text-lightMustard text-lg md:text-xl font-semibold px-6 py-3 rounded-full border border-lightMustard hover:bg-lightMustard hover:text-grayCustom transition-all duration-300 shadow-sm hover:shadow-lg"
         >
           Explore how we deliver
-          <FaArrowRight className="text-lightMustard text-xl" />
+          <FaArrowRight className="text-current group-hover:text-current text-xl transition-colors duration-300" />
         </Link>
       </div>
     </section>
