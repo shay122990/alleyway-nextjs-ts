@@ -39,7 +39,7 @@ export default function MeetTheTeamSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -59,7 +59,7 @@ export default function MeetTheTeamSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
