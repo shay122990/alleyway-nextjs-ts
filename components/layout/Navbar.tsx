@@ -75,6 +75,7 @@ export default function Navbar() {
         <a
           href="https://wa.me/+971528182368"
           target="_blank"
+          aria-label="Chat with Alleyway on WhatsApp (opens in a new tab)"
           className="block text-4xl text-eggshell hover:text-tealCustom transition lg:hidden"
         >
           <FaWhatsapp />
@@ -83,6 +84,7 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-4">
           <a
             href="mailto:hello@alleywaydxb.com"
+            aria-label="Email Alleyway (opens in a new tab)"
             className="text-white hover:text-tealCustom transition text-2xl"
           >
             <FaEnvelope />
@@ -90,6 +92,7 @@ export default function Navbar() {
           <a
             href="https://instagram.com/"
             target="_blank"
+            aria-label="Go to Alleyway Instagram  (opens in a new tab)"
             className="text-white hover:text-tealCustom transition text-2xl"
           >
             <FaInstagram />
@@ -97,6 +100,7 @@ export default function Navbar() {
           <a
             href="https://linkedin.com/"
             target="_blank"
+            aria-label="Go to Alleyway LinkedIn  (opens in a new tab)"
             className="text-white hover:text-tealCustom transition text-2xl"
           >
             <FaLinkedin />
@@ -138,12 +142,14 @@ export default function Navbar() {
           <a
             href="mailto:hello@alleywaydxb.com"
             className="text-eggshell hover:text-tealCustom transition text-2xl"
+            aria-label="Email Alleyway (opens in a new tab)"
           >
             <FaEnvelope />
           </a>
           <a
             href="https://instagram.com/"
             target="_blank"
+            aria-label="Go to Alleyway Instagram  (opens in a new tab)"
             className="text-eggshell hover:text-tealCustom transition text-2xl"
           >
             <FaInstagram />
@@ -151,6 +157,7 @@ export default function Navbar() {
           <a
             href="https://linkedin.com/"
             target="_blank"
+            aria-label="Go to Alleyway LinkedIn  (opens in a new tab)"
             className="text-eggshell hover:text-tealCustom transition text-2xl"
           >
             <FaLinkedin />

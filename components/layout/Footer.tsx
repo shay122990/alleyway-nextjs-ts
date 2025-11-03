@@ -34,21 +34,29 @@ export default function Footer() {
       {/* Brand + Social */}
       <div className="flex flex-row justify-between items-end w-full md:flex-col md:items-start md:w-2/5 md:gap-4">
         <div className="w-28">
-          <Image src={logo} alt="Alleyway Events & Production logo" />
+          <Link
+            href="/"
+            className="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard focus-visible:ring-offset-2 focus-visible:ring-offset-grayCustom"
+          >
+            <Image src={logo} alt="Alleyway — Logo" />
+          </Link>
         </div>
 
         <address className="not-italic flex flex-col gap-4 w-3/5 md:w-11/12 md:flex-col-reverse md:items-start">
           <p className="text-eggshell text-sm md:text-lg md:w-4/5">
-            Stay connected with us for the latest updates, exclusive offers, and
-            more! Follow us on our social platforms.
+            Stay connected with us for the latest updates and more! Follow us on
+            our social platforms.
           </p>
           <ul className="flex flex-row gap-4">
             <li>
               <a
                 href="mailto:hello@alleywaydxb.com"
-                aria-label="Email Alleyway"
-                className="text-white hover:text-tealCustom transition text-2xl"
+                className="text-white hover:text-tealCustom transition text-2xl
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard
+                  focus-visible:ring-offset-2 focus-visible:ring-offset-grayCustom"
+                aria-label="Email Alleyway (opens in a new tab)"
               >
+                <span className="sr-only">Email Alleyway</span>
                 <FaEnvelope aria-hidden="true" />
               </a>
             </li>
@@ -57,9 +65,14 @@ export default function Footer() {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Alleyway on Instagram (opens in new tab)"
-                className="text-white hover:text-tealCustom transition text-2xl"
+                aria-label="Alleyway on Instagram (opens in a new tab)"
+                className="text-white hover:text-tealCustom transition text-2xl
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard
+                  focus-visible:ring-offset-2 focus-visible:ring-offset-grayCustom"
               >
+                <span className="sr-only">
+                  Alleyway on Instagram (opens in a new tab)
+                </span>
                 <FaInstagram aria-hidden="true" />
               </a>
             </li>
@@ -68,9 +81,14 @@ export default function Footer() {
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Alleyway on LinkedIn (opens in new tab)"
-                className="text-white hover:text-tealCustom transition text-2xl"
+                aria-label="Alleyway on LinkedIn (opens in a new tab)"
+                className="text-white hover:text-tealCustom transition text-2xl
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard
+                  focus-visible:ring-offset-2 focus-visible:ring-offset-grayCustom"
               >
+                <span className="sr-only">
+                  Alleyway on LinkedIn (opens in a new tab)
+                </span>
                 <FaLinkedin aria-hidden="true" />
               </a>
             </li>
