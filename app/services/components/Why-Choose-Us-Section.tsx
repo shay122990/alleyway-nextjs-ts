@@ -30,7 +30,7 @@ const chooseUsData: ChooseUsItem[] = [
 
 export default function WhyChooseUsSection() {
   return (
-    <div id="why-choose-us" className="py-8 md:py-14 px-14 lg:px-10">
+    <div id="why-choose-us" className="py-8 md:py-10 px-10 lg:px-10">
       <div className="text-center mb-8 lg:mb-16">
         <h2 className="text-xl md:text-6xl font-extrabold text-tealCustom mb-4 tracking-wide uppercase">
           Why choose us
