@@ -46,11 +46,11 @@ export default function HowWeWork() {
           <div className="h-1 w-20 md:w-28 bg-[#2bbfbb] rounded-full"></div>
         </div>
       </div>
-
-      <div className="grid grid-cols-2 lg:flex lg:flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="flex flex-col lg:flex-row items-center gap-x-6 h-full">
-            <div className="relative group bg-eggshell backdrop-blur-lg border border-white/10 p-4 md:p-6 rounded-2xl md:rounded-3xl flex flex-col items-center text-center shadow-xl hover:shadow-[#2bbfbb]/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] w-full h-full flex-1">
+          <div key={index} className="relative h-full">
+            {/* CARD */}
+            <div className="bg-eggshell backdrop-blur-lg border border-white/10 p-4 md:p-6 rounded-2xl md:rounded-3xl flex flex-col items-center text-center shadow-xl hover:shadow-[#2bbfbb]/20 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] w-full h-full">
               <div className="absolute top-4 left-4 text-3xl md:text-5xl font-bold text-mustard/50 select-none">
                 {index + 1}
               </div>
@@ -67,18 +67,16 @@ export default function HowWeWork() {
                 {step.step}
               </p>
 
-              <p className="text-xs md:text-sm text-grayCustom">{step.description}</p>
+              <p className="text-xs md:text-sm text-grayCustom">
+                {step.description}
+              </p>
             </div>
-            {index < steps.length - 1 && (
-              <div className="hidden lg:flex items-center justify-center">
-                <FaArrowRight className="text-2xl text-grayCustom" />
-              </div>
-            )}
           </div>
         ))}
       </div>
-      <div className="absolute top-0 left-0 w-60 h-60 bg-[#2bbfbb] blur-3xl opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#df8a16] blur-2xl opacity-20 rounded-full translate-x-1/2 translate-y-1/2"></div>
+      {/* background blobs */}
+      {/* <div className="absolute top-0 left-0 w-60 h-60 bg-[#2bbfbb] blur-3xl opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#df8a16] blur-2xl opacity-20 rounded-full translate-x-1/2 translate-y-1/2"></div> */}
     </section>
   );
 }
