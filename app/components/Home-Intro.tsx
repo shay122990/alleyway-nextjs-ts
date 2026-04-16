@@ -83,8 +83,6 @@ const HomeIntro = () => {
             <Image
               src={introImage}
               alt="Main Image"
-              width={600}
-              height={600}
               className="shadow-2xl object-cover rounded-2xl"
             />
           </motion.div>

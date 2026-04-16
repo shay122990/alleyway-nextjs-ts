@@ -40,7 +40,7 @@ export default function SatisfiedClientsSection() {
                   width={120}
                   height={80}
                   sizes="(max-width: 768px) 160px"
-                  className="object-contain w-full h-full"
+                  className="object-contain w-full h-auto"
                 />
               </div>
             ))}
