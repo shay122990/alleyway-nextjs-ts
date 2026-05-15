@@ -37,10 +37,11 @@ export default function SatisfiedClientsSection() {
                 <Image
                   src={logo}
                   alt={`Client logo ${i + 1}`}
-                  width={120}
-                  height={80}
-                  sizes="(max-width: 768px) 160px"
-                  className="object-contain w-full h-auto"
+                  width={160}
+                  height={100}
+                  sizes="(min-width: 1024px) 240px, (min-width: 768px) 200px, 160px"
+                  className="object-contain w-auto h-auto"
+                  loading="eager"
                 />
               </div>
             ))}
@@ -58,7 +59,8 @@ export default function SatisfiedClientsSection() {
                       width={160}
                       height={100}
                       sizes="(min-width: 1024px) 240px, (min-width: 768px) 200px, 160px"
-                      className="object-contain w-full h-full"
+                      className="object-contain w-auto h-auto"
+                      loading="eager"
                     />
                   </div>
                 </div>
