@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import ImageHero from "@/components/layout/ImageHero";
+import ImageHero from "../layout/ImageHero";
 import contactHero from "@/public/images/projects-page/monshaat.webp";
 import MeetTheTeamSection from "./components/Meet-The-Team-Section";
 import ContactFormSection from "./components/Contact-Form-Section";

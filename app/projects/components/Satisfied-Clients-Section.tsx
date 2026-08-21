@@ -32,15 +32,15 @@ export default function SatisfiedClientsSection() {
             {clientLogos.map((logo, i) => (
               <div
                 key={i}
-                className="bg-lightMustard rounded-md shadow-md p-4 flex items-center justify-center w-[160px] h-[100px] mx-auto"
+                className="bg-lightMustard rounded-md shadow-md p-4 flex items-center justify-center w-full h-[100px]"
               >
                 <Image
                   src={logo}
                   alt={`Client logo ${i + 1}`}
                   width={160}
                   height={100}
-                  sizes="(min-width: 1024px) 240px, (min-width: 768px) 200px, 160px"
-                  className="object-contain w-auto h-auto"
+                  sizes="50vw"
+                  className="object-contain max-w-full max-h-full"
                   loading="eager"
                 />
               </div>

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Head from "next/head";
-import ImageHero from "@/components/layout/ImageHero";
+import ImageHero from "../layout/ImageHero";
 import WhyChooseUsSection from "./components/Why-Choose-Us-Section";
 import servicesHero from "@/public/images/services-page/services-hero.webp";
 import { servicesPageData } from "@/data/ServicesPageData";

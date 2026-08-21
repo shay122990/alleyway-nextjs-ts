@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import projectsHero from "@/public/images/projects-page/projects-hero.webp";
-import ImageHero from "@/components/layout/ImageHero";
+import ImageHero from "../layout/ImageHero";
 import SuccessfullyDeliveredSection from "./components/Successfully-Delivered-Section";
 import HowWeWork from "./components/How-We-Work-Section";
 import SatisfiedClientsSection from "./components/Satisfied-Clients-Section";

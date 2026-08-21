@@ -32,14 +32,14 @@ export default function ClientLogoBanner() {
           {[...clientLogos, ...clientLogos].map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center mx-2 px-4 rounded-lg bg-white"
+              className="relative flex items-center justify-center mx-2 px-4 rounded-lg bg-white h-[70px] w-[100px]"
             >
               <Image
                 src={logo}
                 alt={`Client Logo ${index + 1}`}
-                width={70}
-                height={70}
-                className="object-cover"
+                fill
+                sizes="100px"
+                className="object-contain p-2"
               />
             </div>
           ))}

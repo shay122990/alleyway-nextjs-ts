@@ -1,9 +1,8 @@
 import "./globals.css";
 import { Barlow } from "next/font/google";
-import WhatsApp from "@/components/layout/WhatsApp";
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-// import ComingSoon from '@/components/ComingSoon';
+import WhatsApp from "./layout/WhatsApp";
+import Footer from "./layout/Footer";
+import Navbar from "./layout/Navbar";
 
 const font = Barlow({
   weight: ["400", "700"],
@@ -26,7 +25,6 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
   <html lang="en" data-scroll-behavior="smooth">
     <body className={font.className}>
-      {/* <ComingSoon/> */}
       <Navbar />
       {children}
       <Footer />

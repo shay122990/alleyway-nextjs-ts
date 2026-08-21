@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import ImageHero from "@/components/layout/ImageHero";
+import ImageHero from "../layout/ImageHero";
 import privacyHero from "@/public/images/projects-page/monshaat.webp";
 
 const PrivacyPolicy = () => {

@@ -24,7 +24,7 @@ export default function ImageHero({
   height,
   priority,
 }: ImageHeroProps) {
-  const backgroundImage = typeof image === "string" ? image : image?.src;
+  const backgroundImage = typeof image === "string" ? image : image.src;
 
   return (
     <motion.div
@@ -43,8 +43,10 @@ export default function ImageHero({
           alt={title}
           width={width || 1920}
           height={height || 1080}
+          sizes="100vw"
           className="absolute top-0 left-0 w-full h-full object-cover"
           priority={priority}
+          loading="eager"
         />
 
         <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-10" />
